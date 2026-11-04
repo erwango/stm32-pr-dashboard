@@ -175,7 +175,7 @@ function renderFlowChart(rows) {
       labels,
       datasets: [
         { label: "Opened (labelled)", data: labels.map((k) => weeks.get(k).opened), backgroundColor: css("--accent") },
-        { label: "Merged", data: labels.map((k) => weeks.get(k).merged), backgroundColor: css("--accent-2") },
+        { label: "Merged", data: labels.map((k) => weeks.get(k).merged), backgroundColor: css("--neutral") },
       ],
     },
     options: {
@@ -197,7 +197,9 @@ function renderAreaChart(stats) {
         label: "Open PRs",
         data: stats.map((s) => s.count),
         backgroundColor: stats.map((s) =>
-          s.area === state.areaFilter ? css("--accent-2") : css("--accent")),
+          s.area === state.areaFilter ? css("--highlight") : css("--accent")),
+        borderColor: css("--accent"),
+        borderWidth: stats.map((s) => (s.area === state.areaFilter ? 2 : 0)),
       }],
     },
     options: {
@@ -253,7 +255,8 @@ function renderReviewChart(open) {
       labels: REVIEW_STATES.map(([label]) => label),
       datasets: [{
         data: counts,
-        backgroundColor: [css("--accent-2"), css("--muted"), css("--warn"), css("--accent")],
+        // awaiting, reviewed, changes requested (the one that needs attention), approved
+        backgroundColor: [css("--accent"), css("--neutral"), css("--highlight"), css("--sand")],
         borderColor: css("--bg"),
       }],
     },

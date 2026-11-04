@@ -115,6 +115,10 @@ awaiting_review, changes_requested, approved_unmerged
 - A slug collision fails the run (never silently overwrite).
 - Badge files are never deleted: the URL is pasted in live PRs. An area that
   drops to zero renders `0 open`, it never returns 404.
+- Colours follow the ST PowerPoint template (theme `STMicroelectronics`,
+  Oct 2026): `color` is Quantum Blue `001E91`, switching to ST yellow `FAD200`
+  when the median age is over 30 days (the stale threshold); `labelColor` is
+  ST grey `B0B7B9`. No traffic-light colours.
 
 ## Collector
 
@@ -160,6 +164,14 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
   hard-code `/stm32-pr-dashboard/`, so they must change if the repo is renamed.
 - Visible Rules panel and a `Last updated` stamp (the page is authoritative over
   the badges).
+- Colours follow the ST PowerPoint template (theme `STMicroelectronics`, Oct
+  2026): white background, black text, Quantum Blue `001E91` for titles, links
+  and the main data series, ST greys `B0B7B9` / `DBE2E9` for the second series,
+  borders and cards, ST yellow `FAD200` only as the attention accent (selected
+  bar, changes-requested slice, stale ages, error banner), sand `E3DFC3` for the
+  approved slice. Light theme only: the brand defines no dark scheme. The muted
+  text grey `565D5F` is a darker neutral for contrast, not a palette colour. ST
+  Core is not redistributable on the web, so the font stack stays system-ui.
 
 ## Comment template (per area)
 

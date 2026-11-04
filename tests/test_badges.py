@@ -46,19 +46,21 @@ class PayloadTest(unittest.TestCase):
     def test_payload(self):
         doc = badges.payload("SPI", [10.0, 30.0])
         self.assertEqual(doc["message"], "2 open, median 20 d")
-        self.assertEqual(doc["color"], "green")
+        self.assertEqual(doc["color"], "001E91")
+        self.assertEqual(doc["labelColor"], "B0B7B9")
         self.assertEqual(doc["schemaVersion"], 1)
         self.assertEqual(doc["cacheSeconds"], 300)
 
     def test_zero_open(self):
         doc = badges.payload("I2C", [])
         self.assertEqual(doc["message"], "0 open")
-        self.assertEqual(doc["color"], "brightgreen")
+        self.assertEqual(doc["color"], "001E91")
 
     def test_colors(self):
-        self.assertEqual(badges.color_for(14), "brightgreen")
-        self.assertEqual(badges.color_for(45), "yellow")
-        self.assertEqual(badges.color_for(500), "red")
+        self.assertEqual(badges.color_for(None), "001E91")
+        self.assertEqual(badges.color_for(30), "001E91")
+        self.assertEqual(badges.color_for(45), "FAD200")
+        self.assertEqual(badges.color_for(500), "FAD200")
 
 
 class BuildTest(unittest.TestCase):

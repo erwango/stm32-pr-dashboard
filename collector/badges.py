@@ -31,9 +31,12 @@ from collector.aggregate import percentile
 from collector.fetch import parse_ts
 
 CACHE_SECONDS = 300
-# Upper bounds (days) of the median age, from the best colour to the worst.
-COLOR_STEPS = ((14, "brightgreen"), (30, "green"), (60, "yellow"), (90, "orange"))
-WORST_COLOR = "red"
+# ST palette (Oct 2026 template): Quantum Blue normally, ST yellow as the single attention
+# colour once the median age passes the 30-day stale threshold, ST grey for the label.
+COLOR_OK = "001E91"
+COLOR_ATTENTION = "FAD200"
+COLOR_LABEL = "B0B7B9"
+ATTENTION_ABOVE_DAYS = 30
 
 
 class SlugCollisionError(RuntimeError):
@@ -49,12 +52,9 @@ def slugify(area: str) -> str:
 
 
 def color_for(median_age: float | None) -> str:
-    if median_age is None:
-        return "brightgreen"
-    for limit, color in COLOR_STEPS:
-        if median_age <= limit:
-            return color
-    return WORST_COLOR
+    if median_age is not None and median_age > ATTENTION_ABOVE_DAYS:
+        return COLOR_ATTENTION
+    return COLOR_OK
 
 
 def payload(label: str, ages: list[float]) -> dict[str, Any]:
@@ -68,6 +68,7 @@ def payload(label: str, ages: list[float]) -> dict[str, Any]:
         "label": label,
         "message": message,
         "color": color_for(median),
+        "labelColor": COLOR_LABEL,
         "cacheSeconds": CACHE_SECONDS,
     }
 
