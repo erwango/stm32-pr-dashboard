@@ -25,6 +25,7 @@ const REVIEW_STATES = [
 ];
 
 const AREA_ROW_PX = 22;
+const UNCLASSIFIED_AREA = "Unclassified";
 const SITE = "https://erwango.github.io/stm32-pr-dashboard/";
 
 const state = { open: [], areaFilter: null, areaStats: [], slugs: {}, charts: {}, now: Date.now() };
@@ -321,17 +322,30 @@ function setFilter(area) {
   }
 }
 
+/* Zephyr pull request list: open PRs with the STM32 label and, when the PR has one, the area label.
+ * URLSearchParams encodes the quotes, colons and parentheses of labels, so the URL is safe in Markdown. */
+function zephyrFilterUrl(area) {
+  const terms = ["is:pr", "state:open"];
+  if (area !== UNCLASSIFIED_AREA) {
+    terms.push(`label:"area: ${area}"`);
+  }
+  terms.push('label:"platform: STM32"');
+  const query = new URLSearchParams({ q: terms.join(" ") });
+  return `https://github.com/zephyrproject-rtos/zephyr/pulls?${query}`;
+}
+
 /* The marker lets a future bot find and edit this comment instead of duplicating it. */
 function snippetText(area, slug) {
   const badge = `https://img.shields.io/endpoint?url=${SITE}badges/area/${slug}.json`;
+  const listText = area === UNCLASSIFIED_AREA
+    ? "Open STM32 PRs"
+    : `Open STM32 PRs labelled "area: ${area}"`;
   return [
     `**STM32 \u00b7 ${area} review queue**`,
     `![${area} review queue](${badge})`,
     "",
-    "ST-related PRs are reviewed by a small group, so this queue is what stands",
-    "between this PR and a merge. The fastest way to shorten it is to spend 15",
-    "minutes reviewing one of the PRs ahead of yours:",
-    `[STM32 PR dashboard](${SITE})`,
+    "ST-related PRs are reviewed by a small group, so this queue is what stands between this PR and a merge. The fastest way to shorten it is to spend 15 minutes reviewing one of the PRs ahead of yours:",
+    `[${listText}](${zephyrFilterUrl(area)}) \u00b7 [STM32 PR dashboard](${SITE})`,
     "",
     `<!-- stm32-pr-dashboard: area=${slug} -->`,
     "",

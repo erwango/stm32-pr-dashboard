@@ -159,10 +159,8 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 **STM32 · <Area> review queue**
 ![<Area> review queue](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/area/<slug>.json)
 
-ST-related PRs are reviewed by a small group, so this queue is what stands
-between this PR and a merge. The fastest way to shorten it is to spend 15
-minutes reviewing one of the PRs ahead of yours:
-[STM32 PR dashboard](https://erwango.github.io/stm32-pr-dashboard/)
+ST-related PRs are reviewed by a small group, so this queue is what stands between this PR and a merge. The fastest way to shorten it is to spend 15 minutes reviewing one of the PRs ahead of yours:
+[Open STM32 PRs labelled "area: <Area>"](https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+state%3Aopen+label%3A%22area%3A+<Area>%22+label%3A%22platform%3A+STM32%22) · [STM32 PR dashboard](https://erwango.github.io/stm32-pr-dashboard/)
 
 <!-- stm32-pr-dashboard: area=<slug> -->
 ```
@@ -170,6 +168,11 @@ minutes reviewing one of the PRs ahead of yours:
 Keep the hidden marker even while pasting by hand: a future bot would key on it
 to edit rather than duplicate. Tone: shared queue, help drain it; never "your PR
 is deprioritised".
+
+The paragraph is one unwrapped line on purpose (it is pasted into a rich text
+comment box). The first link is the Zephyr pull request list filtered by the
+area label plus `platform: STM32`; for the `Unclassified` bucket, which has no
+label to filter on, it lists all open STM32 PRs.
 
 Paste on new PRs going forward. Do not sweep the ~90 already-open PRs; bulk
 pasting reads as spam.
