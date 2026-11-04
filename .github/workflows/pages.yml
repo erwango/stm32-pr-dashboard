@@ -1,0 +1,66 @@
+# SPDX-FileCopyrightText: 2026 Erwan Gouriou
+# SPDX-License-Identifier: Apache-2.0
+
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - assets/**
+      - badges/**
+      - data/**
+      - .github/workflows/pages.yml
+  # Commits pushed with GITHUB_TOKEN do not trigger push workflows, so the
+  # collector's data commits redeploy the site through this trigger.
+  workflow_run:
+    workflows: [Collect]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # Skip when the collector failed: the previous deployment stays valid.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      # Badge files are never deleted: their URLs are pasted in live PRs.
+      - name: Stage site
+        run: |
+          mkdir -p _site
+          cp -r index.html assets _site/
+          for dir in data badges; do
+            if [ -d "$dir" ]; then cp -r "$dir" _site/; fi
+          done
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

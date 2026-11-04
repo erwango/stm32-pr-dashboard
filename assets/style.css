@@ -1,0 +1,115 @@
+/*
+ * SPDX-FileCopyrightText: 2026 Erwan Gouriou
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --border: #d1d9e0;
+  --card: #f6f8fa;
+  --accent: #03234b;
+  --accent-2: #e6007e;
+  --warn: #bf8700;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #9198a1;
+    --border: #3d444d;
+    --card: #151b23;
+    --accent: #4493f8;
+    --accent-2: #f778ba;
+    --warn: #d29922;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 72rem;
+  padding: 1rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.5 system-ui, sans-serif;
+}
+
+a { color: var(--accent); }
+code { font-size: 0.9em; }
+h1 { margin-bottom: 0.25rem; }
+h2 { margin-top: 2rem; font-size: 1.25rem; }
+.hint { color: var(--muted); margin-top: -0.5rem; }
+.error { color: #cf222e; font-weight: 600; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.card .value { font-size: 2rem; font-weight: 600; line-height: 1.2; }
+.card .label { color: var(--muted); font-size: 0.85rem; }
+
+.chart { position: relative; height: 18rem; }
+.chart.wide { height: 20rem; }
+.chart.tall { height: 28rem; }
+
+.pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.filter {
+  padding: 0.5rem 0.75rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+button {
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.table-wrap { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); }
+th.num, td.num { text-align: right; }
+td.stale { color: var(--warn); font-weight: 600; }
+
+.tag {
+  display: inline-block;
+  margin: 0 0.25rem 0.15rem 0;
+  padding: 0 0.45rem;
+  font-size: 0.8rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+
+.rules { margin-top: 2rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+.rules li { margin-bottom: 0.35rem; }
+
+footer { margin-top: 2rem; color: var(--muted); font-size: 0.85rem; }

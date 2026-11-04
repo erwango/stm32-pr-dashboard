@@ -1,0 +1,112 @@
+<!doctype html>
+<!--
+SPDX-FileCopyrightText: 2026 Erwan Gouriou
+SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://img.shields.io data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>STM32 PR dashboard</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>STM32 PR dashboard</h1>
+    <p>Open pull requests labelled <code>platform: STM32</code> in
+      <a href="https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+is%3Aopen+label%3A%22platform%3A+STM32%22">zephyrproject-rtos/zephyr</a>.
+      Last updated: <time id="updated">loading...</time></p>
+    <p id="error" class="error" hidden></p>
+  </header>
+
+  <main>
+    <section class="cards" aria-label="Summary">
+      <div class="card"><span class="value" id="stat-open">-</span><span class="label">open PRs</span></div>
+      <div class="card"><span class="value" id="stat-p50">-</span><span class="label">median age (days)</span></div>
+      <div class="card"><span class="value" id="stat-p90">-</span><span class="label">90th percentile age (days)</span></div>
+      <div class="card"><span class="value" id="stat-awaiting">-</span><span class="label">awaiting first review</span></div>
+      <div class="card"><span class="value" id="stat-stale">-</span><span class="label">no activity for over 30 days</span></div>
+    </section>
+
+    <section>
+      <h2>Open STM32 PRs, last 12 months</h2>
+      <div class="chart wide"><canvas id="chart-open" role="img" aria-label="Open PRs over time"></canvas></div>
+    </section>
+
+    <section>
+      <h2>Opened vs merged, per week</h2>
+      <div class="chart wide"><canvas id="chart-flow" role="img" aria-label="PRs opened and merged per week"></canvas></div>
+    </section>
+
+    <section>
+      <h2>Backlog by area</h2>
+      <p class="hint">Open PRs per area, with median age in days. Click a bar to filter the table below.</p>
+      <div class="chart tall"><canvas id="chart-areas" role="img" aria-label="Open PRs per area"></canvas></div>
+    </section>
+
+    <section class="pair">
+      <div>
+        <h2>Age distribution</h2>
+        <div class="chart"><canvas id="chart-age" role="img" aria-label="Open PRs by age"></canvas></div>
+      </div>
+      <div>
+        <h2>Review state</h2>
+        <div class="chart"><canvas id="chart-review" role="img" aria-label="Open PRs by review state"></canvas></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Open PRs, oldest first</h2>
+      <p id="filter" class="filter" hidden>
+        Area: <strong id="filter-area"></strong>
+        <button type="button" id="filter-clear">Show all</button>
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Title</th><th>Areas</th><th class="num">Age (days)</th><th>Review</th></tr>
+          </thead>
+          <tbody id="prs"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="rules" class="rules">
+      <h2>Rules</h2>
+      <ul>
+        <li>Population: PRs in <code>zephyrproject-rtos/zephyr</code> labelled <code>platform: STM32</code>.</li>
+        <li>Drafts are absent by construction: the upstream assigner workflow only labels PRs that are
+          ready for review, so a PR enters this dataset when it is labelled.</li>
+        <li>Area = each <code>area:</code> label on the PR. A PR with three area labels counts in all
+          three, so the sum over areas exceeds the PR count. A PR without an <code>area:</code> label
+          is shown as <em>Unclassified</em>.</li>
+        <li>Age is measured from the <code>platform: STM32</code> labeling event ("waiting for ST
+          review"), not from PR creation, so long draft periods do not count.</li>
+        <li>Stale means no activity for more than 30 days.</li>
+        <li>No people: no author, reviewer or leaderboard. The unit is the area.</li>
+      </ul>
+      <h3>Caveats</h3>
+      <ul>
+        <li>The upstream <code>scripts/ci/set_assignees.py</code> caps labels at 10 per PR, ranked by
+          how much of the PR each area accounts for. Very wide PRs lose their tail labels, so area
+          counts are slightly lossy at the edge.</li>
+        <li>A PR whose STM32 label was removed before it closed is not returned by a label-filtered
+          listing, so historical membership is marginally undercounted.</li>
+        <li>The history is rebuilt from timestamps. Review-state and staleness are only known for
+          the present, so past days do not carry them.</li>
+        <li>This page is authoritative; any badge pasted in a PR comment is cached and may lag.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Source: <a href="https://github.com/erwango/stm32-pr-dashboard">erwango/stm32-pr-dashboard</a>.
+      Chart.js is MIT licensed.</p>
+  </footer>
+
+  <script src="assets/vendor/chart.umd.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
