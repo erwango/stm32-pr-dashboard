@@ -201,13 +201,8 @@ function renderFlowChart(rows) {
         },
       },
       scales: {
-        // One tick per bar (Chart.js only skips ticks that would overlap), written vertically
-        // so each date sits right under its pair of bars.
-        x: {
-          title: { display: true, text: "Week starting (Monday)" },
-          ticks: { autoSkip: true, minRotation: 90, maxRotation: 90, font: { size: 10 } },
-          grid: { display: true },
-        },
+        // Same sparse, horizontal date axis as the open PRs chart.
+        x: { title: { display: true, text: "Week starting (Monday)" }, ticks: { maxTicksLimit: 12 } },
         y: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: "PRs per week" } },
       },
     },
