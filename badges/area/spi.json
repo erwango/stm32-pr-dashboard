@@ -1,7 +1,8 @@
 {
  "schemaVersion": 1,
  "label": "SPI",
- "message": "8 open, median 24 d",
- "color": "green",
+ "message": "9 open, median 21 d",
+ "color": "001E91",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

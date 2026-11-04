@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "Clocks",
  "message": "2 open, median 15 d",
- "color": "green",
+ "color": "001E91",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

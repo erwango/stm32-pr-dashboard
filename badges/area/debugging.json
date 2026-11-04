@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "Debugging",
  "message": "0 open",
- "color": "brightgreen",
+ "color": "001E91",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

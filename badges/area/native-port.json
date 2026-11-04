@@ -1,7 +1,8 @@
 {
  "schemaVersion": 1,
  "label": "native port",
- "message": "2 open, median 91 d",
- "color": "red",
+ "message": "2 open, median 92 d",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "CPU Frequency Scaling",
  "message": "1 open, median 30 d",
- "color": "green",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

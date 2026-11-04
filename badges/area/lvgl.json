@@ -1,7 +1,8 @@
 {
  "schemaVersion": 1,
  "label": "LVGL",
- "message": "0 open",
- "color": "brightgreen",
+ "message": "1 open, median 0 d",
+ "color": "001E91",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

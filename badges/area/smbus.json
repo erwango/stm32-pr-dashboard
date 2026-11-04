@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "SMBus",
  "message": "1 open, median 31 d",
- "color": "yellow",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

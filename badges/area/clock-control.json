@@ -1,7 +1,8 @@
 {
  "schemaVersion": 1,
  "label": "Clock Control",
- "message": "21 open, median 30 d",
- "color": "green",
+ "message": "22 open, median 30 d",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

@@ -1,7 +1,8 @@
 {
  "schemaVersion": 1,
  "label": "Video",
- "message": "9 open, median 28 d",
- "color": "green",
+ "message": "10 open, median 28 d",
+ "color": "001E91",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

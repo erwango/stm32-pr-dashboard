@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "RISCV",
  "message": "1 open, median 58 d",
- "color": "yellow",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

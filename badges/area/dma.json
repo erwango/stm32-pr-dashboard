@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "DMA",
  "message": "6 open, median 35 d",
- "color": "yellow",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

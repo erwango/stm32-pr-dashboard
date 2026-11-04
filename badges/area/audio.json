@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "Audio",
  "message": "3 open, median 55 d",
- "color": "yellow",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

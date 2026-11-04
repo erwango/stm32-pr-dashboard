@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "Drivers",
  "message": "1 open, median 453 d",
- "color": "red",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

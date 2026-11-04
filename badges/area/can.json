@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "CAN",
  "message": "2 open, median 117 d",
- "color": "red",
+ "color": "FAD200",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

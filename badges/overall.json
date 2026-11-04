@@ -1,7 +1,8 @@
 {
  "schemaVersion": 1,
  "label": "STM32 PRs",
- "message": "174 open, median 28 d",
- "color": "green",
+ "message": "180 open, median 28 d",
+ "color": "001E91",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

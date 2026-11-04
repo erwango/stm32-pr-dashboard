@@ -2,6 +2,7 @@
  "schemaVersion": 1,
  "label": "I3C",
  "message": "5 open, median 28 d",
- "color": "green",
+ "color": "001E91",
+ "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }
