@@ -1,0 +1,59 @@
+# SPDX-FileCopyrightText: 2026 Erwan Gouriou
+# SPDX-License-Identifier: Apache-2.0
+
+name: Collect
+
+on:
+  schedule:
+    # Best-effort: runs may be delayed or skipped. Everything derives from
+    # timestamps, so a missed run self-heals on the next one.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -t .
+
+      # The first run finds no data/prs.json and performs the full backfill.
+      - name: Fetch STM32 PRs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -m collector.fetch
+
+      - name: Aggregate daily history
+        run: python -m collector.aggregate
+
+      # data/prs.json carries a fresh generated_at every run, so there is
+      # always a commit: that also keeps the cron from being auto-disabled
+      # after 60 days of repository inactivity.
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "data: update STM32 PR data"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
