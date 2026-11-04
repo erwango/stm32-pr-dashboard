@@ -179,17 +179,20 @@ would go stale, so `collector/areas.py` derives it from upstream
 Static `index.html` plus Chart.js reading the JSON. No build step.
 
 - Open STM32 PR count over 12 months (headline); opened vs merged per week.
-- Backlog by area: horizontal bars sorted by count, annotated with median age;
-  click filters the table and reveals that area's snippet.
-- Open PRs, oldest first: number, title, areas, age, review state.
 - Age distribution; review-state split (awaiting review / changes requested /
-  approved-not-merged); stale = no activity for more than 30 days.
+  approved-not-merged); stale = no activity for more than 30 days. These cover
+  all PRs and sit above the label-dependent part.
+- A titled group, "Drill down by label", holds everything that follows the
+  selected label, in this order:
+  - Backlog by area: horizontal bars sorted by count, annotated with median age;
+    click filters the table and reveals that area's snippet.
+  - Review queue comment (per-area copy box with a copy button).
+  - Open PRs, oldest first: number, title, areas, age, review state.
 - Table filter: a label selector above the PR table (kept in sync with the area
   chart bars and the clickable area tags in each row), with a row count. While
   a label is selected, the bar also shows the link to that label's page, with
   `Copy link` and `Copy as Markdown` buttons. The path is the label when it is
   plain (`/SPI`), otherwise its slug (`/boards-socs`), so it never needs escaping.
-- Per-area copy box with a copy button.
 - Deep links: `<site>/` opens at the top of the page. `<site>/SPI` applies the
   area filter and opens on the "Review queue comment" section for that area.
   Pages serves `404.html` for unknown paths and `assets/deeplink.js` forwards

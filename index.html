@@ -40,28 +40,6 @@ SPDX-License-Identifier: Apache-2.0
       <div class="chart wide"><canvas id="chart-flow" role="img" aria-label="PRs opened and merged per week"></canvas></div>
     </section>
 
-    <section>
-      <h2>Backlog by area</h2>
-      <p class="hint">Number of open PRs carrying each hardware <code>area:</code> label: Boards/SoCs
-        and the peripheral drivers (SPI, Flash, Clock Control, ...). A PR with several labels counts
-        in each of them. Click a label or its bar to filter the table below by that label; click it
-        again to clear.</p>
-      <div class="chart" id="chart-areas-box"><canvas id="chart-areas" role="img" aria-label="Open PRs per hardware area label"></canvas></div>
-    </section>
-
-    <section id="snippet" hidden>
-      <h2>Review queue comment</h2>
-      <p class="hint">Text to paste by hand on a new STM32 PR in this area. The badge refreshes
-        itself (it can lag a few minutes). Please do not paste it on PRs that are already open.</p>
-      <p>
-        <label for="snippet-area">Area</label>
-        <select id="snippet-area"></select>
-        <button type="button" id="snippet-copy">Copy</button>
-        <span id="snippet-status" role="status"></span>
-      </p>
-      <textarea id="snippet-text" rows="11" readonly aria-label="Comment text"></textarea>
-    </section>
-
     <section class="pair">
       <div>
         <h2>Age distribution</h2>
@@ -73,8 +51,34 @@ SPDX-License-Identifier: Apache-2.0
       </div>
     </section>
 
+    <h2 class="group" id="by-label">Drill down by label</h2>
+    <p class="hint group-hint">Everything above covers all STM32 PRs. The sections below follow the
+      selected label: click a bar in the chart or use the selector above the table.</p>
+
     <section>
-      <h2>Open PRs, oldest first</h2>
+      <h3>Backlog by area</h3>
+      <p class="hint">Number of open PRs carrying each hardware <code>area:</code> label: Boards/SoCs
+        and the peripheral drivers (SPI, Flash, Clock Control, ...). A PR with several labels counts
+        in each of them. Click a label or its bar to filter the table below by that label; click it
+        again to clear.</p>
+      <div class="chart" id="chart-areas-box"><canvas id="chart-areas" role="img" aria-label="Open PRs per hardware area label"></canvas></div>
+    </section>
+
+    <section id="snippet" hidden>
+      <h3>Review queue comment</h3>
+      <p class="hint">Text to paste by hand on a new STM32 PR in this area. The badge refreshes
+        itself (it can lag a few minutes). Please do not paste it on PRs that are already open.</p>
+      <p>
+        <label for="snippet-area">Area</label>
+        <select id="snippet-area"></select>
+        <button type="button" id="snippet-copy">Copy</button>
+        <span id="snippet-status" role="status"></span>
+      </p>
+      <textarea id="snippet-text" rows="11" readonly aria-label="Comment text"></textarea>
+    </section>
+
+    <section>
+      <h3>Open PRs, oldest first</h3>
       <div id="filter" class="filter">
         <div>
           <label for="filter-select">Filter by label:</label>
