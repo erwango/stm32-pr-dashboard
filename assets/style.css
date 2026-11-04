@@ -66,7 +66,6 @@ h2 { margin-top: 2rem; font-size: 1.25rem; }
 
 .chart { position: relative; height: 18rem; }
 .chart.wide { height: 20rem; }
-.chart.tall { height: 28rem; }
 
 .pair {
   display: grid;

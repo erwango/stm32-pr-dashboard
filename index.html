@@ -42,8 +42,10 @@ SPDX-License-Identifier: Apache-2.0
 
     <section>
       <h2>Backlog by area</h2>
-      <p class="hint">Open PRs per area, with median age in days. Click a bar to filter the table below.</p>
-      <div class="chart tall"><canvas id="chart-areas" role="img" aria-label="Open PRs per area"></canvas></div>
+      <p class="hint">Number of open PRs carrying each <code>area:</code> label. A PR with several
+        labels counts in each of them. Click a label or its bar to filter the table below by that
+        label; click it again to clear.</p>
+      <div class="chart" id="chart-areas-box"><canvas id="chart-areas" role="img" aria-label="Open PRs per area label"></canvas></div>
     </section>
 
     <section id="snippet" hidden>
@@ -73,7 +75,7 @@ SPDX-License-Identifier: Apache-2.0
     <section>
       <h2>Open PRs, oldest first</h2>
       <p id="filter" class="filter" hidden>
-        Area: <strong id="filter-area"></strong>
+        Filtered by label: <strong id="filter-area"></strong>
         <button type="button" id="filter-clear">Show all</button>
       </p>
       <div class="table-wrap">

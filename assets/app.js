@@ -24,9 +24,10 @@ const REVIEW_STATES = [
   ["approved, not merged", "approved"],
 ];
 
+const AREA_ROW_PX = 22;
 const SITE = "https://erwango.github.io/stm32-pr-dashboard/";
 
-const state = { open: [], areaFilter: null, slugs: {}, charts: {}, now: Date.now() };
+const state = { open: [], areaFilter: null, areaStats: [], slugs: {}, charts: {}, now: Date.now() };
 
 function css(name) {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -102,11 +103,7 @@ function areaStats(open) {
     }
   }
   return [...byArea.entries()]
-    .map(([area, ages]) => ({
-      area,
-      count: ages.length,
-      median: percentile(ages.sort((a, b) => a - b), 0.5),
-    }))
+    .map(([area, ages]) => ({ area, count: ages.length }))
     .sort((a, b) => b.count - a.count || a.area.localeCompare(b.area));
 }
 
@@ -188,21 +185,36 @@ function renderFlowChart(rows) {
 }
 
 function renderAreaChart(stats) {
+  state.areaStats = stats;
+  // One fixed-height row per label, so every label is drawn and none is skipped.
+  document.getElementById("chart-areas-box").style.height = `${stats.length * AREA_ROW_PX + 60}px`;
   makeChart("chart-areas", {
     type: "bar",
     data: {
-      labels: stats.map((s) => `${s.area} (median ${fmt(s.median)} d)`),
-      datasets: [{ label: "Open PRs", data: stats.map((s) => s.count), backgroundColor: css("--accent") }],
+      labels: stats.map((s) => s.area),
+      datasets: [{
+        label: "Open PRs",
+        data: stats.map((s) => s.count),
+        backgroundColor: stats.map((s) =>
+          s.area === state.areaFilter ? css("--accent-2") : css("--accent")),
+      }],
     },
     options: {
       indexAxis: "y",
       maintainAspectRatio: false,
       plugins: { legend: { display: false } },
-      scales: { x: { beginAtZero: true, ticks: { precision: 0 } } },
+      scales: {
+        x: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: "Open PRs carrying the label" } },
+        y: { ticks: { autoSkip: false }, title: { display: true, text: "area: label" } },
+      },
+      // A click anywhere on a row (bar or label band) selects that label.
       onClick: (event, _elements, chart) => {
-        const hits = chart.getElementsAtEventForMode(event, "nearest", { intersect: true }, true);
+        const hits = chart.getElementsAtEventForMode(
+          event, "nearest", { axis: "y", intersect: false }, true);
         if (hits.length > 0) {
-          setFilter(stats[hits[0].index].area);
+          const area = stats[hits[0].index].area;
+          // Deferred: the filter redraws this very chart, which must not happen mid-event.
+          setTimeout(() => setFilter(area === state.areaFilter ? null : area), 0);
         }
       },
       onHover: (event, elements) => {
@@ -300,8 +312,9 @@ function renderTable() {
 function setFilter(area) {
   state.areaFilter = area;
   document.getElementById("filter").hidden = area === null;
-  setText("filter-area", area || "");
+  setText("filter-area", area ? `area: ${area}` : "");
   renderTable();
+  renderAreaChart(state.areaStats);
   if (area !== null) {
     selectSnippetArea(area);
     document.getElementById("filter").scrollIntoView({ behavior: "smooth", block: "nearest" });
