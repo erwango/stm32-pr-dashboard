@@ -122,13 +122,6 @@ function isHardwareArea(area) {
   return state.hardware === null || state.hardware.has(area.toLowerCase());
 }
 
-function renderHiddenAreas(stats) {
-  const hidden = stats.filter((s) => !isHardwareArea(s.area));
-  const note = document.getElementById("chart-areas-note");
-  note.hidden = hidden.length === 0;
-  note.textContent = `Not hardware, not shown: ${hidden.map((s) => `${s.area} (${s.count})`).join(", ")}.`;
-}
-
 function renderStats(open) {
   const ages = open.map(ageDays).sort((a, b) => a - b);
   setText("stat-open", String(open.length));
@@ -530,7 +523,6 @@ async function main() {
   const stats = areaStats(state.open);
   renderStats(state.open);
   renderAreaChart(stats.filter((s) => isHardwareArea(s.area)));
-  renderHiddenAreas(stats);
   renderFilterSelect(stats);
   renderSnippets(stats);
   renderAgeChart(state.open);

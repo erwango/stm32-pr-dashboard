@@ -47,7 +47,6 @@ SPDX-License-Identifier: Apache-2.0
         in each of them. Click a label or its bar to filter the table below by that label; click it
         again to clear.</p>
       <div class="chart" id="chart-areas-box"><canvas id="chart-areas" role="img" aria-label="Open PRs per hardware area label"></canvas></div>
-      <p class="hint" id="chart-areas-note" hidden></p>
     </section>
 
     <section id="snippet" hidden>
@@ -114,7 +113,7 @@ SPDX-License-Identifier: Apache-2.0
           a label is hardware when at least half of the areas carrying it are driver areas
           (titled <code>Drivers:</code> or owning a whole <code>drivers/&lt;name&gt;/</code>
           directory) or <code>boards/</code> and <code>soc/</code>. Labels such as Tests, Samples,
-          Documentation, Networking or native port are listed under the chart instead. The table,
+          Documentation, Networking or native port are left out of the chart. The table,
           its filter and the review queue comment still cover every label.</li>
         <li>Age is measured from the <code>platform: STM32</code> labeling event ("waiting for ST
           review"), not from PR creation, so long draft periods do not count.</li>

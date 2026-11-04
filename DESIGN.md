@@ -51,7 +51,7 @@ Audience: everyone (public repo, public page).
   all three, so the sum over areas exceeds the PR count. A PR with no `area:`
   label is shown as `Unclassified`.
 - The area chart only shows hardware labels (Boards/SoCs and peripheral
-  drivers); the other labels are listed under it. See "Hardware labels".
+  drivers); the other labels are not charted. See "Hardware labels".
 - Age is measured from the `platform: STM32` labeling event ("waiting for ST
   review"), which survives long draft periods.
 - No people: no author, reviewer or leaderboard. The unit is the area.
