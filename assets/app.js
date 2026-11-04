@@ -333,7 +333,11 @@ function renderTable() {
     }
     tr.appendChild(areas);
 
-    cell(tr, String(Math.floor(ageDays(pr))), isStale(pr) ? "num stale" : "num");
+    const age = cell(tr, String(Math.floor(ageDays(pr))), isStale(pr) ? "num stale" : "num");
+    if (isStale(pr)) {
+      const idle = Math.floor((state.now - Date.parse(pr.last_activity_at)) / DAY_MS);
+      age.title = `No activity for ${idle} days`;
+    }
     const label = REVIEW_STATES.find(([, key]) => key === reviewState(pr))[0];
     cell(tr, label);
     body.appendChild(tr);
