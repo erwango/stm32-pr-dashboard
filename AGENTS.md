@@ -19,7 +19,9 @@ already answers.
 - Never delete files under `badges/`; their URLs are pasted in live PRs.
 - Never write a truncated `data/prs.json`: temp file, record count must not
   shrink, then move.
-- No people in the data or the page: no author, reviewer or leaderboard.
+- The PR author's public GitHub handle is allowed in the data and the page, so ST
+  and external contributors can be told apart (decided Nov 2026). Still no
+  reviewer, leaderboard or per-author counts or charts.
 - Do not create, push or change settings of the GitHub repo without being asked.
 - This is not the Zephyr tree: Zephyr's `AGENTS.md` and checkpatch rules do not
   apply here.

@@ -17,6 +17,7 @@ def node(number, state="OPEN", labels=("platform: STM32", "area: SPI"), **over):
         "title": f"PR {number}",
         "url": f"https://github.com/zephyrproject-rtos/zephyr/pull/{number}",
         "state": state,
+        "author": {"login": "octocat"},
         "createdAt": "2026-01-01T00:00:00Z",
         "closedAt": None,
         "mergedAt": None,
@@ -69,6 +70,13 @@ class ToRecordTest(unittest.TestCase):
         self.assertEqual(rec["labeled_at"], "2026-01-03T00:00:00Z")
         self.assertEqual(rec["first_review_at"], "2026-01-06T00:00:00Z")
         self.assertEqual(rec["last_activity_at"], "2026-01-10T00:00:00Z")
+        self.assertEqual(rec["author"], "octocat")
+
+    def test_deleted_author_is_null(self):
+        self.assertIsNone(fetch.to_record(node(10, author=None))["author"])
+        n = node(11)
+        del n["author"]
+        self.assertIsNone(fetch.to_record(n)["author"])
 
     def test_unclassified_and_merged(self):
         rec = fetch.to_record(node(8, state="MERGED", labels=("platform: STM32",)))

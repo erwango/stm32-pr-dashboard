@@ -30,7 +30,7 @@ Audience: everyone (public repo, public page).
 |---|---|
 | Population | PRs in `zephyrproject-rtos/zephyr` carrying the label `platform: STM32` |
 | Area | Each `area: *` label on the PR, as applied by the Zephyr assigner |
-| Breakdown | Area only. No author, no reviewer, no leaderboard ("no finger pointing") |
+| Breakdown | By area. The PR table shows the author's public GitHub handle (Nov 2026, to tell ST from external contributors). No reviewer, no leaderboard, no per-author counts |
 | Age clock | From the `platform: STM32` labeling event, not from PR creation |
 | History | Rebuilt retroactively, 12 months, daily points |
 | Refresh | Every 6 hours (cron) plus manual dispatch |
@@ -54,7 +54,10 @@ Audience: everyone (public repo, public page).
   drivers); the other labels are not charted. See "Hardware labels".
 - Age is measured from the `platform: STM32` labeling event ("waiting for ST
   review"), which survives long draft periods.
-- No people: no author, reviewer or leaderboard. The unit is the area.
+- People: the only person shown is the PR author, by public GitHub handle,
+  because authors identify themselves by contributing in public and a hand-kept
+  ST list would go stale. No reviewer, no leaderboard, no per-author counts or
+  charts. The unit is the area.
 
 Footnotes to show on the page:
 
@@ -91,13 +94,16 @@ the areas that currently have open PRs, so it maintains itself.
 `data/prs.json`: one record per STM32 PR ever seen.
 
 ```
-number, title, url, state (open|merged|closed),
+number, title, url, author, state (open|merged|closed),
 created_at, labeled_at, closed_at, merged_at,
 areas: ["SPI", "Boards/SoCs"],
 review_decision, first_review_at, last_activity_at
 ```
 
 - `labeled_at` is the first `LABELED_EVENT` for `platform: STM32`.
+- `author` is the GraphQL `author.login` (null for a deleted account). Records
+  written before it was collected lack it; open PRs are refreshed every run, so
+  they gain it on the next collection, and the page shows `-` meanwhile.
 - Records for closed PRs are immutable once written, which caps incremental cost.
 
 `data/history/YYYY-MM.json`: daily aggregates, append-only (a past day is never

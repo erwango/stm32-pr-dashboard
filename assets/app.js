@@ -321,6 +321,18 @@ function renderTable() {
     }
     cell(tr, pr.title);
 
+    const author = document.createElement("td");
+    const profile = pr.author ? safeUrl(`https://github.com/${encodeURIComponent(pr.author)}`) : null;
+    if (profile) {
+      const a = document.createElement("a");
+      a.href = profile;
+      a.textContent = pr.author;
+      a.rel = "noopener noreferrer";
+      author.appendChild(a);
+    } else {
+      author.textContent = pr.author || "-";
+    }
+    tr.appendChild(author);
     const areas = document.createElement("td");
     for (const area of pr.areas) {
       const tag = document.createElement("button");

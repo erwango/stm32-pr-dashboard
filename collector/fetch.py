@@ -124,6 +124,7 @@ def parse_ts(value: str) -> datetime:
 
 _PR_FIELDS = """
   number title url state createdAt closedAt mergedAt updatedAt reviewDecision
+  author { login }
   labels(first: 50) { nodes { name } }
   timelineItems(itemTypes: [LABELED_EVENT], first: 100) {
     nodes { ... on LabeledEvent { createdAt label { name } } }
@@ -158,6 +159,8 @@ def to_record(node: dict[str, Any]) -> dict[str, Any]:
         "number": node["number"],
         "title": node["title"],
         "url": node["url"],
+        # Public GitHub handle of the PR author; null for a deleted account.
+        "author": (node.get("author") or {}).get("login"),
         "state": node["state"].lower(),
         "created_at": node["createdAt"],
         "labeled_at": min(label_times) if label_times else node["createdAt"],
