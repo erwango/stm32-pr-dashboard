@@ -179,8 +179,10 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 **STM32 · area: <Area> open PR**
 ![area: <Area> open PR](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/area/<slug>.json)
 
-Reviews on ST-related PRs are limited by team bandwidth. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome.
-[Open STM32 PRs labelled "area: <Area>"](https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+state%3Aopen+label%3A%22area%3A+<Area>%22+label%3A%22platform%3A+STM32%22) · [STM32 PR dashboard](https://erwango.github.io/stm32-pr-dashboard/)
+Reviews on ST-related PRs are limited by team bandwidth. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome:
+[Open STM32 PRs labelled "area: <Area>"](https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+state%3Aopen+label%3A%22area%3A+<Area>%22+label%3A%22platform%3A+STM32%22)
+
+[STM32 PR dashboard](https://erwango.github.io/stm32-pr-dashboard/)
 
 <!-- stm32-pr-dashboard: area=<slug> -->
 ```
