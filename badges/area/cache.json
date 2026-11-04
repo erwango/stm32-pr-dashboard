@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Cache",
+ "message": "1 open, median 24 d",
+ "color": "green",
+ "cacheSeconds": 300
+}

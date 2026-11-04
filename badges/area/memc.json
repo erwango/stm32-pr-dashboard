@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "MEMC",
+ "message": "6 open, median 43 d",
+ "color": "yellow",
+ "cacheSeconds": 300
+}

@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Battery Backed RAM (bbram)",
+ "message": "1 open, median 2 d",
+ "color": "brightgreen",
+ "cacheSeconds": 300
+}

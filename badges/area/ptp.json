@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "PTP",
+ "message": "1 open, median 1 d",
+ "color": "brightgreen",
+ "cacheSeconds": 300
+}

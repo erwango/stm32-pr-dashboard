@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Crypto / RNG",
+ "message": "3 open, median 41 d",
+ "color": "yellow",
+ "cacheSeconds": 300
+}

@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "IEEE 802.15.4",
+ "message": "0 open",
+ "color": "brightgreen",
+ "cacheSeconds": 300
+}

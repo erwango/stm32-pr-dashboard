@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "DMA",
+ "message": "6 open, median 35 d",
+ "color": "yellow",
+ "cacheSeconds": 300
+}

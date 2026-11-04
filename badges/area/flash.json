@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Flash",
+ "message": "10 open, median 50 d",
+ "color": "yellow",
+ "cacheSeconds": 300
+}

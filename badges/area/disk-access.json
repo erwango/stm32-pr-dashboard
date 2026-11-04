@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Disk Access",
+ "message": "8 open, median 28 d",
+ "color": "green",
+ "cacheSeconds": 300
+}

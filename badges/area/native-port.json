@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "native port",
+ "message": "2 open, median 91 d",
+ "color": "red",
+ "cacheSeconds": 300
+}

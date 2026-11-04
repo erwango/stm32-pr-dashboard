@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Aux display",
+ "message": "1 open, median 101 d",
+ "color": "red",
+ "cacheSeconds": 300
+}

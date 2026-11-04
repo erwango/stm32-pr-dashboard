@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "PWM",
+ "message": "2 open, median 64 d",
+ "color": "orange",
+ "cacheSeconds": 300
+}

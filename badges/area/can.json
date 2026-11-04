@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "CAN",
+ "message": "2 open, median 117 d",
+ "color": "red",
+ "cacheSeconds": 300
+}

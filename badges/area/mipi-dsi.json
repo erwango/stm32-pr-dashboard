@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "MIPI-DSI",
+ "message": "3 open, median 5 d",
+ "color": "brightgreen",
+ "cacheSeconds": 300
+}

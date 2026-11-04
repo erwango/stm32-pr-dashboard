@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Clocks",
+ "message": "2 open, median 15 d",
+ "color": "green",
+ "cacheSeconds": 300
+}

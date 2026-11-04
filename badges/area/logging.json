@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Logging",
+ "message": "0 open",
+ "color": "brightgreen",
+ "cacheSeconds": 300
+}

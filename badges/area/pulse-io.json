@@ -1,0 +1,7 @@
+{
+ "schemaVersion": 1,
+ "label": "Pulse IO",
+ "message": "2 open, median 26 d",
+ "color": "green",
+ "cacheSeconds": 300
+}
