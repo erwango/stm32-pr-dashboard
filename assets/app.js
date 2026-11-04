@@ -407,7 +407,9 @@ function renderSnippets(stats) {
   selectSnippetArea(areas[0]);
 }
 
-/* Deep link: ?area=SPI (what 404.html turns /SPI into). Matches a label or its slug, ignoring case. */
+/* Deep link: ?area=SPI (what 404.html turns /SPI into). Matches a label or its slug, ignoring case.
+ * The area is filtered and the page opens on the "Review queue comment" section for it;
+ * without ?area= the page is left at the top. */
 function applyDeepLink(stats) {
   const wanted = new URLSearchParams(window.location.search).get("area");
   if (!wanted) {
@@ -419,6 +421,10 @@ function applyDeepLink(stats) {
   );
   if (match) {
     setFilter(match.area);
+    const section = document.getElementById("snippet");
+    if (!section.hidden) {
+      requestAnimationFrame(() => section.scrollIntoView({ block: "start" }));
+    }
   }
 }
 
