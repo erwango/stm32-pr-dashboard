@@ -61,12 +61,16 @@ class GitHubClient:
             "User-Agent": "stm32-pr-dashboard",
         }
 
-    def _request(self, url: str, body: bytes | None = None) -> tuple[Any, str]:
+    def _request(self, url: str, body: bytes | None = None, raw: bool = False) -> tuple[Any, str]:
+        headers = self._headers
+        if raw:
+            headers = {**headers, "Accept": "application/vnd.github.raw+json"}
         for attempt in range(MAX_ATTEMPTS):
-            request = urllib.request.Request(url, data=body, headers=self._headers)
+            request = urllib.request.Request(url, data=body, headers=headers)
             try:
                 with urllib.request.urlopen(request, timeout=60) as response:
-                    return json.load(response), response.headers.get("Link", "")
+                    content = response.read().decode() if raw else json.load(response)
+                    return content, response.headers.get("Link", "")
             except urllib.error.HTTPError as err:
                 retryable = err.code >= 500
                 if not retryable or attempt == MAX_ATTEMPTS - 1:
@@ -94,6 +98,13 @@ class GitHubClient:
                     yield item
             match = _NEXT_LINK.search(link)
             url = match.group(1) if match else None
+
+    def get_text(self, repo: str, path: str, ref: str) -> str:
+        """Return the content of a file of `repo` at `ref`."""
+        quoted = urllib.parse.quote(path)
+        url = f"{self._api_url}/repos/{repo}/contents/{quoted}?ref={urllib.parse.quote(ref)}"
+        text, _ = self._request(url, raw=True)
+        return text
 
     def graphql(self, query: str) -> dict[str, Any]:
         body = json.dumps({"query": query}).encode()

@@ -39,6 +39,12 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: python -m collector.fetch
 
+      # Auxiliary: on failure it keeps the previous data/areas.json and succeeds.
+      - name: Classify hardware area labels
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -m collector.areas
+
       - name: Aggregate daily history
         run: python -m collector.aggregate
 

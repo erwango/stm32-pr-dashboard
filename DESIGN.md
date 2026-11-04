@@ -50,6 +50,8 @@ Audience: everyone (public repo, public page).
 - Area = each `area: *` label on the PR. A PR with three area labels counts in
   all three, so the sum over areas exceeds the PR count. A PR with no `area:`
   label is shown as `Unclassified`.
+- The area chart only shows hardware labels (Boards/SoCs and peripheral
+  drivers); the other labels are listed under it. See "Hardware labels".
 - Age is measured from the `platform: STM32` labeling event ("waiting for ST
   review"), which survives long draft periods.
 - No people: no author, reviewer or leaderboard. The unit is the area.
@@ -143,6 +145,35 @@ PRs would exceed. Do not use it.
   auto-disabled after 60 days of repo inactivity.
 - Auth: `GITHUB_TOKEN` is enough (public repo, read only on the Zephyr side).
 
+### Hardware labels
+
+The area chart should only count labels that name a piece of ST hardware, not
+`Tests`, `Samples`, `Documentation`, `native port`, ... A hand-written list
+would go stale, so `collector/areas.py` derives it from upstream
+`MAINTAINERS.yml` (fetched with the contents API on every run) into
+`data/areas.json` (`hardware`: lowercase label names, no people).
+
+- A MAINTAINERS area is a hardware area if its title starts with `Drivers:`,
+  or it owns a whole peripheral directory (`drivers/<name>/`,
+  `include/zephyr/drivers/<name>.h` or `/`), or it owns both `boards/` and
+  `soc/`. `West project:` areas (third-party modules) are ignored.
+- A label is hardware if at least half of the areas carrying it are hardware
+  areas. This keeps `Bluetooth` (1 of 8) and `Networking` (1 of 16) out and
+  `Ethernet` (1 of 2), `Wi-Fi` (3 of 6) and `Disk Access` in. Naming alone
+  misses USB, Display, Bluetooth HCI, Cache, Input and Power Management;
+  file paths alone wrongly include RISC-V and `native port`.
+- Matching is case-insensitive (GitHub label names are; MAINTAINERS spelling
+  differs, e.g. `Clock control` against `Clock Control`).
+- The parser is a line scanner (no PyYAML in CI) and was checked equal to
+  PyYAML on all 422 areas. A fetch or parse failure, an empty result, or a
+  result under half the previous size keeps the previous file; the step never
+  fails the run.
+- Not hardware by this rule, notably: the generic `Drivers` and `Unclassified`
+  labels (not in MAINTAINERS.yml), `Shields` (third-party boards).
+- Only the chart is restricted. The table, its filter, deep links and the
+  snippet selector still cover every label. If `data/areas.json` is missing the
+  chart shows everything.
+
 ## Page
 
 Static `index.html` plus Chart.js reading the JSON. No build step.
@@ -208,8 +239,8 @@ pasting reads as spam.
 ```
 .github/workflows/collect.yml     cron + dispatch, commits data/ and badges/
 .github/workflows/pages.yml       deploy-pages from main
-collector/  fetch.py  aggregate.py  badges.py
-data/prs.json  data/history/
+collector/  fetch.py  aggregate.py  badges.py  areas.py
+data/prs.json  data/areas.json  data/history/
 badges/overall.json  badges/area/*.json
 index.html  assets/app.js  assets/style.css
 README.md  LICENSE  DESIGN.md  AGENTS.md

@@ -28,7 +28,15 @@ const AREA_ROW_PX = 22;
 const UNCLASSIFIED_AREA = "Unclassified";
 const SITE = "https://erwango.github.io/stm32-pr-dashboard/";
 
-const state = { open: [], areaFilter: null, areaStats: [], slugs: {}, charts: {}, now: Date.now() };
+const state = {
+  open: [],
+  areaFilter: null,
+  areaStats: [],
+  hardware: null,
+  slugs: {},
+  charts: {},
+  now: Date.now(),
+};
 
 function css(name) {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -106,6 +114,19 @@ function areaStats(open) {
   return [...byArea.entries()]
     .map(([area, ages]) => ({ area, count: ages.length }))
     .sort((a, b) => b.count - a.count || a.area.localeCompare(b.area));
+}
+
+/* data/areas.json lists the hardware labels (peripheral drivers, Boards/SoCs), lowercase.
+ * Without it, every label counts as hardware and the chart is unrestricted. */
+function isHardwareArea(area) {
+  return state.hardware === null || state.hardware.has(area.toLowerCase());
+}
+
+function renderHiddenAreas(stats) {
+  const hidden = stats.filter((s) => !isHardwareArea(s.area));
+  const note = document.getElementById("chart-areas-note");
+  note.hidden = hidden.length === 0;
+  note.textContent = `Not hardware, not shown: ${hidden.map((s) => `${s.area} (${s.count})`).join(", ")}.`;
 }
 
 function renderStats(open) {
@@ -504,9 +525,12 @@ async function main() {
   state.open = corpus.prs.filter((pr) => pr.state === "open");
   const index = await fetchJSON("badges/index.json", true);
   state.slugs = index ? index.areas : {};
+  const areas = await fetchJSON("data/areas.json", true);
+  state.hardware = areas ? new Set(areas.hardware) : null;
   const stats = areaStats(state.open);
   renderStats(state.open);
-  renderAreaChart(stats);
+  renderAreaChart(stats.filter((s) => isHardwareArea(s.area)));
+  renderHiddenAreas(stats);
   renderFilterSelect(stats);
   renderSnippets(stats);
   renderAgeChart(state.open);
