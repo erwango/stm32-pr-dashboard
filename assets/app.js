@@ -19,7 +19,7 @@ const AGE_BUCKETS = [
 ];
 const REVIEW_STATES = [
   ["awaiting review", "awaiting"],
-  ["reviewed, no decision", "reviewed"],
+  ["reviewed, missing approval", "reviewed"],
   ["changes requested", "changes"],
   ["approved, not merged", "approved"],
 ];
