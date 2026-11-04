@@ -356,11 +356,13 @@ function snippetText(area, slug) {
   const listText = area === UNCLASSIFIED_AREA
     ? "Open STM32 PRs"
     : `Open STM32 PRs labelled "area: ${area}"`;
+  // Unclassified is not an upstream label, so it gets no "area:" prefix.
+  const title = area === UNCLASSIFIED_AREA ? area : `area: ${area}`;
   return [
-    `**STM32 \u00b7 ${area} review queue**`,
-    `![${area} review queue](${badge})`,
+    `**STM32 \u00b7 ${title} open PR**`,
+    `![${title} open PR](${badge})`,
     "",
-    "ST-related PRs are reviewed by a small group, so this queue is what stands between this PR and a merge. The fastest way to shorten it is to spend 15 minutes reviewing one of the PRs ahead of yours:",
+    "Reviews on ST-related PRs are limited by team bandwidth. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome.",
     `[${listText}](${zephyrFilterUrl(area)}) \u00b7 [STM32 PR dashboard](${SITE})`,
     "",
     `<!-- stm32-pr-dashboard: area=${slug} -->`,
