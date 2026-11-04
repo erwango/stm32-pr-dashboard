@@ -149,6 +149,8 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 - Open PRs, oldest first: number, title, areas, age, review state.
 - Age distribution; review-state split (awaiting review / changes requested /
   approved-not-merged); stale = no activity for more than 30 days.
+- Table filter: a label selector above the PR table (kept in sync with the area
+  chart bars and the clickable area tags in each row), with a row count.
 - Per-area copy box with a copy button.
 - Deep links: `<site>/SPI` opens the page filtered on that area. Pages serves
   `404.html` for unknown paths and `assets/deeplink.js` forwards the path to

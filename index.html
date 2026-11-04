@@ -74,9 +74,11 @@ SPDX-License-Identifier: Apache-2.0
 
     <section>
       <h2>Open PRs, oldest first</h2>
-      <p id="filter" class="filter" hidden>
-        Filtered by label: <strong id="filter-area"></strong>
-        <button type="button" id="filter-clear">Show all</button>
+      <p id="filter" class="filter">
+        <label for="filter-select">Filter by label:</label>
+        <select id="filter-select"><option value="">All labels</option></select>
+        <button type="button" id="filter-clear" hidden>Show all</button>
+        <span id="filter-count" class="muted"></span>
       </p>
       <div class="table-wrap">
         <table>

@@ -120,6 +120,11 @@ td.stale { color: var(--warn); font-weight: 600; }
   border-radius: 1rem;
 }
 
+button.tag { color: var(--fg); cursor: pointer; font: inherit; font-size: 0.8rem; }
+button.tag:hover { border-color: var(--accent); }
+
+.muted { margin-left: 0.75rem; color: var(--muted); }
+
 .rules { margin-top: 2rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
 .rules li { margin-bottom: 0.35rem; }
 

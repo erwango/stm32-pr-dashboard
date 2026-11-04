@@ -215,7 +215,7 @@ function renderAreaChart(stats) {
         if (hits.length > 0) {
           const area = stats[hits[0].index].area;
           // Deferred: the filter redraws this very chart, which must not happen mid-event.
-          setTimeout(() => setFilter(area === state.areaFilter ? null : area), 0);
+          setTimeout(() => setFilter(area === state.areaFilter ? null : area, true), 0);
         }
       },
       onHover: (event, elements) => {
@@ -296,9 +296,12 @@ function renderTable() {
 
     const areas = document.createElement("td");
     for (const area of pr.areas) {
-      const tag = document.createElement("span");
+      const tag = document.createElement("button");
+      tag.type = "button";
       tag.className = "tag";
       tag.textContent = area;
+      tag.title = `Filter by area: ${area}`;
+      tag.addEventListener("click", () => setFilter(area));
       areas.appendChild(tag);
     }
     tr.appendChild(areas);
@@ -308,17 +311,30 @@ function renderTable() {
     cell(tr, label);
     body.appendChild(tr);
   }
+  setText("filter-count", `${rows.length} of ${state.open.length} open PRs`);
 }
 
-function setFilter(area) {
+/* The table filter: every label with open PRs, kept in sync with the chart and the tags. */
+function renderFilterSelect(stats) {
+  const select = document.getElementById("filter-select");
+  select.replaceChildren(new Option("All labels", ""));
+  for (const s of stats) {
+    select.appendChild(new Option(`${s.area} (${s.count})`, s.area));
+  }
+  select.addEventListener("change", () => setFilter(select.value || null));
+}
+
+function setFilter(area, scroll = false) {
   state.areaFilter = area;
-  document.getElementById("filter").hidden = area === null;
-  setText("filter-area", area ? `area: ${area}` : "");
+  document.getElementById("filter-select").value = area ?? "";
+  document.getElementById("filter-clear").hidden = area === null;
   renderTable();
   renderAreaChart(state.areaStats);
   if (area !== null) {
     selectSnippetArea(area);
-    document.getElementById("filter").scrollIntoView({ behavior: "smooth", block: "nearest" });
+    if (scroll) {
+      document.getElementById("filter").scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
   }
 }
 
@@ -439,6 +455,7 @@ async function main() {
   const stats = areaStats(state.open);
   renderStats(state.open);
   renderAreaChart(stats);
+  renderFilterSelect(stats);
   renderSnippets(stats);
   renderAgeChart(state.open);
   renderReviewChart(state.open);
