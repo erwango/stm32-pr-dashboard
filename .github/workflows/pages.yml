@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - index.html
+      - 404.html
       - assets/**
       - badges/**
       - data/**
@@ -51,7 +52,7 @@ jobs:
       - name: Stage site
         run: |
           mkdir -p _site
-          cp -r index.html assets _site/
+          cp -r index.html 404.html assets _site/
           for dir in data badges; do
             if [ -d "$dir" ]; then cp -r "$dir" _site/; fi
           done

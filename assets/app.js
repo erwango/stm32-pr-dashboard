@@ -391,6 +391,21 @@ function renderSnippets(stats) {
   selectSnippetArea(areas[0]);
 }
 
+/* Deep link: ?area=SPI (what 404.html turns /SPI into). Matches a label or its slug, ignoring case. */
+function applyDeepLink(stats) {
+  const wanted = new URLSearchParams(window.location.search).get("area");
+  if (!wanted) {
+    return;
+  }
+  const key = wanted.trim().toLowerCase();
+  const match = stats.find(
+    (s) => s.area.toLowerCase() === key || state.slugs[s.area] === key,
+  );
+  if (match) {
+    setFilter(match.area);
+  }
+}
+
 async function loadHistory(now) {
   const requests = [];
   for (let i = HISTORY_MONTHS - 1; i >= 0; i--) {
@@ -428,6 +443,7 @@ async function main() {
   renderAgeChart(state.open);
   renderReviewChart(state.open);
   renderTable();
+  applyDeepLink(stats);
 
   const rows = await loadHistory(new Date(state.now));
   renderOpenChart(rows, state.open.length);

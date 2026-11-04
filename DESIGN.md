@@ -150,6 +150,11 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 - Age distribution; review-state split (awaiting review / changes requested /
   approved-not-merged); stale = no activity for more than 30 days.
 - Per-area copy box with a copy button.
+- Deep links: `<site>/SPI` opens the page filtered on that area. Pages serves
+  `404.html` for unknown paths and `assets/deeplink.js` forwards the path to
+  `?area=SPI`; `app.js` matches a label or a slug, ignoring case, and ignores
+  unknown names. `BASE` in `deeplink.js` and the asset paths in `404.html`
+  hard-code `/stm32-pr-dashboard/`, so they must change if the repo is renamed.
 - Visible Rules panel and a `Last updated` stamp (the page is authoritative over
   the badges).
 
