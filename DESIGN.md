@@ -154,7 +154,10 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 - Age distribution; review-state split (awaiting review / changes requested /
   approved-not-merged); stale = no activity for more than 30 days.
 - Table filter: a label selector above the PR table (kept in sync with the area
-  chart bars and the clickable area tags in each row), with a row count.
+  chart bars and the clickable area tags in each row), with a row count. While
+  a label is selected, the bar also shows the link to that label's page, with
+  `Copy link` and `Copy as Markdown` buttons. The path is the label when it is
+  plain (`/SPI`), otherwise its slug (`/boards-socs`), so it never needs escaping.
 - Per-area copy box with a copy button.
 - Deep links: `<site>/` opens at the top of the page. `<site>/SPI` applies the
   area filter and opens on the "Review queue comment" section for that area.

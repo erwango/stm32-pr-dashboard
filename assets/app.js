@@ -327,10 +327,35 @@ function renderFilterSelect(stats) {
   select.addEventListener("change", () => setFilter(select.value || null));
 }
 
+/* Shareable link to the selected label's page, shown under the filter. */
+function renderFilterLink(area) {
+  const url = area === null ? null : areaPageUrl(area);
+  document.getElementById("filter-link").hidden = url === null;
+  setText("filter-copy-status", "");
+  if (url !== null) {
+    const link = document.getElementById("filter-url");
+    link.href = url;
+    link.textContent = url;
+    link.dataset.markdown = `[${areaTitle(area)}](${url})`;
+  }
+}
+
+async function copyFilterLink(markdown) {
+  const link = document.getElementById("filter-url");
+  const text = markdown ? link.dataset.markdown : link.href;
+  try {
+    await navigator.clipboard.writeText(text);
+    setText("filter-copy-status", "Copied");
+  } catch {
+    setText("filter-copy-status", "Copy failed, select the link and press Ctrl+C");
+  }
+}
+
 function setFilter(area, scroll = false) {
   state.areaFilter = area;
   document.getElementById("filter-select").value = area ?? "";
   document.getElementById("filter-clear").hidden = area === null;
+  renderFilterLink(area);
   renderTable();
   renderAreaChart(state.areaStats);
   if (area !== null) {
@@ -353,14 +378,26 @@ function zephyrFilterUrl(area) {
   return `https://github.com/zephyrproject-rtos/zephyr/pulls?${query}`;
 }
 
+/* Unclassified is not an upstream label, so it gets no "area:" prefix. */
+function areaTitle(area) {
+  return area === UNCLASSIFIED_AREA ? area : `area: ${area}`;
+}
+
+/* Address of the page opened on one label (see 404.html). The label itself when it is plain
+ * (/SPI), otherwise its slug (/boards-socs), so the path never needs escaping. */
+function areaPageUrl(area) {
+  const plain = /^[A-Za-z0-9-]+$/.test(area);
+  const name = plain ? area : state.slugs[area];
+  return name ? `${SITE}${encodeURIComponent(name)}` : null;
+}
+
 /* The marker lets a future bot find and edit this comment instead of duplicating it. */
 function snippetText(area, slug) {
   const badge = `https://img.shields.io/endpoint?url=${SITE}badges/area/${slug}.json`;
   const listText = area === UNCLASSIFIED_AREA
     ? "Open STM32 PRs"
     : `Open STM32 PRs labelled "area: ${area}"`;
-  // Unclassified is not an upstream label, so it gets no "area:" prefix.
-  const title = area === UNCLASSIFIED_AREA ? area : `area: ${area}`;
+  const title = areaTitle(area);
   return [
     `**STM32 \u00b7 ${title} open PR**`,
     `![${title} open PR](${badge})`,
@@ -453,6 +490,8 @@ async function main() {
   Chart.defaults.borderColor = css("--border");
 
   document.getElementById("filter-clear").addEventListener("click", () => setFilter(null));
+  document.getElementById("filter-copy-url").addEventListener("click", () => copyFilterLink(false));
+  document.getElementById("filter-copy-md").addEventListener("click", () => copyFilterLink(true));
 
   const corpus = await fetchJSON("data/prs.json", true);
   if (corpus === null) {

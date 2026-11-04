@@ -74,12 +74,20 @@ SPDX-License-Identifier: Apache-2.0
 
     <section>
       <h2>Open PRs, oldest first</h2>
-      <p id="filter" class="filter">
-        <label for="filter-select">Filter by label:</label>
-        <select id="filter-select"><option value="">All labels</option></select>
-        <button type="button" id="filter-clear" hidden>Show all</button>
-        <span id="filter-count" class="muted"></span>
-      </p>
+      <div id="filter" class="filter">
+        <div>
+          <label for="filter-select">Filter by label:</label>
+          <select id="filter-select"><option value="">All labels</option></select>
+          <button type="button" id="filter-clear" hidden>Show all</button>
+          <span id="filter-count" class="muted"></span>
+        </div>
+        <div id="filter-link" class="filter-link" hidden>
+          Link to this label's page: <a id="filter-url" href="#" rel="noopener noreferrer"></a>
+          <button type="button" id="filter-copy-url">Copy link</button>
+          <button type="button" id="filter-copy-md">Copy as Markdown</button>
+          <span id="filter-copy-status" role="status"></span>
+        </div>
+      </div>
       <div class="table-wrap">
         <table>
           <thead>

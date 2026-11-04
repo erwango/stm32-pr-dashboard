@@ -69,11 +69,14 @@ h2 { margin-top: 2rem; font-size: 1.25rem; }
 }
 
 .filter {
+  margin: 1rem 0;
   padding: 0.5rem 0.75rem;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 6px;
 }
+
+.filter-link { margin-top: 0.5rem; overflow-wrap: anywhere; }
 
 button {
   margin-left: 0.5rem;
