@@ -188,13 +188,28 @@ function renderFlowChart(rows) {
     data: {
       labels,
       datasets: [
-        { label: "Opened (labelled)", data: labels.map((k) => weeks.get(k).opened), backgroundColor: css("--accent") },
+        { label: "Opened (non-draft)", data: labels.map((k) => weeks.get(k).opened), backgroundColor: css("--accent") },
         { label: "Merged", data: labels.map((k) => weeks.get(k).merged), backgroundColor: css("--neutral") },
       ],
     },
     options: {
       maintainAspectRatio: false,
-      scales: { x: { ticks: { maxTicksLimit: 12 } }, y: { beginAtZero: true, ticks: { precision: 0 } } },
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        tooltip: {
+          callbacks: { title: (items) => `Week starting Monday ${items[0].label}` },
+        },
+      },
+      scales: {
+        // One tick per bar (Chart.js only skips ticks that would overlap), written vertically
+        // so each date sits right under its pair of bars.
+        x: {
+          title: { display: true, text: "Week starting (Monday)" },
+          ticks: { autoSkip: true, minRotation: 90, maxRotation: 90, font: { size: 10 } },
+          grid: { display: true },
+        },
+        y: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: "PRs per week" } },
+      },
     },
   });
 }
