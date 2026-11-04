@@ -47,10 +47,12 @@ class FakeClient:
         self.listed = listed
         self.nodes = {n["number"]: n for n in nodes}
         self.since = "unset"
+        self.calls = []
         self.queries = []
 
-    def rest_issues(self, repo, since=None):
+    def rest_issues(self, repo, since=None, state="all"):
         self.since = since
+        self.calls.append((since, state))
         return iter({"number": n, "pull_request": {}} for n in self.listed)
 
     def graphql(self, query):
@@ -117,7 +119,11 @@ class CollectTest(unittest.TestCase):
     def test_backfill_then_incremental(self):
         client = FakeClient([1, 2], [node(1), node(2)])
         doc = fetch.collect(client, self.output, now=self.now)
-        self.assertIsNone(client.since)
+        # Backfill is bounded to the window, plus every open PR however idle.
+        self.assertEqual(
+            client.calls,
+            [(self.now - fetch.BACKFILL_WINDOW, "all"), (None, "open")],
+        )
         self.assertEqual([r["number"] for r in doc["prs"]], [1, 2])
         self.assertEqual(doc["watermark"], "2026-02-01T11:00:00Z")
         self.assertEqual(json.loads(self.output.read_text())["prs"], doc["prs"])

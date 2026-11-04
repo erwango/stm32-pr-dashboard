@@ -33,11 +33,13 @@ LABEL = "platform: STM32"
 AREA_PREFIX = "area: "
 UNCLASSIFIED = "Unclassified"
 SCHEMA_VERSION = 1
-BATCH_SIZE = 25
+BATCH_SIZE = 10
 MAX_ATTEMPTS = 4
 # The next incremental run asks for changes since (start of this run - margin),
 # so a PR updated while a run was in flight is never missed.
 WATERMARK_MARGIN = timedelta(hours=1)
+# The first run only reaches back this far (12 months of history plus a month of slack).
+BACKFILL_WINDOW = timedelta(days=395)
 API_URL = "https://api.github.com"
 
 _NEXT_LINK = re.compile(r'<([^>]+)>;\s*rel="next"')
@@ -75,9 +77,11 @@ class GitHubClient:
             time.sleep(2**attempt)
         raise AssertionError("unreachable")
 
-    def rest_issues(self, repo: str, since: datetime | None = None) -> Iterator[dict[str, Any]]:
-        """Yield the pull requests carrying the STM32 label, any state."""
-        params = {"labels": LABEL, "state": "all", "per_page": "100"}
+    def rest_issues(
+        self, repo: str, since: datetime | None = None, state: str = "all"
+    ) -> Iterator[dict[str, Any]]:
+        """Yield the pull requests carrying the STM32 label."""
+        params = {"labels": LABEL, "state": state, "per_page": "100"}
         if since is None:
             params.update(sort="created", direction="asc")
         else:
@@ -109,11 +113,13 @@ def parse_ts(value: str) -> datetime:
 
 _PR_FIELDS = """
   number title url state createdAt closedAt mergedAt updatedAt reviewDecision
-  labels(first: 100) { nodes { name } }
+  labels(first: 50) { nodes { name } }
   timelineItems(itemTypes: [LABELED_EVENT], first: 100) {
     nodes { ... on LabeledEvent { createdAt label { name } } }
   }
-  reviews(first: 100) { nodes { state submittedAt } }
+  reviews(first: 1, states: [COMMENTED, APPROVED, CHANGES_REQUESTED, DISMISSED]) {
+    nodes { state submittedAt }
+  }
 """
 
 
@@ -153,13 +159,29 @@ def to_record(node: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def fetch_nodes(client: GitHubClient, repo: str, batch: list[int]) -> dict[str, Any]:
+    """Query a batch of PRs. A failing batch is bisected so a bad PR is isolated and named."""
+    try:
+        return client.graphql(build_query(repo, batch))["repository"]
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as err:
+        if len(batch) == 1:
+            print(f"error: PR #{batch[0]} cannot be fetched: {err}", file=sys.stderr)
+            raise
+        print(f"warning: batch of {len(batch)} failed ({err}), splitting", file=sys.stderr)
+        half = len(batch) // 2
+        nodes = fetch_nodes(client, repo, batch[:half])
+        nodes.update(fetch_nodes(client, repo, batch[half:]))
+        return nodes
+
+
 def hydrate(client: GitHubClient, repo: str, numbers: Iterable[int]) -> dict[int, dict[str, Any]]:
     """Fetch full records for the given PR numbers, in batches."""
     pending = sorted(set(numbers))
     records: dict[int, dict[str, Any]] = {}
     for start in range(0, len(pending), BATCH_SIZE):
         batch = pending[start : start + BATCH_SIZE]
-        data = client.graphql(build_query(repo, batch))["repository"]
+        data = fetch_nodes(client, repo, batch)
+        print(f"hydrated {start + len(batch)}/{len(pending)}", file=sys.stderr, flush=True)
         for number in batch:
             node = data.get(f"pr{number}")
             if node is None:
@@ -235,7 +257,17 @@ def collect(
     existing = {r["number"]: r for r in previous["prs"]} if previous else {}
     since = parse_ts(previous["watermark"]) if previous else None
 
-    listed = [item["number"] for item in client.rest_issues(repo, since)]
+    if since is None:
+        # Backfill. The label has ~6000 PRs over its lifetime; only the window matters.
+        # A PR closed inside the window was updated inside it, so the `updated` filter
+        # finds it. Open PRs may be idle for longer, so they are listed separately.
+        cutoff = now - BACKFILL_WINDOW
+        listed = [item["number"] for item in client.rest_issues(repo, cutoff)]
+        listed += [item["number"] for item in client.rest_issues(repo, state="open")]
+    else:
+        listed = [item["number"] for item in client.rest_issues(repo, since)]
+    listed = sorted(set(listed))
+    print(f"listed {len(listed)} PRs", file=sys.stderr, flush=True)
     to_fetch = select_to_hydrate(listed, existing)
     fresh = hydrate(client, repo, to_fetch)
 
