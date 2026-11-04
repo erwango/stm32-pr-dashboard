@@ -92,6 +92,18 @@ button {
   font: inherit;
 }
 
+textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  color: var(--fg);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: 0.85rem/1.4 ui-monospace, monospace;
+}
+
+select { padding: 0.15rem 0.4rem; color: var(--fg); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; font: inherit; }
+
 .table-wrap { overflow-x: auto; }
 
 table { width: 100%; border-collapse: collapse; }

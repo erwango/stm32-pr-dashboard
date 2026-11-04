@@ -42,6 +42,9 @@ jobs:
       - name: Aggregate daily history
         run: python -m collector.aggregate
 
+      - name: Generate badges
+        run: python -m collector.badges
+
       # data/prs.json carries a fresh generated_at every run, so there is
       # always a commit: that also keeps the cron from being auto-disabled
       # after 60 days of repository inactivity.
@@ -49,7 +52,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
+          git add data badges
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0

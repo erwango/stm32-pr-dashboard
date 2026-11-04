@@ -24,7 +24,9 @@ const REVIEW_STATES = [
   ["approved, not merged", "approved"],
 ];
 
-const state = { open: [], areaFilter: null, charts: {}, now: Date.now() };
+const SITE = "https://erwango.github.io/stm32-pr-dashboard/";
+
+const state = { open: [], areaFilter: null, slugs: {}, charts: {}, now: Date.now() };
 
 function css(name) {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -301,8 +303,65 @@ function setFilter(area) {
   setText("filter-area", area || "");
   renderTable();
   if (area !== null) {
+    selectSnippetArea(area);
     document.getElementById("filter").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
+}
+
+/* The marker lets a future bot find and edit this comment instead of duplicating it. */
+function snippetText(area, slug) {
+  const badge = `https://img.shields.io/endpoint?url=${SITE}badges/area/${slug}.json`;
+  return [
+    `**STM32 \u00b7 ${area} review queue**`,
+    `![${area} review queue](${badge})`,
+    "",
+    "ST-related PRs are reviewed by a small group, so this queue is what stands",
+    "between this PR and a merge. The fastest way to shorten it is to spend 15",
+    "minutes reviewing one of the PRs ahead of yours:",
+    `[STM32 PR dashboard](${SITE})`,
+    "",
+    `<!-- stm32-pr-dashboard: area=${slug} -->`,
+    "",
+  ].join("\n");
+}
+
+function selectSnippetArea(area) {
+  const select = document.getElementById("snippet-area");
+  if (!state.slugs[area]) {
+    return;
+  }
+  select.value = area;
+  document.getElementById("snippet-text").value = snippetText(area, state.slugs[area]);
+  setText("snippet-status", "");
+}
+
+/* One variant per area that currently has open PRs, so the list maintains itself. */
+function renderSnippets(stats) {
+  const areas = stats.map((s) => s.area).filter((area) => state.slugs[area]);
+  if (areas.length === 0) {
+    return;
+  }
+  const select = document.getElementById("snippet-area");
+  select.replaceChildren();
+  for (const area of areas) {
+    const option = document.createElement("option");
+    option.value = area;
+    option.textContent = area;
+    select.appendChild(option);
+  }
+  select.addEventListener("change", () => selectSnippetArea(select.value));
+  document.getElementById("snippet-copy").addEventListener("click", async () => {
+    const text = document.getElementById("snippet-text");
+    try {
+      await navigator.clipboard.writeText(text.value);
+      setText("snippet-status", "Copied");
+    } catch {
+      text.select();
+      setText("snippet-status", "Press Ctrl+C to copy");
+    }
+  });
+  document.getElementById("snippet").hidden = false;
+  selectSnippetArea(areas[0]);
 }
 
 async function loadHistory(now) {
@@ -333,8 +392,12 @@ async function main() {
   setText("updated", new Date(corpus.generated_at).toUTCString());
 
   state.open = corpus.prs.filter((pr) => pr.state === "open");
+  const index = await fetchJSON("badges/index.json", true);
+  state.slugs = index ? index.areas : {};
+  const stats = areaStats(state.open);
   renderStats(state.open);
-  renderAreaChart(areaStats(state.open));
+  renderAreaChart(stats);
+  renderSnippets(stats);
   renderAgeChart(state.open);
   renderReviewChart(state.open);
   renderTable();
