@@ -126,9 +126,16 @@ function renderStats(open) {
   const ages = open.map(ageDays).sort((a, b) => a - b);
   setText("stat-open", String(open.length));
   setText("stat-p50", fmt(percentile(ages, 0.5)));
-  setText("stat-p90", fmt(percentile(ages, 0.9)));
   setText("stat-awaiting", String(open.filter((pr) => reviewState(pr) === "awaiting").length));
+  setText(
+    "stat-approval",
+    String(open.filter((pr) => ["awaiting", "reviewed"].includes(reviewState(pr))).length),
+  );
   setText("stat-stale", String(open.filter(isStale).length));
+  const staleBefore = new Date(state.now - STALE_DAYS * DAY_MS).toISOString().slice(0, 19) + "Z";
+  linkCard("card-open", []);
+  linkCard("card-approval", ["review:required"]);
+  linkCard("card-stale", [`updated:<${staleBefore}`]);
 }
 
 function makeChart(id, config) {
@@ -407,16 +414,24 @@ function setFilter(area, scroll = false) {
   }
 }
 
-/* Zephyr pull request list: open PRs with the STM32 label and, when the PR has one, the area label.
- * URLSearchParams encodes the quotes, colons and parentheses of labels, so the URL is safe in Markdown. */
-function zephyrFilterUrl(area) {
-  const terms = ["is:pr", "state:open"];
-  if (area !== UNCLASSIFIED_AREA) {
-    terms.push(`label:"area: ${area}"`);
-  }
-  terms.push('label:"platform: STM32"');
+/* Zephyr pull request search: open PRs with the STM32 label plus extra search terms. The query
+ * is encoded by URLSearchParams (quotes, colons, parentheses), so the URL is safe in Markdown. */
+function zephyrSearchUrl(extraTerms) {
+  const terms = ["is:pr", "state:open", ...extraTerms, 'label:"platform: STM32"'];
   const query = new URLSearchParams({ q: terms.join(" ") });
   return `https://github.com/zephyrproject-rtos/zephyr/pulls?${query}`;
+}
+
+/* Summary card turned into a link to the same list on GitHub. */
+function linkCard(id, extraTerms) {
+  const card = document.getElementById(id);
+  card.href = zephyrSearchUrl(extraTerms);
+  card.title = "Open this list on GitHub";
+}
+
+/* Zephyr pull request list: open PRs with the STM32 label and, when the PR has one, the area label. */
+function zephyrFilterUrl(area) {
+  return zephyrSearchUrl(area === UNCLASSIFIED_AREA ? [] : [`label:"area: ${area}"`]);
 }
 
 /* Unclassified is not an upstream label, so it gets no "area:" prefix. */

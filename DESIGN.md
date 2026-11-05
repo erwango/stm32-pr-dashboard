@@ -186,6 +186,13 @@ would go stale, so `collector/areas.py` derives it from upstream
 
 Static `index.html` plus Chart.js reading the JSON. No build step.
 
+- Summary cards: open PRs, median age, awaiting first review, missing approval,
+  stale. Open PRs, missing approval and stale are links to the matching Zephyr
+  pull request search (`review:required`, `updated:<30 days ago`). Missing
+  approval is GitHub's review-required state, so it also includes PRs not yet
+  reviewed. Awaiting first review has no link: GitHub's `review:none` also
+  matches PRs that only have comments (101 against 38 when checked). The 90th
+  percentile card was removed; `age_p90` stays in the history.
 - Open STM32 PR count over 12 months (headline); opened vs merged per week.
 - Age distribution; review-state split (awaiting review / changes requested /
   approved-not-merged); stale = no activity for more than 30 days. These cover

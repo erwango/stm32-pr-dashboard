@@ -23,11 +23,11 @@ SPDX-License-Identifier: Apache-2.0
 
   <main>
     <section class="cards" aria-label="Summary">
-      <div class="card"><span class="value" id="stat-open">-</span><span class="label">open PRs</span></div>
+      <a class="card" id="card-open" rel="noopener noreferrer"><span class="value" id="stat-open">-</span><span class="label">open PRs</span></a>
       <div class="card"><span class="value" id="stat-p50">-</span><span class="label">median age (days)</span></div>
-      <div class="card"><span class="value" id="stat-p90">-</span><span class="label">90th percentile age (days)</span></div>
       <div class="card"><span class="value" id="stat-awaiting">-</span><span class="label">awaiting first review</span></div>
-      <div class="card"><span class="value" id="stat-stale">-</span><span class="label">no activity for over 30 days</span></div>
+      <a class="card" id="card-approval" rel="noopener noreferrer"><span class="value" id="stat-approval">-</span><span class="label">missing approval</span></a>
+      <a class="card" id="card-stale" rel="noopener noreferrer"><span class="value" id="stat-stale">-</span><span class="label">no activity for over 30 days</span></a>
     </section>
 
     <section>
@@ -126,6 +126,10 @@ SPDX-License-Identifier: Apache-2.0
         <li>Age is measured from the <code>platform: STM32</code> labeling event ("waiting for ST
           review"), not from PR creation, so long draft periods do not count.</li>
         <li>Stale means no activity for more than 30 days.</li>
+        <li>Cards: open PRs, missing approval (GitHub's <em>review required</em>: not approved and no
+          changes requested, so it includes PRs not yet reviewed) and stale link to the matching
+          list on GitHub. Awaiting first review has no link: GitHub's no-review filter also counts
+          PRs that only received comments.</li>
         <li>People: the only person shown is the PR author, by public GitHub handle, so ST
           engineers and external contributors can be told apart. No reviewer, no ranking and no
           per-person counts. The unit is the area.</li>
