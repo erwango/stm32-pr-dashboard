@@ -434,17 +434,21 @@ function areaPageUrl(area) {
 /* The marker lets a future bot find and edit this comment instead of duplicating it. */
 function snippetText(area, slug) {
   const badge = `https://img.shields.io/endpoint?url=${SITE}badges/area/${slug}.json`;
+  const overallBadge = `https://img.shields.io/endpoint?url=${SITE}badges/overall.json`;
   const listText = area === UNCLASSIFIED_AREA
     ? "Open STM32 PRs"
     : `Open STM32 PRs labelled "area: ${area}"`;
   const title = areaTitle(area);
   return [
     `**STM32 \u00b7 ${title} open PR**`,
-    `![${title} open PR](${badge})`,
+    `![STM32 open PRs](${overallBadge}) ![${title} open PR](${badge})`,
     "",
-    "Reviews on ST-related PRs are limited by team bandwidth. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome:",
+    "Reviews on ST-related PRs are limited by team bandwidth, and the same team reviews every STM32 PR whatever its area, so the overall queue matters as much as the area one. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome:",
     `[${listText}](${zephyrFilterUrl(area)})`,
     "",
+    ...(area === UNCLASSIFIED_AREA
+      ? []
+      : [`[All open STM32 PRs](${zephyrFilterUrl(UNCLASSIFIED_AREA)})`, ""]),
     `[STM32 PR dashboard](${SITE})`,
     "",
     `<!-- stm32-pr-dashboard: area=${slug} -->`,

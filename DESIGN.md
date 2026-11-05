@@ -85,7 +85,9 @@ Footnotes to show on the page:
 A pasted comment is static markdown; the only self-refreshing element is an
 image, and its URL is fixed text. Identical text on every PR gives an identical
 badge. A per-PR rank needs a bot (deferred). Option chosen: one comment variant
-per area, each with that area's badge ("SPI: 11 open, median 45 d"). The
+per area, each with that area's badge ("SPI: 11 open, median 45 d") next to the
+overall badge ("STM32 PRs: 180 open"), because the same team reviews every
+area and a small area can hide a long overall queue. The
 dashboard offers a copy button per area, and the variant list is generated from
 the areas that currently have open PRs, so it maintains itself.
 
@@ -220,10 +222,12 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 
 ```
 **STM32 · area: <Area> open PR**
-![area: <Area> open PR](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/area/<slug>.json)
+![STM32 open PRs](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/overall.json) ![area: <Area> open PR](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/area/<slug>.json)
 
-Reviews on ST-related PRs are limited by team bandwidth. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome:
+Reviews on ST-related PRs are limited by team bandwidth, and the same team reviews every STM32 PR whatever its area, so the overall queue matters as much as the area one. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome:
 [Open STM32 PRs labelled "area: <Area>"](https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+state%3Aopen+label%3A%22area%3A+<Area>%22+label%3A%22platform%3A+STM32%22)
+
+[All open STM32 PRs](https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+state%3Aopen+label%3A%22platform%3A+STM32%22)
 
 [STM32 PR dashboard](https://erwango.github.io/stm32-pr-dashboard/)
 
