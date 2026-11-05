@@ -449,8 +449,6 @@ function snippetText(area, slug) {
     ...(area === UNCLASSIFIED_AREA
       ? []
       : [`[All open STM32 PRs](${zephyrFilterUrl(UNCLASSIFIED_AREA)})`, ""]),
-    `[STM32 PR dashboard](${SITE})`,
-    "",
     `<!-- stm32-pr-dashboard: area=${slug} -->`,
     "",
   ].join("\n");

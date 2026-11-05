@@ -229,8 +229,6 @@ Reviews on ST-related PRs are limited by team bandwidth, and the same team revie
 
 [All open STM32 PRs](https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+state%3Aopen+label%3A%22platform%3A+STM32%22)
 
-[STM32 PR dashboard](https://erwango.github.io/stm32-pr-dashboard/)
-
 <!-- stm32-pr-dashboard: area=<slug> -->
 ```
 
