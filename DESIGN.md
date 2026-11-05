@@ -222,7 +222,7 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 
 ```
 **STM32 · area: <Area> open PR**
-![STM32 open PRs](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/overall.json) ![area: <Area> open PR](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/area/<slug>.json)
+[![STM32 open PRs](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/overall.json)](https://erwango.github.io/stm32-pr-dashboard/) [![area: <Area> open PR](https://img.shields.io/endpoint?url=https://erwango.github.io/stm32-pr-dashboard/badges/area/<slug>.json)](https://erwango.github.io/stm32-pr-dashboard/<Area>)
 
 Reviews on ST-related PRs are limited by team bandwidth, and the same team reviews every STM32 PR whatever its area, so the overall queue matters as much as the area one. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome:
 [Open STM32 PRs labelled "area: <Area>"](https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+state%3Aopen+label%3A%22area%3A+<Area>%22+label%3A%22platform%3A+STM32%22)

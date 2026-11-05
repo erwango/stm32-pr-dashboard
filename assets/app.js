@@ -441,7 +441,7 @@ function snippetText(area, slug) {
   const title = areaTitle(area);
   return [
     `**STM32 \u00b7 ${title} open PR**`,
-    `![STM32 open PRs](${overallBadge}) ![${title} open PR](${badge})`,
+    `[![STM32 open PRs](${overallBadge})](${SITE}) [![${title} open PR](${badge})](${areaPageUrl(area) || SITE})`,
     "",
     "Reviews on ST-related PRs are limited by team bandwidth, and the same team reviews every STM32 PR whatever its area, so the overall queue matters as much as the area one. The fastest way to get your PR merged is to help the team and spend 15 minutes reviewing one of the PRs ahead of yours. Any help in testing will also be welcome:",
     `[${listText}](${zephyrFilterUrl(area)})`,
