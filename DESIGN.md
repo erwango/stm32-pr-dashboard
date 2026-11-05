@@ -199,7 +199,8 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 - Table filter: a label selector above the PR table (kept in sync with the area
   chart bars and the clickable area tags in each row), with a row count. While
   a label is selected, the bar also shows the link to that label's page, with
-  `Copy link` and `Copy as Markdown` buttons. The path is the label when it is
+  `Copy link` and `Copy comment` buttons (the latter copies the review queue
+  comment for that label). The path is the label when it is
   plain (`/SPI`), otherwise its slug (`/boards-socs`), so it never needs escaping.
 - Deep links: `<site>/` opens at the top of the page. `<site>/SPI` applies the
   area filter and opens on the "Review queue comment" section for that area.

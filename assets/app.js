@@ -376,18 +376,19 @@ function renderFilterLink(area) {
     const link = document.getElementById("filter-url");
     link.href = url;
     link.textContent = url;
-    link.dataset.markdown = `[${areaTitle(area)}](${url})`;
   }
 }
 
-async function copyFilterLink(markdown) {
-  const link = document.getElementById("filter-url");
-  const text = markdown ? link.dataset.markdown : link.href;
+/* Copies the link, or the review queue comment for the selected label (same text as the box above). */
+async function copyFilterText(comment) {
+  const text = comment
+    ? document.getElementById("snippet-text").value
+    : document.getElementById("filter-url").href;
   try {
     await navigator.clipboard.writeText(text);
     setText("filter-copy-status", "Copied");
   } catch {
-    setText("filter-copy-status", "Copy failed, select the link and press Ctrl+C");
+    setText("filter-copy-status", "Copy failed, select the text and press Ctrl+C");
   }
 }
 
@@ -532,8 +533,8 @@ async function main() {
   Chart.defaults.borderColor = css("--border");
 
   document.getElementById("filter-clear").addEventListener("click", () => setFilter(null));
-  document.getElementById("filter-copy-url").addEventListener("click", () => copyFilterLink(false));
-  document.getElementById("filter-copy-md").addEventListener("click", () => copyFilterLink(true));
+  document.getElementById("filter-copy-url").addEventListener("click", () => copyFilterText(false));
+  document.getElementById("filter-copy-comment").addEventListener("click", () => copyFilterText(true));
 
   const corpus = await fetchJSON("data/prs.json", true);
   if (corpus === null) {
