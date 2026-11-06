@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05T19:56:24Z",
- "watermark": "2026-11-05T18:56:24Z",
+ "generated_at": "2026-11-06T06:43:58Z",
+ "watermark": "2026-11-06T05:43:58Z",
  "prs": [
   {
    "number": 25085,
@@ -2673,9 +2673,9 @@
     "USB",
     "Video"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2025-09-30T14:22:06Z",
-   "last_activity_at": "2026-11-05T19:51:20Z"
+   "last_activity_at": "2026-11-05T20:15:48Z"
   },
   {
    "number": 96412,
@@ -15328,7 +15328,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-05-11T09:46:27Z",
-   "last_activity_at": "2026-11-04T13:16:51Z"
+   "last_activity_at": "2026-11-06T06:06:05Z"
   },
   {
    "number": 108814,
@@ -24368,17 +24368,17 @@
    "title": "Fix uart nrfx irq cb race",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/118537",
    "author": "JoYizPsyKicK",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-09-08T12:06:36Z",
    "labeled_at": "2026-09-08T12:08:23Z",
-   "closed_at": null,
+   "closed_at": "2026-11-06T00:40:28Z",
    "merged_at": null,
    "areas": [
     "UART"
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-29T00:47:39Z"
+   "last_activity_at": "2026-11-06T00:40:28Z"
   },
   {
    "number": 118560,
@@ -25244,10 +25244,10 @@
    "title": "arch: arm: tcm: Add possibility to describe ECC capabilities of TCM memories",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/119477",
    "author": "avolmat-st",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-09-17T11:05:39Z",
    "labeled_at": "2026-09-17T12:57:13Z",
-   "closed_at": null,
+   "closed_at": "2026-11-06T00:40:16Z",
    "merged_at": null,
    "areas": [
     "ARM",
@@ -25256,7 +25256,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-17T15:15:03Z",
-   "last_activity_at": "2026-10-29T00:47:21Z"
+   "last_activity_at": "2026-11-06T00:40:16Z"
   },
   {
    "number": 119480,
@@ -26849,18 +26849,18 @@
    "title": "dts: st: u5: add lpdma node",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/120774",
    "author": "mariopaja",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-09-30T07:55:54Z",
    "labeled_at": "2026-09-30T07:57:12Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-05T22:18:40Z",
+   "merged_at": "2026-11-05T22:18:40Z",
    "areas": [
     "DMA",
     "Tests"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-09-30T12:54:46Z",
-   "last_activity_at": "2026-11-05T16:45:57Z"
+   "last_activity_at": "2026-11-05T22:18:41Z"
   },
   {
    "number": 120778,
@@ -26919,18 +26919,18 @@
    "title": "drivers: serial: stm32: take the RX wake lock when RX starts awake",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/120795",
    "author": "jsilvenn1",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-09-30T10:32:36Z",
    "labeled_at": "2026-09-30T11:12:54Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-05T22:18:46Z",
+   "merged_at": "2026-11-05T22:18:46Z",
    "areas": [
     "Tests",
     "UART"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-01T11:41:47Z",
-   "last_activity_at": "2026-11-05T18:32:42Z"
+   "last_activity_at": "2026-11-06T06:05:34Z"
   },
   {
    "number": 120811,
@@ -30190,7 +30190,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-02T14:13:40Z",
-   "last_activity_at": "2026-11-05T03:21:18Z"
+   "last_activity_at": "2026-11-06T05:31:45Z"
   },
   {
    "number": 124320,
@@ -30352,7 +30352,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-03T16:47:10Z",
-   "last_activity_at": "2026-11-05T13:09:55Z"
+   "last_activity_at": "2026-11-05T21:37:50Z"
   },
   {
    "number": 124476,
@@ -30558,8 +30558,25 @@
     "Display"
    ],
    "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-05T20:48:29Z",
+   "last_activity_at": "2026-11-05T21:36:31Z"
+  },
+  {
+   "number": 124776,
+   "title": "[Backport v4.5-branch] stm32 lptim timer proper power state selection",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124776",
+   "author": "github-actions",
+   "state": "open",
+   "created_at": "2026-11-05T14:51:08Z",
+   "labeled_at": "2026-11-06T06:27:06Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Timer"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-05T12:27:25Z"
+   "last_activity_at": "2026-11-06T06:27:26Z"
   },
   {
    "number": 124787,
@@ -30604,6 +30621,24 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-05T18:33:27Z"
+  },
+  {
+   "number": 124833,
+   "title": "drivers: flash: stm32g0: support single-bank mode on 256KB devices",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124833",
+   "author": "avolkov-1221",
+   "state": "open",
+   "created_at": "2026-11-05T22:52:47Z",
+   "labeled_at": "2026-11-05T22:54:33Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Devicetree Binding",
+    "Flash"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-06T00:43:51Z"
   }
  ]
 }
