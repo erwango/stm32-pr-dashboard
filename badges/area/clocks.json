@@ -1,8 +1,8 @@
 {
  "schemaVersion": 1,
  "label": "Clocks",
- "message": "2 open, median 16 d",
- "color": "001E91",
+ "message": "1 open, median 31 d",
+ "color": "FAD200",
  "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

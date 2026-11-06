@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T06:43:58Z",
- "watermark": "2026-11-06T05:43:58Z",
+ "generated_at": "2026-11-06T19:24:01Z",
+ "watermark": "2026-11-06T18:24:01Z",
  "prs": [
   {
    "number": 25085,
@@ -14744,7 +14744,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-04-29T15:19:02Z",
-   "last_activity_at": "2026-11-02T09:23:47Z"
+   "last_activity_at": "2026-11-06T13:42:26Z"
   },
   {
    "number": 108183,
@@ -16074,9 +16074,9 @@
     "Samples",
     "Tests"
    ],
-   "review_decision": "APPROVED",
+   "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-08-17T09:33:54Z",
-   "last_activity_at": "2026-11-04T17:11:00Z"
+   "last_activity_at": "2026-11-06T16:34:24Z"
   },
   {
    "number": 109468,
@@ -17026,7 +17026,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-06-03T13:11:08Z",
-   "last_activity_at": "2026-11-05T08:22:04Z"
+   "last_activity_at": "2026-11-06T15:42:25Z"
   },
   {
    "number": 110429,
@@ -17232,7 +17232,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-06-19T06:32:09Z",
-   "last_activity_at": "2026-11-03T10:37:56Z"
+   "last_activity_at": "2026-11-06T09:03:57Z"
   },
   {
    "number": 110582,
@@ -18898,7 +18898,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-02T14:40:12Z",
-   "last_activity_at": "2026-11-03T00:41:56Z"
+   "last_activity_at": "2026-11-06T15:45:12Z"
   },
   {
    "number": 112113,
@@ -24502,7 +24502,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-25T15:30:57Z",
-   "last_activity_at": "2026-11-05T16:38:09Z"
+   "last_activity_at": "2026-11-06T12:50:05Z"
   },
   {
    "number": 118648,
@@ -26956,11 +26956,11 @@
    "title": "drivers: ptp_clock: add scaled ppm rate adjustment",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/120828",
    "author": "maass-hamburg",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-09-30T12:56:26Z",
    "labeled_at": "2026-11-03T16:54:30Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-06T10:18:52Z",
+   "merged_at": "2026-11-06T10:18:52Z",
    "areas": [
     "Clocks",
     "Ethernet",
@@ -26970,9 +26970,9 @@
     "Tests",
     "native port"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-03T21:58:32Z",
-   "last_activity_at": "2026-11-05T19:00:40Z"
+   "last_activity_at": "2026-11-06T11:22:18Z"
   },
   {
    "number": 120833,
@@ -27103,7 +27103,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-09-30T22:32:45Z",
-   "last_activity_at": "2026-11-05T13:49:49Z"
+   "last_activity_at": "2026-11-06T07:55:55Z"
   },
   {
    "number": 120903,
@@ -27647,8 +27647,8 @@
     "Samples"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-10-12T09:50:44Z"
+   "first_review_at": "2026-11-06T08:29:14Z",
+   "last_activity_at": "2026-11-06T13:18:46Z"
   },
   {
    "number": 121230,
@@ -28034,7 +28034,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-13T08:28:26Z",
-   "last_activity_at": "2026-10-29T09:25:22Z"
+   "last_activity_at": "2026-11-06T11:28:37Z"
   },
   {
    "number": 121484,
@@ -28118,9 +28118,9 @@
    "areas": [
     "Clock Control"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-10-07T14:14:18Z"
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-06T12:06:53Z",
+   "last_activity_at": "2026-11-06T13:06:17Z"
   },
   {
    "number": 121542,
@@ -28553,18 +28553,18 @@
    "title": "drivers: bluetooth: hci: ipm_stm32wb.c:fix BLE Public Address creation",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/121896",
    "author": "ericmechin",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-12T13:06:43Z",
    "labeled_at": "2026-10-12T13:08:54Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-06T13:01:43Z",
+   "merged_at": "2026-11-06T13:01:43Z",
    "areas": [
     "Bluetooth",
     "Bluetooth HCI"
    ],
-   "review_decision": "CHANGES_REQUESTED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-10-12T15:45:04Z",
-   "last_activity_at": "2026-11-03T15:14:08Z"
+   "last_activity_at": "2026-11-06T13:01:43Z"
   },
   {
    "number": 121929,
@@ -29649,7 +29649,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-26T11:22:23Z",
-   "last_activity_at": "2026-11-05T10:18:09Z"
+   "last_activity_at": "2026-11-06T15:37:23Z"
   },
   {
    "number": 123503,
@@ -29698,11 +29698,12 @@
    "closed_at": null,
    "merged_at": null,
    "areas": [
-    "Unclassified"
+    "Audio",
+    "Tests"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-26T17:36:17Z",
-   "last_activity_at": "2026-10-29T15:30:25Z"
+   "last_activity_at": "2026-11-06T15:48:23Z"
   },
   {
    "number": 123668,
@@ -29778,10 +29779,10 @@
    "title": "drivers: wifi: add MXCHIP EMW3080 driver",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/123792",
    "author": "lvio-witekio",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-10-28T12:06:21Z",
    "labeled_at": "2026-10-28T12:08:08Z",
-   "closed_at": null,
+   "closed_at": "2026-11-06T16:01:04Z",
    "merged_at": null,
    "areas": [
     "Boards/SoCs",
@@ -29790,7 +29791,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-29T11:00:52Z",
-   "last_activity_at": "2026-11-02T14:13:04Z"
+   "last_activity_at": "2026-11-06T16:07:19Z"
   },
   {
    "number": 123855,
@@ -30016,7 +30017,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-04T11:41:06Z",
-   "last_activity_at": "2026-11-04T11:41:07Z"
+   "last_activity_at": "2026-11-06T10:43:51Z"
   },
   {
    "number": 124066,
@@ -30139,7 +30140,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-02T13:58:23Z",
-   "last_activity_at": "2026-11-05T11:08:56Z"
+   "last_activity_at": "2026-11-06T19:05:34Z"
   },
   {
    "number": 124177,
@@ -30188,9 +30189,9 @@
     "Boards/SoCs",
     "Timer"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-02T14:13:40Z",
-   "last_activity_at": "2026-11-06T05:31:45Z"
+   "last_activity_at": "2026-11-06T12:50:52Z"
   },
   {
    "number": 124320,
@@ -30331,7 +30332,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-03T14:52:01Z",
-   "last_activity_at": "2026-11-05T15:58:42Z"
+   "last_activity_at": "2026-11-06T09:45:45Z"
   },
   {
    "number": 124473,
@@ -30352,7 +30353,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-03T16:47:10Z",
-   "last_activity_at": "2026-11-05T21:37:50Z"
+   "last_activity_at": "2026-11-06T11:43:17Z"
   },
   {
    "number": 124476,
@@ -30422,7 +30423,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-04T13:03:33Z"
+   "last_activity_at": "2026-11-06T10:52:15Z"
   },
   {
    "number": 124599,
@@ -30457,7 +30458,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-04T15:53:29Z",
-   "last_activity_at": "2026-11-05T16:19:25Z"
+   "last_activity_at": "2026-11-06T18:00:54Z"
   },
   {
    "number": 124606,
@@ -30490,8 +30491,8 @@
     "SPI"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-04T16:22:25Z"
+   "first_review_at": "2026-11-06T08:21:15Z",
+   "last_activity_at": "2026-11-06T08:21:15Z"
   },
   {
    "number": 124637,
@@ -30506,9 +30507,9 @@
    "areas": [
     "Boards/SoCs"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-05T11:04:59Z",
-   "last_activity_at": "2026-11-05T11:05:00Z"
+   "last_activity_at": "2026-11-06T10:40:34Z"
   },
   {
    "number": 124670,
@@ -30594,9 +30595,9 @@
     "Samples",
     "native port"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-05T17:54:42Z",
-   "last_activity_at": "2026-11-05T17:54:42Z"
+   "last_activity_at": "2026-11-06T18:14:23Z"
   },
   {
    "number": 124799,
@@ -30618,9 +30619,9 @@
     "Reset",
     "Tests"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-05T18:33:27Z"
+   "review_decision": "CHANGES_REQUESTED",
+   "first_review_at": "2026-11-06T10:17:39Z",
+   "last_activity_at": "2026-11-06T15:40:54Z"
   },
   {
    "number": 124833,
@@ -30638,7 +30639,24 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-06T00:43:51Z"
+   "last_activity_at": "2026-11-06T07:40:49Z"
+  },
+  {
+   "number": 124851,
+   "title": "drivers: spi: stm32: fix rtio path getting stuck",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124851",
+   "author": "gautierg-st",
+   "state": "open",
+   "created_at": "2026-11-06T07:26:54Z",
+   "labeled_at": "2026-11-06T07:28:23Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "SPI"
+   ],
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-06T10:50:29Z",
+   "last_activity_at": "2026-11-06T16:23:08Z"
   }
  ]
 }
