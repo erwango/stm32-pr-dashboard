@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-07T05:57:37Z",
- "watermark": "2026-11-07T04:57:37Z",
+ "generated_at": "2026-11-07T12:59:29Z",
+ "watermark": "2026-11-07T11:59:29Z",
  "prs": [
   {
    "number": 25085,
@@ -16076,7 +16076,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-08-17T09:33:54Z",
-   "last_activity_at": "2026-11-06T16:34:24Z"
+   "last_activity_at": "2026-11-07T10:56:07Z"
   },
   {
    "number": 109468,
@@ -25442,7 +25442,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-25T12:46:02Z",
-   "last_activity_at": "2026-11-04T17:09:22Z"
+   "last_activity_at": "2026-11-07T10:04:28Z"
   },
   {
    "number": 119585,
@@ -29649,7 +29649,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-26T11:22:23Z",
-   "last_activity_at": "2026-11-06T15:37:23Z"
+   "last_activity_at": "2026-11-07T12:35:21Z"
   },
   {
    "number": 123503,
@@ -30209,7 +30209,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-02T15:32:21Z",
-   "last_activity_at": "2026-11-05T16:15:50Z"
+   "last_activity_at": "2026-11-07T11:40:14Z"
   },
   {
    "number": 124326,
@@ -30440,7 +30440,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-05T10:27:03Z",
-   "last_activity_at": "2026-11-05T10:27:03Z"
+   "last_activity_at": "2026-11-07T11:22:10Z"
   },
   {
    "number": 124604,
@@ -30660,7 +30660,7 @@
   },
   {
    "number": 124981,
-   "title": "Add initial support for Puya PY32F030 Cortex-M0+ microcontrollers",
+   "title": "Add initial support for Puya PY32 Cortex-M0+ microcontrollers",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124981",
    "author": "kholia",
    "state": "open",
@@ -30676,11 +30676,12 @@
     "Interrupt Controller",
     "MAINTAINER File",
     "Reset",
+    "Tests",
     "UART"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-07T05:27:35Z"
+   "first_review_at": "2026-11-07T06:45:31Z",
+   "last_activity_at": "2026-11-07T12:37:46Z"
   }
  ]
 }
