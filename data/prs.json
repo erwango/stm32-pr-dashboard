@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T19:24:01Z",
- "watermark": "2026-11-06T18:24:01Z",
+ "generated_at": "2026-11-07T05:57:37Z",
+ "watermark": "2026-11-07T04:57:37Z",
  "prs": [
   {
    "number": 25085,
@@ -17232,7 +17232,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-06-19T06:32:09Z",
-   "last_activity_at": "2026-11-06T09:03:57Z"
+   "last_activity_at": "2026-11-07T03:07:26Z"
   },
   {
    "number": 110582,
@@ -27103,7 +27103,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-09-30T22:32:45Z",
-   "last_activity_at": "2026-11-06T07:55:55Z"
+   "last_activity_at": "2026-11-07T01:59:38Z"
   },
   {
    "number": 120903,
@@ -28110,17 +28110,17 @@
    "title": "drivers: clock control: stm32h72x/3x requires CPUFREQ_BOOST at 550MHz",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/121530",
    "author": "FRASTM",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-07T13:11:52Z",
    "labeled_at": "2026-10-07T14:14:02Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-06T22:39:27Z",
+   "merged_at": "2026-11-06T22:39:27Z",
    "areas": [
     "Clock Control"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-06T12:06:53Z",
-   "last_activity_at": "2026-11-06T13:06:17Z"
+   "last_activity_at": "2026-11-06T22:39:27Z"
   },
   {
    "number": 121542,
@@ -30130,17 +30130,17 @@
    "title": "dts: Fix STM32L5 dts for FDCAN peripheral",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124174",
    "author": "CruvixDev",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-31T11:44:17Z",
    "labeled_at": "2026-10-31T11:45:50Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-06T22:40:47Z",
+   "merged_at": "2026-11-06T22:40:47Z",
    "areas": [
     "Unclassified"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-02T13:58:23Z",
-   "last_activity_at": "2026-11-06T19:05:34Z"
+   "last_activity_at": "2026-11-06T22:41:20Z"
   },
   {
    "number": 124177,
@@ -30189,9 +30189,9 @@
     "Boards/SoCs",
     "Timer"
    ],
-   "review_decision": "APPROVED",
+   "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-02T14:13:40Z",
-   "last_activity_at": "2026-11-06T12:50:52Z"
+   "last_activity_at": "2026-11-07T04:28:11Z"
   },
   {
    "number": 124320,
@@ -30394,17 +30394,17 @@
    "title": "drivers: video: stm32_dcmipp: accept RGB24 and BGR24 input",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124577",
    "author": "CharlesDias",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-04T12:31:07Z",
    "labeled_at": "2026-11-04T12:32:44Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-06T22:41:35Z",
+   "merged_at": "2026-11-06T22:41:35Z",
    "areas": [
     "Video"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-04T14:28:16Z",
-   "last_activity_at": "2026-11-04T16:58:37Z"
+   "last_activity_at": "2026-11-06T22:41:35Z"
   },
   {
    "number": 124588,
@@ -30499,17 +30499,17 @@
    "title": "boards: st: nucleo_h533re: add Arduino I2C support",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124637",
    "author": "Matthew1193",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-04T16:37:37Z",
    "labeled_at": "2026-11-04T16:40:23Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-06T22:42:22Z",
+   "merged_at": "2026-11-06T22:42:22Z",
    "areas": [
     "Boards/SoCs"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-05T11:04:59Z",
-   "last_activity_at": "2026-11-06T10:40:34Z"
+   "last_activity_at": "2026-11-06T22:42:49Z"
   },
   {
    "number": 124670,
@@ -30657,6 +30657,30 @@
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-06T10:50:29Z",
    "last_activity_at": "2026-11-06T16:23:08Z"
+  },
+  {
+   "number": 124981,
+   "title": "Add initial support for Puya PY32F030 Cortex-M0+ microcontrollers",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124981",
+   "author": "kholia",
+   "state": "open",
+   "created_at": "2026-11-07T05:25:32Z",
+   "labeled_at": "2026-11-07T05:26:48Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs",
+    "Clock Control",
+    "Devicetree Binding",
+    "Flash",
+    "Interrupt Controller",
+    "MAINTAINER File",
+    "Reset",
+    "UART"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-07T05:27:35Z"
   }
  ]
 }
