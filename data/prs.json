@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-07T12:59:29Z",
- "watermark": "2026-11-07T11:59:29Z",
+ "generated_at": "2026-11-07T21:49:44Z",
+ "watermark": "2026-11-07T20:49:44Z",
  "prs": [
   {
    "number": 25085,
@@ -17608,7 +17608,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-06-08T23:21:03Z",
-   "last_activity_at": "2026-10-26T01:10:30Z"
+   "last_activity_at": "2026-11-07T21:44:23Z"
   },
   {
    "number": 110797,
@@ -29594,7 +29594,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-28T13:31:26Z",
-   "last_activity_at": "2026-11-03T07:55:31Z"
+   "last_activity_at": "2026-11-07T20:01:01Z"
   },
   {
    "number": 123284,
@@ -30353,7 +30353,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-03T16:47:10Z",
-   "last_activity_at": "2026-11-06T11:43:17Z"
+   "last_activity_at": "2026-11-07T16:31:15Z"
   },
   {
    "number": 124476,
@@ -30543,7 +30543,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-05T11:04:22Z",
-   "last_activity_at": "2026-11-05T12:23:24Z"
+   "last_activity_at": "2026-11-07T16:50:14Z"
   },
   {
    "number": 124751,
@@ -30681,7 +30681,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-07T06:45:31Z",
-   "last_activity_at": "2026-11-07T12:37:46Z"
+   "last_activity_at": "2026-11-07T15:29:49Z"
   }
  ]
 }
