@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-07T21:49:44Z",
- "watermark": "2026-11-07T20:49:44Z",
+ "generated_at": "2026-11-08T05:59:52Z",
+ "watermark": "2026-11-08T04:59:52Z",
  "prs": [
   {
    "number": 25085,
@@ -19487,7 +19487,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-07-02T22:24:50Z",
-   "last_activity_at": "2026-11-04T16:52:52Z"
+   "last_activity_at": "2026-11-07T22:44:38Z"
   },
   {
    "number": 112648,
@@ -23093,7 +23093,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-08-24T07:57:13Z",
-   "last_activity_at": "2026-10-08T07:30:35Z"
+   "last_activity_at": "2026-11-08T00:44:19Z"
   },
   {
    "number": 116954,
@@ -29594,7 +29594,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-28T13:31:26Z",
-   "last_activity_at": "2026-11-07T20:01:01Z"
+   "last_activity_at": "2026-11-07T22:28:05Z"
   },
   {
    "number": 123284,
@@ -30682,6 +30682,40 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-07T06:45:31Z",
    "last_activity_at": "2026-11-07T15:29:49Z"
+  },
+  {
+   "number": 124999,
+   "title": "Add STM32L162xE SoC and MikroE SiBRAIN for STM32L162ZE board",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124999",
+   "author": "filipembedded",
+   "state": "open",
+   "created_at": "2026-11-07T22:04:59Z",
+   "labeled_at": "2026-11-07T22:06:37Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-07T22:15:39Z"
+  },
+  {
+   "number": 125010,
+   "title": "drivers: flash: stm32_*spi: fail init when SFDP BFP processing fails",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125010",
+   "author": "ouoam",
+   "state": "open",
+   "created_at": "2026-11-08T04:01:26Z",
+   "labeled_at": "2026-11-08T04:03:06Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Flash"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-08T04:03:22Z"
   }
  ]
 }

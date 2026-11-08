@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "label": "Pulse IO",
  "message": "2 open, median 30 d",
- "color": "001E91",
+ "color": "FAD200",
  "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }

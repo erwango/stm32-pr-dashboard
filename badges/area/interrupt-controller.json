@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "label": "Interrupt Controller",
- "message": "2 open, median 1 d",
+ "message": "2 open, median 2 d",
  "color": "001E91",
  "labelColor": "B0B7B9",
  "cacheSeconds": 300
