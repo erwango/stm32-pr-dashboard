@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T13:23:50Z",
- "watermark": "2026-11-08T12:23:50Z",
+ "generated_at": "2026-11-08T22:04:04Z",
+ "watermark": "2026-11-08T21:04:04Z",
  "prs": [
   {
    "number": 25085,
@@ -1339,7 +1339,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2025-06-09T16:27:36Z",
-   "last_activity_at": "2026-11-02T14:11:55Z"
+   "last_activity_at": "2026-11-08T19:38:30Z"
   },
   {
    "number": 91404,
@@ -12714,7 +12714,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-08-10T10:01:49Z",
-   "last_activity_at": "2026-10-13T15:42:35Z"
+   "last_activity_at": "2026-11-08T20:46:51Z"
   },
   {
    "number": 105995,
@@ -23093,7 +23093,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-08-24T07:57:13Z",
-   "last_activity_at": "2026-11-08T00:44:19Z"
+   "last_activity_at": "2026-11-08T18:25:31Z"
   },
   {
    "number": 116954,
@@ -26370,8 +26370,8 @@
     "Display"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-10-24T18:16:11Z"
+   "first_review_at": "2026-11-08T14:10:12Z",
+   "last_activity_at": "2026-11-08T14:10:12Z"
   },
   {
    "number": 120455,
@@ -26543,8 +26543,8 @@
     "MEMC"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-10-24T18:15:29Z"
+   "first_review_at": "2026-11-08T14:54:46Z",
+   "last_activity_at": "2026-11-08T14:54:46Z"
   },
   {
    "number": 120534,
@@ -26804,7 +26804,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-23T08:50:48Z"
+   "last_activity_at": "2026-11-08T16:16:51Z"
   },
   {
    "number": 120757,
@@ -27853,8 +27853,8 @@
     "Timer"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-10-09T08:45:24Z"
+   "first_review_at": "2026-11-08T17:09:25Z",
+   "last_activity_at": "2026-11-08T17:09:26Z"
   },
   {
    "number": 121335,
@@ -28422,8 +28422,8 @@
     "Tests"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-10-09T08:45:03Z"
+   "first_review_at": "2026-11-08T19:20:18Z",
+   "last_activity_at": "2026-11-08T19:20:19Z"
   },
   {
    "number": 121702,
@@ -28475,7 +28475,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-12T09:23:33Z"
+   "last_activity_at": "2026-11-08T19:29:38Z"
   },
   {
    "number": 121810,
@@ -28494,7 +28494,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-12T09:23:31Z"
+   "last_activity_at": "2026-11-08T19:36:33Z"
   },
   {
    "number": 121812,
@@ -28513,7 +28513,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-12T09:23:30Z"
+   "last_activity_at": "2026-11-08T19:48:45Z"
   },
   {
    "number": 121832,
@@ -29594,7 +29594,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-28T13:31:26Z",
-   "last_activity_at": "2026-11-08T07:35:35Z"
+   "last_activity_at": "2026-11-08T20:34:36Z"
   },
   {
    "number": 123284,
@@ -29703,7 +29703,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-26T17:36:17Z",
-   "last_activity_at": "2026-11-08T12:27:52Z"
+   "last_activity_at": "2026-11-08T17:28:15Z"
   },
   {
    "number": 123668,
@@ -30716,6 +30716,23 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-08T04:03:22Z"
+  },
+  {
+   "number": 125038,
+   "title": "soc: st: stm32: drop redundant STM32_LPTIM_TIMER defaults",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125038",
+   "author": "kartben",
+   "state": "open",
+   "created_at": "2026-11-08T17:31:23Z",
+   "labeled_at": "2026-11-08T18:49:28Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-08T18:49:49Z"
   }
  ]
 }
