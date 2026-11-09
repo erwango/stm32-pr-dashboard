@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T06:26:21Z",
- "watermark": "2026-11-09T05:26:21Z",
+ "generated_at": "2026-11-09T22:21:15Z",
+ "watermark": "2026-11-09T21:21:15Z",
  "prs": [
   {
    "number": 25085,
@@ -1339,7 +1339,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2025-06-09T16:27:36Z",
-   "last_activity_at": "2026-11-08T19:38:30Z"
+   "last_activity_at": "2026-11-09T19:51:01Z"
   },
   {
    "number": 91404,
@@ -14744,7 +14744,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-04-29T15:19:02Z",
-   "last_activity_at": "2026-11-08T09:04:11Z"
+   "last_activity_at": "2026-11-09T08:18:56Z"
   },
   {
    "number": 108183,
@@ -16076,7 +16076,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-08-17T09:33:54Z",
-   "last_activity_at": "2026-11-07T10:56:07Z"
+   "last_activity_at": "2026-11-09T14:15:23Z"
   },
   {
    "number": 109468,
@@ -17026,7 +17026,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-06-03T13:11:08Z",
-   "last_activity_at": "2026-11-06T15:42:25Z"
+   "last_activity_at": "2026-11-09T14:30:22Z"
   },
   {
    "number": 110429,
@@ -17232,7 +17232,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-06-19T06:32:09Z",
-   "last_activity_at": "2026-11-07T03:07:26Z"
+   "last_activity_at": "2026-11-09T11:20:54Z"
   },
   {
    "number": 110582,
@@ -19428,7 +19428,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-07-02T11:00:56Z",
-   "last_activity_at": "2026-11-05T16:48:38Z"
+   "last_activity_at": "2026-11-09T14:13:29Z"
   },
   {
    "number": 112603,
@@ -24396,7 +24396,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-09T07:29:54Z",
-   "last_activity_at": "2026-10-22T13:06:48Z"
+   "last_activity_at": "2026-11-09T11:16:37Z"
   },
   {
    "number": 118580,
@@ -24502,7 +24502,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-25T15:30:57Z",
-   "last_activity_at": "2026-11-06T12:50:05Z"
+   "last_activity_at": "2026-11-09T17:33:14Z"
   },
   {
    "number": 118648,
@@ -24562,7 +24562,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-10T10:35:30Z",
-   "last_activity_at": "2026-11-05T15:19:17Z"
+   "last_activity_at": "2026-11-09T14:01:02Z"
   },
   {
    "number": 118683,
@@ -25440,9 +25440,9 @@
     "Samples",
     "Tests"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-09-25T12:46:02Z",
-   "last_activity_at": "2026-11-07T10:04:28Z"
+   "last_activity_at": "2026-11-09T12:51:24Z"
   },
   {
    "number": 119585,
@@ -26273,7 +26273,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-09-25T11:27:34Z",
-   "last_activity_at": "2026-11-02T12:42:33Z"
+   "last_activity_at": "2026-11-09T14:45:30Z"
   },
   {
    "number": 120355,
@@ -26661,7 +26661,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-29T14:59:42Z",
-   "last_activity_at": "2026-11-05T00:40:01Z"
+   "last_activity_at": "2026-11-09T14:06:07Z"
   },
   {
    "number": 120635,
@@ -26894,7 +26894,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-03T17:08:52Z",
-   "last_activity_at": "2026-11-04T00:38:55Z"
+   "last_activity_at": "2026-11-09T13:49:00Z"
   },
   {
    "number": 120786,
@@ -27439,7 +27439,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-16T08:53:31Z"
+   "last_activity_at": "2026-11-09T14:29:01Z"
   },
   {
    "number": 121096,
@@ -27871,7 +27871,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-09T08:43:40Z",
-   "last_activity_at": "2026-11-09T00:43:42Z"
+   "last_activity_at": "2026-11-09T08:20:12Z"
   },
   {
    "number": 121337,
@@ -27989,7 +27989,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-16T07:22:58Z",
-   "last_activity_at": "2026-10-23T12:11:54Z"
+   "last_activity_at": "2026-11-09T10:29:01Z"
   },
   {
    "number": 121454,
@@ -28009,7 +28009,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-06T20:17:03Z",
-   "last_activity_at": "2026-11-05T09:43:21Z"
+   "last_activity_at": "2026-11-09T20:54:51Z"
   },
   {
    "number": 121471,
@@ -28067,7 +28067,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-07T14:14:26Z",
-   "last_activity_at": "2026-11-05T16:07:02Z"
+   "last_activity_at": "2026-11-09T16:49:50Z"
   },
   {
    "number": 121492,
@@ -28235,7 +28235,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-09T00:43:20Z"
+   "last_activity_at": "2026-11-09T11:24:41Z"
   },
   {
    "number": 121645,
@@ -28252,7 +28252,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-09T00:43:13Z"
+   "last_activity_at": "2026-11-09T11:25:26Z"
   },
   {
    "number": 121647,
@@ -28269,7 +28269,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-09T00:43:09Z"
+   "last_activity_at": "2026-11-09T11:25:40Z"
   },
   {
    "number": 121650,
@@ -28286,7 +28286,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-09T07:09:09Z",
-   "last_activity_at": "2026-11-09T00:43:01Z"
+   "last_activity_at": "2026-11-09T11:26:12Z"
   },
   {
    "number": 121652,
@@ -28303,7 +28303,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-08T17:46:12Z",
-   "last_activity_at": "2026-11-09T00:42:56Z"
+   "last_activity_at": "2026-11-09T11:26:26Z"
   },
   {
    "number": 121654,
@@ -28320,7 +28320,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-09T00:42:51Z"
+   "last_activity_at": "2026-11-09T11:26:41Z"
   },
   {
    "number": 121656,
@@ -28337,7 +28337,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-09T00:42:47Z"
+   "last_activity_at": "2026-11-09T11:26:56Z"
   },
   {
    "number": 121658,
@@ -28354,7 +28354,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-08T17:07:37Z",
-   "last_activity_at": "2026-11-09T00:42:43Z"
+   "last_activity_at": "2026-11-09T11:27:12Z"
   },
   {
    "number": 121659,
@@ -28371,7 +28371,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-09T00:42:40Z"
+   "last_activity_at": "2026-11-09T11:27:19Z"
   },
   {
    "number": 121660,
@@ -28388,7 +28388,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-09T00:42:38Z"
+   "last_activity_at": "2026-11-09T11:27:32Z"
   },
   {
    "number": 121662,
@@ -28884,17 +28884,17 @@
    "title": "soc: st: stm32wl: keep IRQs locked during PM resume",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/122293",
    "author": "flwb-li",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-15T06:38:46Z",
    "labeled_at": "2026-10-15T06:40:31Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-09T16:53:58Z",
+   "merged_at": "2026-11-09T16:53:58Z",
    "areas": [
     "Boards/SoCs"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-08T23:00:43Z"
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-09T09:13:39Z",
+   "last_activity_at": "2026-11-09T16:53:58Z"
   },
   {
    "number": 122294,
@@ -29167,6 +29167,26 @@
    "last_activity_at": "2026-10-21T20:00:38Z"
   },
   {
+   "number": 122669,
+   "title": "stm32: rework DCMI DMA handling / DMA fixes + DMAv1 DBM mode support",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/122669",
+   "author": "avolmat-st",
+   "state": "open",
+   "created_at": "2026-10-19T11:09:37Z",
+   "labeled_at": "2026-11-09T13:14:48Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "DMA",
+    "Devicetree Binding",
+    "Tests",
+    "Video"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-09T16:26:21Z"
+  },
+  {
    "number": 122686,
    "title": "drivers: spi: stm32: do not raise cs during half-duplex direction switch",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/122686",
@@ -29249,7 +29269,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-23T12:56:06Z",
-   "last_activity_at": "2026-10-29T19:10:51Z"
+   "last_activity_at": "2026-11-09T09:22:08Z"
   },
   {
    "number": 122793,
@@ -29456,9 +29476,9 @@
     "Devicetree Binding",
     "MSPI"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-03T15:52:06Z",
-   "last_activity_at": "2026-11-03T15:52:07Z"
+   "last_activity_at": "2026-11-09T16:36:32Z"
   },
   {
    "number": 123006,
@@ -29594,7 +29614,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-28T13:31:26Z",
-   "last_activity_at": "2026-11-08T20:34:36Z"
+   "last_activity_at": "2026-11-09T16:12:32Z"
   },
   {
    "number": 123284,
@@ -30054,7 +30074,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-03T07:27:01Z",
-   "last_activity_at": "2026-11-05T14:16:28Z"
+   "last_activity_at": "2026-11-09T18:04:41Z"
   },
   {
    "number": 124093,
@@ -30106,7 +30126,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-02T14:33:13Z",
-   "last_activity_at": "2026-11-02T17:04:34Z"
+   "last_activity_at": "2026-11-09T10:38:05Z"
   },
   {
    "number": 124170,
@@ -30189,9 +30209,9 @@
     "Boards/SoCs",
     "Timer"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-02T14:13:40Z",
-   "last_activity_at": "2026-11-07T04:28:11Z"
+   "last_activity_at": "2026-11-09T09:07:13Z"
   },
   {
    "number": 124320,
@@ -30209,7 +30229,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-02T15:32:21Z",
-   "last_activity_at": "2026-11-07T11:40:14Z"
+   "last_activity_at": "2026-11-09T11:05:43Z"
   },
   {
    "number": 124326,
@@ -30259,8 +30279,8 @@
     "Boards/SoCs"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-03T11:14:03Z"
+   "first_review_at": "2026-11-09T10:43:01Z",
+   "last_activity_at": "2026-11-09T10:43:52Z"
   },
   {
    "number": 124412,
@@ -30332,7 +30352,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-03T14:52:01Z",
-   "last_activity_at": "2026-11-06T09:45:45Z"
+   "last_activity_at": "2026-11-09T19:26:44Z"
   },
   {
    "number": 124473,
@@ -30351,9 +30371,9 @@
     "MIPI-DSI",
     "Shields"
    ],
-   "review_decision": "CHANGES_REQUESTED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-03T16:47:10Z",
-   "last_activity_at": "2026-11-08T10:47:49Z"
+   "last_activity_at": "2026-11-09T14:48:41Z"
   },
   {
    "number": 124476,
@@ -30421,9 +30441,9 @@
     "LVGL",
     "Samples"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-06T10:52:15Z"
+   "review_decision": "CHANGES_REQUESTED",
+   "first_review_at": "2026-11-09T08:02:50Z",
+   "last_activity_at": "2026-11-09T18:08:49Z"
   },
   {
    "number": 124599,
@@ -30533,17 +30553,17 @@
    "title": "drivers: crypto: stm32: Correct AES key size for STM32 HAL2",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124728",
    "author": "etienne-lms",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-05T09:58:42Z",
    "labeled_at": "2026-11-05T10:00:04Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-09T12:16:40Z",
+   "merged_at": "2026-11-09T12:16:40Z",
    "areas": [
     "Crypto / RNG"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-05T11:04:22Z",
-   "last_activity_at": "2026-11-07T16:50:14Z"
+   "last_activity_at": "2026-11-09T12:16:40Z"
   },
   {
    "number": 124751,
@@ -30576,19 +30596,19 @@
     "Timer"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-06T06:27:26Z"
+   "first_review_at": "2026-11-09T14:22:01Z",
+   "last_activity_at": "2026-11-09T14:22:01Z"
   },
   {
    "number": 124787,
    "title": "net: ethernet: remove ETHERNET_LLDP capability",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/124787",
    "author": "maass-hamburg",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-05T15:59:32Z",
    "labeled_at": "2026-11-05T16:07:32Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-09T17:00:12Z",
+   "merged_at": "2026-11-09T17:00:12Z",
    "areas": [
     "Ethernet",
     "Networking",
@@ -30597,7 +30617,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-05T17:54:42Z",
-   "last_activity_at": "2026-11-06T18:14:23Z"
+   "last_activity_at": "2026-11-09T17:00:12Z"
   },
   {
    "number": 124799,
@@ -30621,7 +30641,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-06T10:17:39Z",
-   "last_activity_at": "2026-11-06T15:40:54Z"
+   "last_activity_at": "2026-11-09T17:36:07Z"
   },
   {
    "number": 124833,
@@ -30681,7 +30701,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-07T06:45:31Z",
-   "last_activity_at": "2026-11-07T15:29:49Z"
+   "last_activity_at": "2026-11-09T19:50:56Z"
   },
   {
    "number": 124999,
@@ -30730,9 +30750,128 @@
    "areas": [
     "Boards/SoCs"
    ],
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-09T08:11:57Z",
+   "last_activity_at": "2026-11-09T08:29:59Z"
+  },
+  {
+   "number": 125139,
+   "title": "drivers: i2s: stm32: fix buffer leaks and TX stop handling",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125139",
+   "author": "mariopaja",
+   "state": "open",
+   "created_at": "2026-11-09T10:25:48Z",
+   "labeled_at": "2026-11-09T10:48:10Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "I2S"
+   ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-08T18:49:49Z"
+   "last_activity_at": "2026-11-09T16:52:01Z"
+  },
+  {
+   "number": 125163,
+   "title": "[Backport v4.5-branch] drivers: crypto: stm32: Correct AES key size for STM32 HAL2",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125163",
+   "author": "github-actions",
+   "state": "open",
+   "created_at": "2026-11-09T12:18:12Z",
+   "labeled_at": "2026-11-09T14:31:00Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Crypto / RNG"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-09T14:29:42Z",
+   "last_activity_at": "2026-11-09T14:31:19Z"
+  },
+  {
+   "number": 125177,
+   "title": "dts: arm: st: clean up various property overrides done via nodelabels",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125177",
+   "author": "mathieuchopstm",
+   "state": "open",
+   "created_at": "2026-11-09T13:30:06Z",
+   "labeled_at": "2026-11-09T13:31:42Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Unclassified"
+   ],
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-09T14:23:24Z",
+   "last_activity_at": "2026-11-09T16:26:34Z"
+  },
+  {
+   "number": 125189,
+   "title": "dts: arm: st: *: use generic name for built-in USB PHY nodes",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125189",
+   "author": "mathieuchopstm",
+   "state": "open",
+   "created_at": "2026-11-09T14:46:52Z",
+   "labeled_at": "2026-11-09T14:48:28Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Unclassified"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-09T16:25:20Z",
+   "last_activity_at": "2026-11-09T16:25:20Z"
+  },
+  {
+   "number": 125191,
+   "title": "drivers: display: stm32_ltdc: rely on HAL macros for polarities",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125191",
+   "author": "avolmat-st",
+   "state": "open",
+   "created_at": "2026-11-09T14:57:45Z",
+   "labeled_at": "2026-11-09T14:59:14Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Display"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-09T16:16:51Z",
+   "last_activity_at": "2026-11-09T16:22:37Z"
+  },
+  {
+   "number": 125216,
+   "title": "dts: arm: st: *: fix underscore in swj-port node name",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125216",
+   "author": "mathieuchopstm",
+   "state": "open",
+   "created_at": "2026-11-09T16:56:34Z",
+   "labeled_at": "2026-11-09T16:56:36Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-09T16:56:34Z"
+  },
+  {
+   "number": 125218,
+   "title": "dts: arm: st: n6: fix OTP124/HCONF1 node name",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125218",
+   "author": "mathieuchopstm",
+   "state": "open",
+   "created_at": "2026-11-09T17:02:30Z",
+   "labeled_at": "2026-11-09T17:02:31Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-09T17:02:30Z"
   }
  ]
 }
