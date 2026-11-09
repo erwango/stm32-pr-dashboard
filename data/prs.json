@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T22:04:04Z",
- "watermark": "2026-11-08T21:04:04Z",
+ "generated_at": "2026-11-09T06:26:21Z",
+ "watermark": "2026-11-09T05:26:21Z",
  "prs": [
   {
    "number": 25085,
@@ -25210,10 +25210,10 @@
    "title": "i2s: stm32: add support for full duplex mode on STM32H7 series",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/119361",
    "author": "titouanc",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-09-16T17:13:55Z",
    "labeled_at": "2026-09-16T17:15:26Z",
-   "closed_at": null,
+   "closed_at": "2026-11-09T00:44:54Z",
    "merged_at": null,
    "areas": [
     "I2S",
@@ -25221,7 +25221,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-09-17T06:03:06Z",
-   "last_activity_at": "2026-11-01T00:47:05Z"
+   "last_activity_at": "2026-11-09T00:44:54Z"
   },
   {
    "number": 119376,
@@ -25486,10 +25486,10 @@
    "title": "soc: st: n6: Allow control of external SMPS voltage scale",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/119588",
    "author": "ABESTM",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-09-18T12:47:55Z",
    "labeled_at": "2026-09-18T12:50:05Z",
-   "closed_at": null,
+   "closed_at": "2026-11-09T00:44:44Z",
    "merged_at": null,
    "areas": [
     "Boards/SoCs",
@@ -25498,7 +25498,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-18T13:55:01Z",
-   "last_activity_at": "2026-11-01T00:46:53Z"
+   "last_activity_at": "2026-11-09T00:44:44Z"
   },
   {
    "number": 119693,
@@ -27871,7 +27871,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-09T08:43:40Z",
-   "last_activity_at": "2026-10-09T09:39:42Z"
+   "last_activity_at": "2026-11-09T00:43:42Z"
   },
   {
    "number": 121337,
@@ -27890,7 +27890,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-09T08:45:31Z"
+   "last_activity_at": "2026-11-09T00:43:39Z"
   },
   {
    "number": 121338,
@@ -28235,7 +28235,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-09T11:38:58Z"
+   "last_activity_at": "2026-11-09T00:43:20Z"
   },
   {
    "number": 121645,
@@ -28252,7 +28252,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-09T11:39:35Z"
+   "last_activity_at": "2026-11-09T00:43:13Z"
   },
   {
    "number": 121647,
@@ -28269,7 +28269,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-09T11:39:58Z"
+   "last_activity_at": "2026-11-09T00:43:09Z"
   },
   {
    "number": 121650,
@@ -28286,7 +28286,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-09T07:09:09Z",
-   "last_activity_at": "2026-10-09T12:15:55Z"
+   "last_activity_at": "2026-11-09T00:43:01Z"
   },
   {
    "number": 121652,
@@ -28303,7 +28303,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-08T17:46:12Z",
-   "last_activity_at": "2026-10-09T11:54:30Z"
+   "last_activity_at": "2026-11-09T00:42:56Z"
   },
   {
    "number": 121654,
@@ -28320,7 +28320,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-09T11:55:07Z"
+   "last_activity_at": "2026-11-09T00:42:51Z"
   },
   {
    "number": 121656,
@@ -28337,7 +28337,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-09T11:55:31Z"
+   "last_activity_at": "2026-11-09T00:42:47Z"
   },
   {
    "number": 121658,
@@ -28354,7 +28354,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-08T17:07:37Z",
-   "last_activity_at": "2026-10-09T11:56:10Z"
+   "last_activity_at": "2026-11-09T00:42:43Z"
   },
   {
    "number": 121659,
@@ -28371,7 +28371,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-09T11:56:27Z"
+   "last_activity_at": "2026-11-09T00:42:40Z"
   },
   {
    "number": 121660,
@@ -28388,7 +28388,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-09T11:56:43Z"
+   "last_activity_at": "2026-11-09T00:42:38Z"
   },
   {
    "number": 121662,
@@ -28744,8 +28744,8 @@
     "Flash"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-10-14T11:09:38Z"
+   "first_review_at": "2026-11-08T22:44:26Z",
+   "last_activity_at": "2026-11-08T22:44:26Z"
   },
   {
    "number": 122196,
@@ -28894,7 +28894,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-15T14:11:38Z"
+   "last_activity_at": "2026-11-08T23:00:43Z"
   },
   {
    "number": 122294,
@@ -29212,8 +29212,8 @@
     "USB"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-05T16:52:07Z"
+   "first_review_at": "2026-11-09T02:22:09Z",
+   "last_activity_at": "2026-11-09T02:22:09Z"
   },
   {
    "number": 122755,
@@ -29229,8 +29229,8 @@
     "Boards/SoCs"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-10-20T11:18:38Z"
+   "first_review_at": "2026-11-09T03:01:40Z",
+   "last_activity_at": "2026-11-09T03:01:41Z"
   },
   {
    "number": 122771,
@@ -29303,7 +29303,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-20T13:46:48Z"
+   "last_activity_at": "2026-11-09T04:02:23Z"
   },
   {
    "number": 122843,
