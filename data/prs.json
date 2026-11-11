@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T19:43:44Z",
- "watermark": "2026-11-10T18:43:44Z",
+ "generated_at": "2026-11-11T06:18:01Z",
+ "watermark": "2026-11-11T05:18:01Z",
  "prs": [
   {
    "number": 25085,
@@ -16076,7 +16076,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-08-17T09:33:54Z",
-   "last_activity_at": "2026-11-10T10:38:33Z"
+   "last_activity_at": "2026-11-11T03:16:30Z"
   },
   {
    "number": 109468,
@@ -19004,10 +19004,10 @@
    "title": "bluetooth: HCI: Diamond include for non-local header files",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/112172",
    "author": "etienne-lms",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-06-27T07:27:05Z",
    "labeled_at": "2026-06-27T07:28:35Z",
-   "closed_at": null,
+   "closed_at": "2026-11-11T00:41:26Z",
    "merged_at": null,
    "areas": [
     "Bluetooth",
@@ -19015,7 +19015,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-06-30T08:42:12Z",
-   "last_activity_at": "2026-11-03T00:41:54Z"
+   "last_activity_at": "2026-11-11T00:41:26Z"
   },
   {
    "number": 112188,
@@ -20607,17 +20607,17 @@
    "title": "drivers: i2c: stm32: v2: fall back to interrupt mode per-instance",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/113912",
    "author": "evgeniy-paltsev",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-07-18T22:51:52Z",
    "labeled_at": "2026-07-19T00:01:57Z",
-   "closed_at": null,
+   "closed_at": "2026-11-11T00:41:07Z",
    "merged_at": null,
    "areas": [
     "I2C"
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-07-20T12:03:29Z",
-   "last_activity_at": "2026-11-03T00:41:14Z"
+   "last_activity_at": "2026-11-11T00:41:07Z"
   },
   {
    "number": 113959,
@@ -24228,9 +24228,9 @@
     "Flash",
     "MSPI"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-09-07T03:03:33Z",
-   "last_activity_at": "2026-11-10T19:42:23Z"
+   "last_activity_at": "2026-11-11T03:39:13Z"
   },
   {
    "number": 118449,
@@ -26123,7 +26123,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-24T08:33:55Z",
-   "last_activity_at": "2026-11-10T16:23:48Z"
+   "last_activity_at": "2026-11-11T00:40:23Z"
   },
   {
    "number": 120205,
@@ -28105,7 +28105,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-11T14:05:23Z"
+   "last_activity_at": "2026-11-11T00:39:25Z"
   },
   {
    "number": 121506,
@@ -29733,18 +29733,18 @@
    "title": "dts: arm: st: f4: add DFSDM peripheral support",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/123616",
    "author": "rgallaispou",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-26T17:21:55Z",
    "labeled_at": "2026-10-26T17:23:32Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-11T01:33:25Z",
+   "merged_at": "2026-11-11T01:33:25Z",
    "areas": [
     "Audio",
     "Tests"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-26T17:36:17Z",
-   "last_activity_at": "2026-11-10T14:55:52Z"
+   "last_activity_at": "2026-11-11T01:33:25Z"
   },
   {
    "number": 123668,
@@ -30722,7 +30722,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-07T06:45:31Z",
-   "last_activity_at": "2026-11-10T11:51:03Z"
+   "last_activity_at": "2026-11-11T03:12:46Z"
   },
   {
    "number": 124999,
@@ -30763,17 +30763,17 @@
    "title": "soc: st: stm32: drop redundant STM32_LPTIM_TIMER defaults",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125038",
    "author": "kartben",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-08T17:31:23Z",
    "labeled_at": "2026-11-08T18:49:28Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-11T02:49:48Z",
+   "merged_at": "2026-11-11T02:49:47Z",
    "areas": [
     "Boards/SoCs"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-09T08:11:57Z",
-   "last_activity_at": "2026-11-09T08:29:59Z"
+   "last_activity_at": "2026-11-11T02:49:48Z"
   },
   {
    "number": 125139,
@@ -30927,6 +30927,59 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-10T15:43:31Z",
    "last_activity_at": "2026-11-10T16:27:29Z"
+  },
+  {
+   "number": 125381,
+   "title": "drivers: usb: uhc: add STM32 USB_DRD_FS host controller driver",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125381",
+   "author": "Hamza-Bahri",
+   "state": "open",
+   "created_at": "2026-11-10T21:21:07Z",
+   "labeled_at": "2026-11-11T00:43:46Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs",
+    "Samples",
+    "USB"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-11T00:48:41Z",
+   "last_activity_at": "2026-11-11T00:48:41Z"
+  },
+  {
+   "number": 125388,
+   "title": "drivers: dma: stm32: fix busy flag, memory to memory and mixed widths on v1",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125388",
+   "author": "tpambor",
+   "state": "open",
+   "created_at": "2026-11-10T22:31:47Z",
+   "labeled_at": "2026-11-10T22:33:00Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "DMA"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-10T22:33:16Z"
+  },
+  {
+   "number": 125396,
+   "title": "drivers: ethernet: stm32: align nocache DMA descriptors to 32 bytes",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125396",
+   "author": "lu-figure",
+   "state": "open",
+   "created_at": "2026-11-11T02:24:44Z",
+   "labeled_at": "2026-11-11T02:26:20Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Ethernet"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-11T02:26:41Z"
   }
  ]
 }
