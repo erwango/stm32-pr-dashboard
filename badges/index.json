@@ -101,6 +101,7 @@
   "RTC": "rtc",
   "RTIO": "rtio",
   "Regulators": "regulators",
+  "Renode": "renode",
   "Reset": "reset",
   "Retained Memory": "retained-memory",
   "Retention": "retention",
