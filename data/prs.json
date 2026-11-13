@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T06:44:51Z",
- "watermark": "2026-11-13T05:44:51Z",
+ "generated_at": "2026-11-13T19:40:55Z",
+ "watermark": "2026-11-13T18:40:55Z",
  "prs": [
   {
    "number": 25085,
@@ -101,6 +101,29 @@
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2021-11-04T10:52:25Z",
    "last_activity_at": "2025-11-07T16:06:16Z"
+  },
+  {
+   "number": 43965,
+   "title": "drivers: display: add STM32 LTDC driver",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/43965",
+   "author": "tmilkovic51",
+   "state": "merged",
+   "created_at": "2022-03-18T12:25:57Z",
+   "labeled_at": "2022-03-18T12:26:16Z",
+   "closed_at": "2022-03-30T01:30:03Z",
+   "merged_at": "2022-03-30T01:30:03Z",
+   "areas": [
+    "API",
+    "Boards",
+    "Devicetree",
+    "Devicetree Binding",
+    "Display",
+    "Documentation",
+    "Samples"
+   ],
+   "review_decision": "APPROVED",
+   "first_review_at": "2022-03-18T12:44:08Z",
+   "last_activity_at": "2026-11-13T09:17:52Z"
   },
   {
    "number": 44815,
@@ -12798,9 +12821,9 @@
     "Samples",
     "Shields"
    ],
-   "review_decision": "CHANGES_REQUESTED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-03-26T08:03:56Z",
-   "last_activity_at": "2026-11-11T14:27:10Z"
+   "last_activity_at": "2026-11-13T18:45:16Z"
   },
   {
    "number": 106105,
@@ -22037,7 +22060,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-08-10T05:47:22Z",
-   "last_activity_at": "2026-11-12T10:14:21Z"
+   "last_activity_at": "2026-11-13T14:43:18Z"
   },
   {
    "number": 115583,
@@ -25600,8 +25623,8 @@
     "Tests"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-11T14:27:31Z"
+   "first_review_at": "2026-11-13T16:00:22Z",
+   "last_activity_at": "2026-11-13T16:18:45Z"
   },
   {
    "number": 119781,
@@ -26294,7 +26317,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-09-25T11:27:34Z",
-   "last_activity_at": "2026-11-12T14:01:38Z"
+   "last_activity_at": "2026-11-13T13:23:11Z"
   },
   {
    "number": 120355,
@@ -26805,7 +26828,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-30T18:51:10Z",
-   "last_activity_at": "2026-11-12T13:29:44Z"
+   "last_activity_at": "2026-11-13T17:03:00Z"
   },
   {
    "number": 120740,
@@ -26915,7 +26938,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-03T17:08:52Z",
-   "last_activity_at": "2026-11-12T16:17:39Z"
+   "last_activity_at": "2026-11-13T17:46:53Z"
   },
   {
    "number": 120786,
@@ -27241,7 +27264,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-01T11:32:24Z",
-   "last_activity_at": "2026-11-12T22:37:54Z"
+   "last_activity_at": "2026-11-13T18:45:22Z"
   },
   {
    "number": 120970,
@@ -27409,7 +27432,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-09T09:20:30Z",
-   "last_activity_at": "2026-10-26T14:24:12Z"
+   "last_activity_at": "2026-11-13T11:28:40Z"
   },
   {
    "number": 121041,
@@ -27458,9 +27481,9 @@
    "areas": [
     "Boards/SoCs"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-10T10:33:14Z",
-   "last_activity_at": "2026-11-12T20:26:49Z"
+   "last_activity_at": "2026-11-13T15:15:28Z"
   },
   {
    "number": 121096,
@@ -27656,20 +27679,20 @@
    "title": "boards: st: stm32l496g_disco: move quadspi to MSPI controller",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/121223",
    "author": "filipembedded",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-04T10:37:15Z",
    "labeled_at": "2026-10-11T09:00:34Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T11:10:22Z",
+   "merged_at": "2026-11-13T11:10:22Z",
    "areas": [
     "Boards/SoCs",
     "Devicetree Binding",
     "MSPI",
     "Samples"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-06T08:29:14Z",
-   "last_activity_at": "2026-11-06T13:18:46Z"
+   "last_activity_at": "2026-11-13T11:10:22Z"
   },
   {
    "number": 121230,
@@ -27858,7 +27881,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-06T07:01:34Z",
-   "last_activity_at": "2026-11-12T17:31:41Z"
+   "last_activity_at": "2026-11-13T14:24:18Z"
   },
   {
    "number": 121334,
@@ -28122,9 +28145,9 @@
     "Devicetree Binding",
     "Video"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-10-14T14:01:06Z",
-   "last_activity_at": "2026-10-14T14:14:21Z"
+   "last_activity_at": "2026-11-13T19:31:57Z"
   },
   {
    "number": 121530,
@@ -29023,18 +29046,18 @@
    "title": "boards: st: add support for stm32f769i_eval board",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/122392",
    "author": "avolmat-st",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-15T20:08:28Z",
    "labeled_at": "2026-10-19T13:15:35Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T11:10:34Z",
+   "merged_at": "2026-11-13T11:10:34Z",
    "areas": [
     "Boards/SoCs",
     "Shields"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-10-20T11:22:52Z",
-   "last_activity_at": "2026-11-12T18:54:22Z"
+   "last_activity_at": "2026-11-13T11:10:34Z"
   },
   {
    "number": 122413,
@@ -29254,7 +29277,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-09T02:22:09Z",
-   "last_activity_at": "2026-11-09T02:22:09Z"
+   "last_activity_at": "2026-11-13T15:09:59Z"
   },
   {
    "number": 122755,
@@ -29278,19 +29301,19 @@
    "title": "drivers: crc: stm32: bit-reverse the seed of reflected CRCs",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/122771",
    "author": "lilborgo",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-20T07:18:13Z",
    "labeled_at": "2026-10-20T07:19:42Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T15:34:28Z",
+   "merged_at": "2026-11-13T15:34:28Z",
    "areas": [
     "CRC",
     "Tests",
     "Utilities"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-10-23T12:56:06Z",
-   "last_activity_at": "2026-11-09T09:22:08Z"
+   "last_activity_at": "2026-11-13T15:34:28Z"
   },
   {
    "number": 122793,
@@ -29344,7 +29367,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-12T13:33:54Z"
+   "last_activity_at": "2026-11-13T10:11:42Z"
   },
   {
    "number": 122843,
@@ -29377,7 +29400,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-22T16:32:19Z",
-   "last_activity_at": "2026-11-12T10:44:36Z"
+   "last_activity_at": "2026-11-13T15:54:00Z"
   },
   {
    "number": 122901,
@@ -29449,7 +29472,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-28T10:32:11Z",
-   "last_activity_at": "2026-11-12T09:57:47Z"
+   "last_activity_at": "2026-11-13T08:10:28Z"
   },
   {
    "number": 122992,
@@ -29520,7 +29543,7 @@
   },
   {
    "number": 123021,
-   "title": "dts: arm: st: h7: add USB OTG HS node to STM32H742",
+   "title": "dts: arm: st: h7: declare USB OTG HS in stm32h7.dtsi",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/123021",
    "author": "kartben",
    "state": "open",
@@ -29531,9 +29554,9 @@
    "areas": [
     "Unclassified"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-04T09:57:51Z",
-   "last_activity_at": "2026-11-12T10:34:52Z"
+   "last_activity_at": "2026-11-13T15:09:51Z"
   },
   {
    "number": 123063,
@@ -29714,11 +29737,11 @@
    "title": "STM32MP135F_DK add STPMIC1 support",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/123590",
    "author": "eszSTM",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-26T13:54:53Z",
    "labeled_at": "2026-10-26T13:57:17Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T11:10:57Z",
+   "merged_at": "2026-11-13T11:10:57Z",
    "areas": [
     "Boards/SoCs",
     "Devicetree Binding",
@@ -29727,7 +29750,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-26T17:17:28Z",
-   "last_activity_at": "2026-11-11T12:23:40Z"
+   "last_activity_at": "2026-11-13T11:10:57Z"
   },
   {
    "number": 123616,
@@ -29998,7 +30021,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-30T08:39:14Z",
-   "last_activity_at": "2026-11-12T19:13:54Z"
+   "last_activity_at": "2026-11-13T14:00:12Z"
   },
   {
    "number": 123977,
@@ -30096,7 +30119,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-03T07:27:01Z",
-   "last_activity_at": "2026-11-12T16:30:13Z"
+   "last_activity_at": "2026-11-13T14:02:26Z"
   },
   {
    "number": 124093,
@@ -30148,7 +30171,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-02T14:33:13Z",
-   "last_activity_at": "2026-11-09T10:38:05Z"
+   "last_activity_at": "2026-11-13T14:00:07Z"
   },
   {
    "number": 124170,
@@ -30663,7 +30686,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-06T10:17:39Z",
-   "last_activity_at": "2026-11-12T17:31:31Z"
+   "last_activity_at": "2026-11-13T16:00:39Z"
   },
   {
    "number": 124833,
@@ -30711,6 +30734,7 @@
    "closed_at": null,
    "merged_at": null,
    "areas": [
+    "ADC",
     "Boards/SoCs",
     "Clock Control",
     "Devicetree Binding",
@@ -30720,12 +30744,13 @@
     "MAINTAINER File",
     "Pinctrl",
     "Reset",
+    "Samples",
     "Tests",
     "UART"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-07T06:45:31Z",
-   "last_activity_at": "2026-11-12T15:31:31Z"
+   "last_activity_at": "2026-11-13T13:04:49Z"
   },
   {
    "number": 124999,
@@ -30792,25 +30817,25 @@
     "I2S"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-09T16:52:01Z"
+   "first_review_at": "2026-11-13T09:34:01Z",
+   "last_activity_at": "2026-11-13T11:57:52Z"
   },
   {
    "number": 125163,
    "title": "[Backport v4.5-branch] drivers: crypto: stm32: Correct AES key size for STM32 HAL2",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125163",
    "author": "github-actions",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-09T12:18:12Z",
    "labeled_at": "2026-11-09T14:31:00Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T09:59:17Z",
+   "merged_at": "2026-11-13T09:59:17Z",
    "areas": [
     "Crypto / RNG"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-09T14:29:42Z",
-   "last_activity_at": "2026-11-12T15:02:48Z"
+   "last_activity_at": "2026-11-13T09:59:21Z"
   },
   {
    "number": 125177,
@@ -30844,7 +30869,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-09T16:25:20Z",
-   "last_activity_at": "2026-11-09T16:25:20Z"
+   "last_activity_at": "2026-11-13T14:48:49Z"
   },
   {
    "number": 125191,
@@ -30859,9 +30884,9 @@
    "areas": [
     "Display"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-09T16:16:51Z",
-   "last_activity_at": "2026-11-12T14:07:44Z"
+   "last_activity_at": "2026-11-13T10:29:52Z"
   },
   {
    "number": 125216,
@@ -30885,17 +30910,17 @@
    "title": "dts: arm: st: n6: fix OTP124/HCONF1 node name",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125218",
    "author": "mathieuchopstm",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-09T17:02:30Z",
    "labeled_at": "2026-11-09T17:02:31Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T15:35:40Z",
+   "merged_at": "2026-11-13T15:35:40Z",
    "areas": [
     "Boards/SoCs"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-09T17:02:30Z"
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-13T12:55:57Z",
+   "last_activity_at": "2026-11-13T15:46:16Z"
   },
   {
    "number": 125277,
@@ -30946,7 +30971,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-10T15:43:31Z",
-   "last_activity_at": "2026-11-10T16:27:29Z"
+   "last_activity_at": "2026-11-13T16:57:32Z"
   },
   {
    "number": 125349,
@@ -30981,8 +31006,8 @@
     "Boards/SoCs"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-12T07:31:20Z"
+   "first_review_at": "2026-11-13T08:56:03Z",
+   "last_activity_at": "2026-11-13T12:39:21Z"
   },
   {
    "number": 125365,
@@ -31070,9 +31095,103 @@
     "Tests",
     "UART"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-12T14:18:44Z",
-   "last_activity_at": "2026-11-12T14:18:44Z"
+   "last_activity_at": "2026-11-13T11:42:45Z"
+  },
+  {
+   "number": 125714,
+   "title": "drivers: flash: stm32: hold off Stop while an operation runs",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125714",
+   "author": "kamnxt",
+   "state": "open",
+   "created_at": "2026-11-13T07:18:45Z",
+   "labeled_at": "2026-11-13T07:20:22Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Flash"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-13T08:24:51Z",
+   "last_activity_at": "2026-11-13T12:09:05Z"
+  },
+  {
+   "number": 125739,
+   "title": "boards: st: stm32h745i_disco: fix illegal PLL3 config",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125739",
+   "author": "jurenat",
+   "state": "open",
+   "created_at": "2026-11-13T10:07:34Z",
+   "labeled_at": "2026-11-13T10:09:18Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs",
+    "Display"
+   ],
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-13T15:34:47Z",
+   "last_activity_at": "2026-11-13T17:28:40Z"
+  },
+  {
+   "number": 125746,
+   "title": "soc: stm32wbax: extend KConfig Radio Calibration to ieee802154",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125746",
+   "author": "vtardy-st",
+   "state": "open",
+   "created_at": "2026-11-13T11:07:18Z",
+   "labeled_at": "2026-11-13T11:08:51Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Bluetooth",
+    "Bluetooth HCI",
+    "Boards/SoCs"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-13T12:07:34Z"
+  },
+  {
+   "number": 125759,
+   "title": "boards: ruiside: art_pi2: support external flash and PSRAM",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125759",
+   "author": "bricle",
+   "state": "open",
+   "created_at": "2026-11-13T14:05:24Z",
+   "labeled_at": "2026-11-13T14:06:42Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs",
+    "Devicetree Binding",
+    "Flash",
+    "MEMC",
+    "MSPI",
+    "Samples",
+    "Tests"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-13T15:26:28Z",
+   "last_activity_at": "2026-11-13T15:26:29Z"
+  },
+  {
+   "number": 125766,
+   "title": "drivers: usb: udc: stm32: miscellaneous cleanups",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125766",
+   "author": "mathieuchopstm",
+   "state": "open",
+   "created_at": "2026-11-13T15:08:44Z",
+   "labeled_at": "2026-11-13T15:10:34Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "USB"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-13T15:10:56Z"
   }
  ]
 }

@@ -1,8 +1,8 @@
 {
  "schemaVersion": 1,
  "label": "Bluetooth HCI",
- "message": "1 open, median 39 d",
- "color": "FAD200",
+ "message": "2 open, median 20 d",
+ "color": "001E91",
  "labelColor": "B0B7B9",
  "cacheSeconds": 300
 }
