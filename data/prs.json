@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T19:53:35Z",
- "watermark": "2026-11-12T18:53:35Z",
+ "generated_at": "2026-11-13T06:44:51Z",
+ "watermark": "2026-11-13T05:44:51Z",
  "prs": [
   {
    "number": 25085,
@@ -9301,7 +9301,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-01-29T20:08:16Z",
-   "last_activity_at": "2026-11-01T12:58:01Z"
+   "last_activity_at": "2026-11-13T00:43:13Z"
   },
   {
    "number": 103204,
@@ -27239,9 +27239,9 @@
     "Devicetree Binding",
     "I3C"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-10-01T11:32:24Z",
-   "last_activity_at": "2026-11-12T19:23:09Z"
+   "last_activity_at": "2026-11-12T22:37:54Z"
   },
   {
    "number": 120970,
@@ -27460,7 +27460,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-10T10:33:14Z",
-   "last_activity_at": "2026-11-12T19:48:57Z"
+   "last_activity_at": "2026-11-12T20:26:49Z"
   },
   {
    "number": 121096,
@@ -31052,7 +31052,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-12T18:16:54Z",
-   "last_activity_at": "2026-11-12T18:16:54Z"
+   "last_activity_at": "2026-11-12T21:35:59Z"
   },
   {
    "number": 125453,
