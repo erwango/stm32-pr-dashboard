@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T19:40:55Z",
- "watermark": "2026-11-13T18:40:55Z",
+ "generated_at": "2026-11-14T06:21:58Z",
+ "watermark": "2026-11-14T05:21:58Z",
  "prs": [
   {
    "number": 25085,
@@ -12811,11 +12811,11 @@
    "title": "Add support for shield x-stm32mp-msp01 ",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/106090",
    "author": "CGUSTM",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-03-23T13:24:18Z",
    "labeled_at": "2026-10-01T16:11:01Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T20:55:52Z",
+   "merged_at": "2026-11-13T20:55:52Z",
    "areas": [
     "Boards/SoCs",
     "Samples",
@@ -12823,7 +12823,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-03-26T08:03:56Z",
-   "last_activity_at": "2026-11-13T18:45:16Z"
+   "last_activity_at": "2026-11-13T20:55:53Z"
   },
   {
    "number": 106105,
@@ -26848,7 +26848,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-10T14:45:38Z"
+   "last_activity_at": "2026-11-14T00:10:49Z"
   },
   {
    "number": 120757,
@@ -27036,7 +27036,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-30T14:16:45Z",
-   "last_activity_at": "2026-10-14T10:17:04Z"
+   "last_activity_at": "2026-11-14T00:39:55Z"
   },
   {
    "number": 120838,
@@ -27252,11 +27252,11 @@
    "title": "i3c: add configurable tCAS (tcas-ns)",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/120959",
    "author": "Shreehari-AlifSemi",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-01T09:53:27Z",
    "labeled_at": "2026-10-01T09:54:55Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T20:56:06Z",
+   "merged_at": "2026-11-13T20:56:06Z",
    "areas": [
     "Devicetree",
     "Devicetree Binding",
@@ -27264,7 +27264,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-01T11:32:24Z",
-   "last_activity_at": "2026-11-13T18:45:22Z"
+   "last_activity_at": "2026-11-13T20:56:06Z"
   },
   {
    "number": 120970,
@@ -27334,7 +27334,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-05T13:48:22Z",
-   "last_activity_at": "2026-10-14T10:48:31Z"
+   "last_activity_at": "2026-11-14T00:39:46Z"
   },
   {
    "number": 121003,
@@ -27432,7 +27432,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-10-09T09:20:30Z",
-   "last_activity_at": "2026-11-13T11:28:40Z"
+   "last_activity_at": "2026-11-14T01:10:14Z"
   },
   {
    "number": 121041,
@@ -28262,7 +28262,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-14T15:05:57Z"
+   "last_activity_at": "2026-11-14T00:39:01Z"
   },
   {
    "number": 121642,
@@ -28449,7 +28449,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-10-14T15:06:14Z"
+   "last_activity_at": "2026-11-14T00:38:57Z"
   },
   {
    "number": 121696,
@@ -28772,7 +28772,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-03T07:10:53Z"
+   "last_activity_at": "2026-11-13T21:33:36Z"
   },
   {
    "number": 122148,
@@ -29546,17 +29546,17 @@
    "title": "dts: arm: st: h7: declare USB OTG HS in stm32h7.dtsi",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/123021",
    "author": "kartben",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-21T15:25:43Z",
    "labeled_at": "2026-10-29T02:15:10Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T20:56:38Z",
+   "merged_at": "2026-11-13T20:56:38Z",
    "areas": [
     "Unclassified"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-04T09:57:51Z",
-   "last_activity_at": "2026-11-13T15:09:51Z"
+   "last_activity_at": "2026-11-13T21:48:01Z"
   },
   {
    "number": 123063,
@@ -30750,7 +30750,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-07T06:45:31Z",
-   "last_activity_at": "2026-11-13T13:04:49Z"
+   "last_activity_at": "2026-11-14T05:32:08Z"
   },
   {
    "number": 124999,
@@ -30876,17 +30876,17 @@
    "title": "drivers: display: stm32_ltdc: rely on HAL macros for polarities",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125191",
    "author": "avolmat-st",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-09T14:57:45Z",
    "labeled_at": "2026-11-09T14:59:14Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-13T20:57:18Z",
+   "merged_at": "2026-11-13T20:57:18Z",
    "areas": [
     "Display"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-09T16:16:51Z",
-   "last_activity_at": "2026-11-13T10:29:52Z"
+   "last_activity_at": "2026-11-13T20:57:18Z"
   },
   {
    "number": 125216,
@@ -31192,6 +31192,41 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-13T15:10:56Z"
+  },
+  {
+   "number": 125808,
+   "title": "drivers: timer: stm32_lptim: fix uint32 overflow in sys_clock_idle_ex…",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125808",
+   "author": "Eben113",
+   "state": "open",
+   "created_at": "2026-11-14T02:19:20Z",
+   "labeled_at": "2026-11-14T02:20:52Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Timer"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-14T02:21:08Z"
+  },
+  {
+   "number": 125811,
+   "title": "drivers: serial: stm32: stop RX DMA before releasing the RX buffer",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125811",
+   "author": "ceolin",
+   "state": "open",
+   "created_at": "2026-11-14T05:54:18Z",
+   "labeled_at": "2026-11-14T05:55:58Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Tests",
+    "UART"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-14T05:56:16Z"
   }
  ]
 }
