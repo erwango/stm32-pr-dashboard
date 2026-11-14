@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T06:21:58Z",
- "watermark": "2026-11-14T05:21:58Z",
+ "generated_at": "2026-11-14T18:00:07Z",
+ "watermark": "2026-11-14T17:00:07Z",
  "prs": [
   {
    "number": 25085,
@@ -1362,7 +1362,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2025-06-09T16:27:36Z",
-   "last_activity_at": "2026-11-09T19:51:01Z"
+   "last_activity_at": "2026-11-14T17:29:14Z"
   },
   {
    "number": 91404,
@@ -18921,7 +18921,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-02T14:40:12Z",
-   "last_activity_at": "2026-11-06T15:45:12Z"
+   "last_activity_at": "2026-11-14T07:40:36Z"
   },
   {
    "number": 112113,
@@ -26506,6 +26506,26 @@
    "last_activity_at": "2026-10-03T10:49:18Z"
   },
   {
+   "number": 120478,
+   "title": "Simplify s2ram restore by saving nvic status in s2ram",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/120478",
+   "author": "msmttchr",
+   "state": "open",
+   "created_at": "2026-09-27T18:01:06Z",
+   "labeled_at": "2026-11-14T16:13:36Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Bluetooth",
+    "Bluetooth HCI",
+    "Boards/SoCs",
+    "IEEE 802.15.4"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-14T16:14:06Z"
+  },
+  {
    "number": 120482,
    "title": "soc: st: stm32: register the soc log module on C0, F1, F4, G0, L0, L1",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/120482",
@@ -28213,7 +28233,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-02T08:06:11Z",
-   "last_activity_at": "2026-11-02T08:06:54Z"
+   "last_activity_at": "2026-11-14T07:46:21Z"
   },
   {
    "number": 121590,
@@ -28557,7 +28577,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-08T19:48:45Z"
+   "last_activity_at": "2026-11-14T17:58:27Z"
   },
   {
    "number": 121832,
@@ -31227,6 +31247,96 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-14T05:56:16Z"
+  },
+  {
+   "number": 125812,
+   "title": "drivers: spi: stm32: enable the SPI only once its DMA is armed",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125812",
+   "author": "HybridChild",
+   "state": "open",
+   "created_at": "2026-11-14T08:37:34Z",
+   "labeled_at": "2026-11-14T08:39:15Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "SPI",
+    "Tests"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-14T08:39:33Z"
+  },
+  {
+   "number": 125821,
+   "title": "drivers: radio: stm32wba: add dts clock and reset information",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125821",
+   "author": "msmttchr",
+   "state": "open",
+   "created_at": "2026-11-14T12:47:04Z",
+   "labeled_at": "2026-11-14T12:48:20Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Bluetooth",
+    "Bluetooth HCI",
+    "Devicetree Binding",
+    "IEEE 802.15.4"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-14T12:54:36Z"
+  },
+  {
+   "number": 125832,
+   "title": "drivers: sensor: stm32_temp: pick STM32H743 TS_CAL2 temp by revision",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125832",
+   "author": "ouoam",
+   "state": "open",
+   "created_at": "2026-11-14T14:49:47Z",
+   "labeled_at": "2026-11-14T14:51:24Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Sensors"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-14T14:51:40Z"
+  },
+  {
+   "number": 125835,
+   "title": "soc: st: stm32: power.c: remove extra irq enable on resume",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125835",
+   "author": "msmttchr",
+   "state": "open",
+   "created_at": "2026-11-14T16:08:06Z",
+   "labeled_at": "2026-11-14T16:09:37Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-14T16:09:53Z"
+  },
+  {
+   "number": 125841,
+   "title": "drivers: dma: stm32_bdma: do not set burst lengths in the HAL helper",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125841",
+   "author": "ouoam",
+   "state": "open",
+   "created_at": "2026-11-14T16:55:58Z",
+   "labeled_at": "2026-11-14T16:57:31Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "DMA",
+    "Tests"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-14T16:57:47Z"
   }
  ]
 }
