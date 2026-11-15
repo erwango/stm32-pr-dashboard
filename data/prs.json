@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T22:23:38Z",
- "watermark": "2026-11-14T21:23:38Z",
+ "generated_at": "2026-11-15T06:30:05Z",
+ "watermark": "2026-11-15T05:30:05Z",
  "prs": [
   {
    "number": 25085,
@@ -22420,7 +22420,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-08-13T09:12:50Z",
-   "last_activity_at": "2026-11-14T22:17:34Z"
+   "last_activity_at": "2026-11-14T22:43:56Z"
   },
   {
    "number": 116126,
@@ -24827,7 +24827,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-14T09:48:31Z",
-   "last_activity_at": "2026-10-15T06:51:11Z"
+   "last_activity_at": "2026-11-15T00:45:15Z"
   },
   {
    "number": 118909,
@@ -31342,6 +31342,57 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-14T16:57:47Z"
+  },
+  {
+   "number": 125859,
+   "title": "drivers: spi: stm32: return the DMA load error",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125859",
+   "author": "ouoam",
+   "state": "open",
+   "created_at": "2026-11-15T02:31:10Z",
+   "labeled_at": "2026-11-15T02:32:47Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "SPI"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-15T02:33:06Z"
+  },
+  {
+   "number": 125861,
+   "title": "drivers: dma: stm32: release a never started channel on stop",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125861",
+   "author": "ouoam",
+   "state": "open",
+   "created_at": "2026-11-15T03:44:33Z",
+   "labeled_at": "2026-11-15T03:46:12Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "DMA"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-15T03:46:29Z"
+  },
+  {
+   "number": 125863,
+   "title": "drivers: ipm: stm32: honor IPCC send wait semantics",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125863",
+   "author": "IthaiT",
+   "state": "open",
+   "created_at": "2026-11-15T04:16:33Z",
+   "labeled_at": "2026-11-15T04:18:08Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "IPM"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-15T04:18:24Z"
   }
  ]
 }
