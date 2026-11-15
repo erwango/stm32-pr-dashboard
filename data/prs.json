@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T06:30:05Z",
- "watermark": "2026-11-15T05:30:05Z",
+ "generated_at": "2026-11-15T18:50:38Z",
+ "watermark": "2026-11-15T17:50:38Z",
  "prs": [
   {
    "number": 25085,
@@ -27508,7 +27508,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-10T10:33:14Z",
-   "last_activity_at": "2026-11-13T15:15:28Z"
+   "last_activity_at": "2026-11-15T09:04:36Z"
   },
   {
    "number": 121096,
@@ -27902,11 +27902,12 @@
    "closed_at": null,
    "merged_at": null,
    "areas": [
+    "Boards/SoCs",
     "Clock Control"
    ],
-   "review_decision": "APPROVED",
+   "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-06T07:01:34Z",
-   "last_activity_at": "2026-11-13T14:24:18Z"
+   "last_activity_at": "2026-11-15T12:37:14Z"
   },
   {
    "number": 121334,
@@ -27959,7 +27960,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-09T00:43:39Z"
+   "last_activity_at": "2026-11-15T12:34:05Z"
   },
   {
    "number": 121338,
@@ -27981,7 +27982,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-06T20:18:23Z",
-   "last_activity_at": "2026-10-20T11:19:43Z"
+   "last_activity_at": "2026-11-15T12:34:07Z"
   },
   {
    "number": 121341,
@@ -29200,24 +29201,24 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-22T07:15:25Z",
-   "last_activity_at": "2026-10-23T13:49:07Z"
+   "last_activity_at": "2026-11-15T08:12:30Z"
   },
   {
    "number": 122560,
    "title": "dts: arm: st: h7, h7rs: fix the SAI1 kernel clock selector",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/122560",
    "author": "wiltshiretom",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-10-17T20:04:25Z",
    "labeled_at": "2026-10-17T20:13:58Z",
-   "closed_at": null,
+   "closed_at": "2026-11-15T08:13:02Z",
    "merged_at": null,
    "areas": [
     "Unclassified"
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-19T13:33:08Z",
-   "last_activity_at": "2026-11-10T10:01:41Z"
+   "last_activity_at": "2026-11-15T08:13:02Z"
   },
   {
    "number": 122595,
@@ -30070,7 +30071,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-01T15:03:49Z",
-   "last_activity_at": "2026-11-12T10:16:12Z"
+   "last_activity_at": "2026-11-15T17:38:32Z"
   },
   {
    "number": 124044,
@@ -30792,7 +30793,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-10T16:26:41Z",
-   "last_activity_at": "2026-11-11T07:55:14Z"
+   "last_activity_at": "2026-11-15T11:35:20Z"
   },
   {
    "number": 125010,
@@ -31215,8 +31216,8 @@
     "USB"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-13T15:10:56Z"
+   "first_review_at": "2026-11-15T10:42:20Z",
+   "last_activity_at": "2026-11-15T10:42:20Z"
   },
   {
    "number": 125808,
@@ -31323,7 +31324,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-14T16:09:53Z"
+   "last_activity_at": "2026-11-15T14:29:55Z"
   },
   {
    "number": 125841,
@@ -31393,6 +31394,23 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-15T04:18:24Z"
+  },
+  {
+   "number": 125878,
+   "title": "drivers: spi: stm32: time the DMA wait from the length on every series",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125878",
+   "author": "ouoam",
+   "state": "open",
+   "created_at": "2026-11-15T06:55:55Z",
+   "labeled_at": "2026-11-15T06:57:21Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "SPI"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-15T06:57:36Z"
   }
  ]
 }
