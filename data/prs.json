@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T18:50:38Z",
- "watermark": "2026-11-15T17:50:38Z",
+ "generated_at": "2026-11-16T06:27:47Z",
+ "watermark": "2026-11-16T05:27:47Z",
  "prs": [
   {
    "number": 25085,
@@ -27960,7 +27960,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-15T12:34:05Z"
+   "last_activity_at": "2026-11-16T00:46:36Z"
   },
   {
    "number": 121338,
@@ -30071,7 +30071,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-01T15:03:49Z",
-   "last_activity_at": "2026-11-15T17:38:32Z"
+   "last_activity_at": "2026-11-15T20:36:45Z"
   },
   {
    "number": 124044,
@@ -30210,11 +30210,12 @@
    "closed_at": null,
    "merged_at": null,
    "areas": [
+    "Tests",
     "UART"
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-02T16:04:41Z",
-   "last_activity_at": "2026-11-05T09:44:27Z"
+   "last_activity_at": "2026-11-16T04:21:28Z"
   },
   {
    "number": 124174,
@@ -31086,7 +31087,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-12T09:49:22Z"
+   "last_activity_at": "2026-11-16T03:09:20Z"
   },
   {
    "number": 125396,
@@ -31376,7 +31377,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-15T03:46:29Z"
+   "last_activity_at": "2026-11-16T03:18:38Z"
   },
   {
    "number": 125863,
@@ -31411,6 +31412,23 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-15T06:57:36Z"
+  },
+  {
+   "number": 125918,
+   "title": "drivers: spi: stm32: optimize full duplex polling transfers not using fifo",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125918",
+   "author": "theadib",
+   "state": "open",
+   "created_at": "2026-11-15T23:16:49Z",
+   "labeled_at": "2026-11-15T23:18:13Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "SPI"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-15T23:25:01Z"
   }
  ]
 }
