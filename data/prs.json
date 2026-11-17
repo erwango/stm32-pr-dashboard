@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T22:00:29Z",
- "watermark": "2026-11-16T21:00:29Z",
+ "generated_at": "2026-11-17T07:54:34Z",
+ "watermark": "2026-11-17T06:54:34Z",
  "prs": [
   {
    "number": 25085,
@@ -11621,6 +11621,30 @@
    "review_decision": "APPROVED",
    "first_review_at": "2026-03-09T07:39:10Z",
    "last_activity_at": "2026-03-11T00:59:19Z"
+  },
+  {
+   "number": 105093,
+   "title": "Add cpu address mapping check to bindings",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/105093",
+   "author": "kylebonnici",
+   "state": "open",
+   "created_at": "2026-03-08T15:06:26Z",
+   "labeled_at": "2026-11-17T01:49:20Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs",
+    "Bootloader",
+    "Devicetree",
+    "Devicetree Binding",
+    "Flash",
+    "MCUBoot",
+    "SPI",
+    "Tests"
+   ],
+   "review_decision": "CHANGES_REQUESTED",
+   "first_review_at": "2026-03-18T17:14:24Z",
+   "last_activity_at": "2026-11-17T01:49:51Z"
   },
   {
    "number": 105097,
@@ -27806,9 +27830,9 @@
    "areas": [
     "DMA"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-16T15:54:48Z"
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-17T07:44:43Z",
+   "last_activity_at": "2026-11-17T07:46:55Z"
   },
   {
    "number": 121315,
@@ -28042,10 +28066,10 @@
    "title": "video: ov2640: many fixes",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/121400",
    "author": "josuah",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-10-06T01:24:59Z",
    "labeled_at": "2026-10-06T01:44:10Z",
-   "closed_at": null,
+   "closed_at": "2026-11-17T00:41:11Z",
    "merged_at": null,
    "areas": [
     "Boards/SoCs",
@@ -28061,7 +28085,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-06T21:15:37Z",
-   "last_activity_at": "2026-11-10T00:38:15Z"
+   "last_activity_at": "2026-11-17T00:41:11Z"
   },
   {
    "number": 121410,
@@ -28258,7 +28282,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-02T08:06:11Z",
-   "last_activity_at": "2026-11-16T16:21:31Z"
+   "last_activity_at": "2026-11-16T23:55:15Z"
   },
   {
    "number": 121590,
@@ -30090,7 +30114,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-01T15:03:49Z",
-   "last_activity_at": "2026-11-16T21:54:28Z"
+   "last_activity_at": "2026-11-16T23:41:57Z"
   },
   {
    "number": 124044,
@@ -31054,7 +31078,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-13T08:56:03Z",
-   "last_activity_at": "2026-11-16T08:53:14Z"
+   "last_activity_at": "2026-11-17T07:01:40Z"
   },
   {
    "number": 125365,
@@ -31315,7 +31339,7 @@
   },
   {
    "number": 125832,
-   "title": "drivers: sensor: stm32_temp: pick STM32H743 TS_CAL2 temp by revision",
+   "title": "drivers: sensor: stm32_temp: H7 TS_CAL2 at 130 °C, by revision on H743",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125832",
    "author": "ouoam",
    "state": "open",
@@ -31328,7 +31352,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-16T10:14:08Z",
-   "last_activity_at": "2026-11-16T10:14:32Z"
+   "last_activity_at": "2026-11-17T07:06:47Z"
   },
   {
    "number": 125835,
@@ -31363,7 +31387,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-16T15:16:06Z",
-   "last_activity_at": "2026-11-16T15:16:06Z"
+   "last_activity_at": "2026-11-17T03:25:44Z"
   },
   {
    "number": 125859,
@@ -31431,7 +31455,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-16T07:45:29Z",
-   "last_activity_at": "2026-11-16T12:42:55Z"
+   "last_activity_at": "2026-11-17T03:52:29Z"
   },
   {
    "number": 125918,
@@ -31448,7 +31472,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-16T20:33:18Z"
+   "last_activity_at": "2026-11-17T07:43:49Z"
   },
   {
    "number": 125951,
@@ -31472,17 +31496,17 @@
    "title": "dts: arm: st: h7: dual-core parts store TS_CAL2 at 130 °C",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125981",
    "author": "ouoam",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-11-16T14:08:06Z",
    "labeled_at": "2026-11-16T14:09:52Z",
-   "closed_at": null,
+   "closed_at": "2026-11-17T00:46:50Z",
    "merged_at": null,
    "areas": [
     "Unclassified"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-16T15:06:34Z",
-   "last_activity_at": "2026-11-16T15:15:12Z"
+   "last_activity_at": "2026-11-17T00:46:48Z"
   },
   {
    "number": 125991,
@@ -31558,9 +31582,9 @@
    "areas": [
     "Video"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-16T21:31:23Z"
+   "review_decision": "CHANGES_REQUESTED",
+   "first_review_at": "2026-11-17T07:44:57Z",
+   "last_activity_at": "2026-11-17T07:44:58Z"
   }
  ]
 }
