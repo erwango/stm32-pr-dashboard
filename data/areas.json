@@ -78,6 +78,7 @@
     "pulse io",
     "pwm",
     "regulators",
+    "relay",
     "reset",
     "retained memory",
     "rtc",
