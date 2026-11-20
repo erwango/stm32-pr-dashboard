@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-19T20:36:26Z",
- "watermark": "2026-11-19T19:36:26Z",
+ "generated_at": "2026-11-20T07:14:27Z",
+ "watermark": "2026-11-20T06:14:27Z",
  "prs": [
   {
    "number": 25085,
@@ -17073,7 +17073,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-06-03T13:11:08Z",
-   "last_activity_at": "2026-11-18T09:18:16Z"
+   "last_activity_at": "2026-11-20T05:41:25Z"
   },
   {
    "number": 110429,
@@ -26343,9 +26343,9 @@
     "Tests",
     "Timer"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-09-25T11:27:34Z",
-   "last_activity_at": "2026-11-18T13:02:46Z"
+   "last_activity_at": "2026-11-20T00:52:18Z"
   },
   {
    "number": 120355,
@@ -29010,7 +29010,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-26T16:37:37Z",
-   "last_activity_at": "2026-10-29T06:09:56Z"
+   "last_activity_at": "2026-11-20T06:14:02Z"
   },
   {
    "number": 122293,
@@ -30859,7 +30859,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-07T06:45:31Z",
-   "last_activity_at": "2026-11-18T17:09:27Z"
+   "last_activity_at": "2026-11-20T06:20:40Z"
   },
   {
    "number": 124999,
@@ -31566,7 +31566,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-16T20:04:30Z",
-   "last_activity_at": "2026-11-19T20:36:06Z"
+   "last_activity_at": "2026-11-19T20:38:21Z"
   },
   {
    "number": 126003,
@@ -31942,7 +31942,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-19T15:49:54Z",
-   "last_activity_at": "2026-11-19T16:06:09Z"
+   "last_activity_at": "2026-11-20T06:27:17Z"
   },
   {
    "number": 126457,
@@ -31981,6 +31981,23 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-19T16:18:08Z",
    "last_activity_at": "2026-11-19T16:18:09Z"
+  },
+  {
+   "number": 126514,
+   "title": "soc: st: stm32: f7x: Enable cache management by default",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126514",
+   "author": "shenki",
+   "state": "open",
+   "created_at": "2026-11-20T05:49:20Z",
+   "labeled_at": "2026-11-20T05:50:48Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-20T05:51:05Z"
   }
  ]
 }
