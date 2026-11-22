@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-21T19:14:49Z",
- "watermark": "2026-11-21T18:14:49Z",
+ "generated_at": "2026-11-22T06:46:59Z",
+ "watermark": "2026-11-22T05:46:59Z",
  "prs": [
   {
    "number": 25085,
@@ -27521,7 +27521,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-15T13:02:38Z",
-   "last_activity_at": "2026-11-05T10:52:30Z"
+   "last_activity_at": "2026-11-22T02:15:51Z"
   },
   {
    "number": 121054,
@@ -28303,7 +28303,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-02T08:06:11Z",
-   "last_activity_at": "2026-11-21T18:59:58Z"
+   "last_activity_at": "2026-11-21T22:58:50Z"
   },
   {
    "number": 121590,
@@ -29367,7 +29367,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-09T02:22:09Z",
-   "last_activity_at": "2026-11-21T11:54:49Z"
+   "last_activity_at": "2026-11-21T20:07:47Z"
   },
   {
    "number": 122755,
@@ -29440,7 +29440,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-20T13:20:05Z",
-   "last_activity_at": "2026-10-22T09:44:09Z"
+   "last_activity_at": "2026-11-22T00:43:21Z"
   },
   {
    "number": 122834,
@@ -31466,7 +31466,7 @@
   },
   {
    "number": 125863,
-   "title": "drivers: ipm: stm32: honor IPCC send wait semantics",
+   "title": "drivers: ipm: stm32: avoid waiting in nonblocking IPCC sends",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/125863",
    "author": "IthaiT",
    "state": "open",
@@ -31479,7 +31479,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-19T10:02:14Z",
-   "last_activity_at": "2026-11-19T10:02:14Z"
+   "last_activity_at": "2026-11-22T03:57:30Z"
   },
   {
    "number": 125878,
@@ -31513,7 +31513,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-18T08:23:58Z",
-   "last_activity_at": "2026-11-21T10:06:15Z"
+   "last_activity_at": "2026-11-21T23:19:23Z"
   },
   {
    "number": 125951,
