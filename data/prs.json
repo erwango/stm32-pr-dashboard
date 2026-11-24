@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T23:53:07Z",
- "watermark": "2026-11-23T22:53:07Z",
+ "generated_at": "2026-11-24T09:53:21Z",
+ "watermark": "2026-11-24T08:53:21Z",
  "prs": [
   {
    "number": 25085,
@@ -1362,7 +1362,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2025-06-09T16:27:36Z",
-   "last_activity_at": "2026-11-23T20:14:50Z"
+   "last_activity_at": "2026-11-24T07:50:38Z"
   },
   {
    "number": 91404,
@@ -19831,7 +19831,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-07-08T14:50:04Z",
-   "last_activity_at": "2026-11-17T08:24:50Z"
+   "last_activity_at": "2026-11-24T08:29:28Z"
   },
   {
    "number": 112858,
@@ -22444,7 +22444,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-08-13T09:12:50Z",
-   "last_activity_at": "2026-11-23T20:40:56Z"
+   "last_activity_at": "2026-11-24T08:26:27Z"
   },
   {
    "number": 116126,
@@ -26070,7 +26070,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-23T15:26:33Z",
-   "last_activity_at": "2026-10-24T18:10:20Z"
+   "last_activity_at": "2026-11-24T00:39:05Z"
   },
   {
    "number": 120105,
@@ -27238,7 +27238,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-01T13:31:56Z",
-   "last_activity_at": "2026-10-24T10:10:36Z"
+   "last_activity_at": "2026-11-24T00:38:43Z"
   },
   {
    "number": 120939,
@@ -28124,7 +28124,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-16T07:22:58Z",
-   "last_activity_at": "2026-11-23T08:46:20Z"
+   "last_activity_at": "2026-11-24T08:58:07Z"
   },
   {
    "number": 121454,
@@ -30112,9 +30112,9 @@
     "Boards/SoCs",
     "Input"
    ],
-   "review_decision": "CHANGES_REQUESTED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-10-30T08:39:14Z",
-   "last_activity_at": "2026-11-23T15:18:13Z"
+   "last_activity_at": "2026-11-24T09:30:37Z"
   },
   {
    "number": 123977,
@@ -31478,11 +31478,14 @@
    "closed_at": null,
    "merged_at": null,
    "areas": [
-    "IPM"
+    "IPC",
+    "IPM",
+    "Open AMP",
+    "Samples"
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-19T10:02:14Z",
-   "last_activity_at": "2026-11-23T17:51:18Z"
+   "last_activity_at": "2026-11-24T02:45:42Z"
   },
   {
    "number": 125878,
@@ -31571,7 +31574,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-16T20:04:30Z",
-   "last_activity_at": "2026-11-23T17:04:50Z"
+   "last_activity_at": "2026-11-24T09:23:37Z"
   },
   {
    "number": 126001,
@@ -31789,7 +31792,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-17T18:57:05Z",
-   "last_activity_at": "2026-11-23T11:23:38Z"
+   "last_activity_at": "2026-11-24T09:33:15Z"
   },
   {
    "number": 126148,
@@ -31986,7 +31989,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-23T10:18:55Z",
-   "last_activity_at": "2026-11-23T14:00:40Z"
+   "last_activity_at": "2026-11-24T07:55:46Z"
   },
   {
    "number": 126459,
@@ -32173,9 +32176,9 @@
    "areas": [
     "Boards/SoCs"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-23T07:59:05Z",
-   "last_activity_at": "2026-11-23T20:38:50Z"
+   "last_activity_at": "2026-11-24T09:25:27Z"
   },
   {
    "number": 126644,
@@ -32210,7 +32213,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-23T08:44:26Z",
-   "last_activity_at": "2026-11-23T22:45:22Z"
+   "last_activity_at": "2026-11-24T06:49:37Z"
   },
   {
    "number": 126754,
@@ -32227,7 +32230,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-23T08:00:41Z",
-   "last_activity_at": "2026-11-23T23:52:11Z"
+   "last_activity_at": "2026-11-24T08:46:44Z"
   },
   {
    "number": 126807,
@@ -32269,10 +32272,10 @@
    "title": "[Backport v4.5-branch] scripts: west: runners: dfu-util: fix multi-image flashing with DfuSe",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126832",
    "author": "mrk-its",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-11-23T18:39:41Z",
    "labeled_at": "2026-11-23T18:41:19Z",
-   "closed_at": null,
+   "closed_at": "2026-11-24T07:24:36Z",
    "merged_at": null,
    "areas": [
     "Boards/SoCs",
@@ -32280,7 +32283,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-23T21:00:13Z"
+   "last_activity_at": "2026-11-24T07:24:37Z"
   },
   {
    "number": 126844,
@@ -32316,6 +32319,41 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-23T23:00:32Z"
+  },
+  {
+   "number": 126872,
+   "title": "[Backport v4.5-branch] scripts: west: runners: dfu-util: fix multi-image flashing with DfuSe",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126872",
+   "author": "github-actions",
+   "state": "open",
+   "created_at": "2026-11-24T06:49:10Z",
+   "labeled_at": "2026-11-24T08:30:34Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs",
+    "West"
+   ],
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-24T08:29:39Z",
+   "last_activity_at": "2026-11-24T08:32:00Z"
+  },
+  {
+   "number": 126887,
+   "title": "drivers: video: stm32_venc: reuse free EWL chunk slots",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126887",
+   "author": "kristkis",
+   "state": "open",
+   "created_at": "2026-11-24T09:19:30Z",
+   "labeled_at": "2026-11-24T09:20:57Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Video"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-24T09:26:49Z"
   }
  ]
 }
