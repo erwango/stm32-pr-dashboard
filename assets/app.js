@@ -19,8 +19,8 @@ const AGE_BUCKETS = [
 ];
 const REVIEW_STATES = [
   ["awaiting review", "awaiting"],
-  ["reviewed, missing approval", "reviewed"],
   ["changes requested", "changes"],
+  ["reviewed, missing approval", "reviewed"],
   ["approved, not merged", "approved"],
 ];
 // Boards/SoCs, Clock Control and Flash are broad labels that often ride along a more specific
@@ -308,7 +308,7 @@ function renderAreaChart(stats) {
   });
 }
 
-// awaiting, reviewed, changes requested (the one that needs attention), approved: shared
+// Colors follow REVIEW_STATES' order (awaiting, changes requested, reviewed, approved): shared
 // between the age and review-state charts so a state always carries the same color.
 function reviewStateColors() {
   return [css("--accent"), css("--neutral"), css("--highlight"), css("--sand")];
