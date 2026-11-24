@@ -49,7 +49,11 @@ Audience: everyone (public repo, public page).
   labelled, i.e. when it is ready for review.
 - Area = each `area: *` label on the PR. A PR with three area labels counts in
   all three, so the sum over areas exceeds the PR count. A PR with no `area:`
-  label is shown as `Unclassified`.
+  label is shown as `Unclassified`. Exception, marked `(*)` in the
+  backlog-by-area chart: Boards/SoCs, Clock Control and Flash only count a PR
+  that carries no other hardware area label; a PR carrying several of these
+  three and nothing else is kept under only the most specific one, in this
+  broadest-first priority order: Boards/SoCs, Clock Control, Flash.
 - The area chart only shows hardware labels (Boards/SoCs and peripheral
   drivers); the other labels are not charted. See "Hardware labels".
 - Age is measured from the `platform: STM32` labeling event ("waiting for ST
@@ -208,6 +212,10 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
     review-state chart, so an area's backlog composition is visible without
     cross-referencing it; the selected area is marked with a border instead of
     a background swap, so the selection never collides with a state color.
+    Boards/SoCs, Clock Control and Flash are starred (`(*)` in the bar's
+    label) and carry a tooltip explaining the exclusivity rule above; the
+    table filter applies the same rule, so clicking a starred bar shows
+    exactly the PRs counted in it.
   - Review queue comment (per-area copy box with a copy button).
   - Open PRs, oldest first: number, title, areas, age, review state.
 - Table filter: a label selector above the PR table (kept in sync with the area

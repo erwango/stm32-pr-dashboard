@@ -23,6 +23,13 @@ const REVIEW_STATES = [
   ["changes requested", "changes"],
   ["approved, not merged", "approved"],
 ];
+// Boards/SoCs, Clock Control and Flash are broad labels that often ride along a more specific
+// peripheral-driver label. In the backlog-by-area chart and its table filter, a PR carrying one
+// of these plus a real peripheral-driver label only counts under that driver, not here. A PR
+// carrying several of these three and nothing else keeps only the most specific one, in this
+// priority order (broadest first): Boards/SoCs, then Clock Control, then Flash.
+const EXCLUSIVE_AREAS = ["Boards/SoCs", "Clock Control", "Flash"];
+const EXCLUSIVE_AREA_SET = new Set(EXCLUSIVE_AREAS);
 
 const AREA_ROW_PX = 22;
 const UNCLASSIFIED_AREA = "Unclassified";
@@ -105,6 +112,9 @@ function areaStats(open) {
   const byArea = new Map();
   for (const pr of open) {
     for (const area of pr.areas) {
+      if (!prMatchesArea(pr, area)) {
+        continue;
+      }
       if (!byArea.has(area)) {
         // states counts each review state for the area, so the backlog chart can stack by it.
         byArea.set(area, { ages: [], states: Object.fromEntries(REVIEW_STATES.map(([, key]) => [key, 0])) });
@@ -123,6 +133,26 @@ function areaStats(open) {
  * Without it, every label counts as hardware and the chart is unrestricted. */
 function isHardwareArea(area) {
   return state.hardware === null || state.hardware.has(area.toLowerCase());
+}
+
+/* Among a PR's hardware areas that are in EXCLUSIVE_AREAS, the one counted: the most specific
+ * (last in priority order), but only if no other, non-exclusive hardware area is present (that
+ * always wins outright). Returns null when no exclusive area should count for this PR. */
+function exclusiveWinner(pr) {
+  const hardwareAreas = pr.areas.filter(isHardwareArea);
+  if (hardwareAreas.some((area) => !EXCLUSIVE_AREA_SET.has(area))) {
+    return null;
+  }
+  const present = EXCLUSIVE_AREAS.filter((area) => hardwareAreas.includes(area));
+  return present.length > 0 ? present[present.length - 1] : null;
+}
+
+/* Shared by the backlog-by-area counts and its table filter, so both always agree. */
+function prMatchesArea(pr, area) {
+  if (!pr.areas.includes(area)) {
+    return false;
+  }
+  return !EXCLUSIVE_AREA_SET.has(area) || exclusiveWinner(pr) === area;
 }
 
 function renderStats(open) {
@@ -237,13 +267,26 @@ function renderAreaChart(stats) {
   makeChart("chart-areas", {
     type: "bar",
     data: {
-      labels: stats.map((s) => s.area),
+      // A star marks the exclusive areas (see EXCLUSIVE_AREAS); the tooltip explains it on hover.
+      labels: stats.map((s) => (EXCLUSIVE_AREA_SET.has(s.area) ? `${s.area} (*)` : s.area)),
       datasets,
     },
     options: {
       indexAxis: "y",
       maintainAspectRatio: false,
-      plugins: { legend: { position: "bottom" } },
+      plugins: {
+        legend: { position: "bottom" },
+        tooltip: {
+          callbacks: {
+            footer: (items) => {
+              const area = stats[items[0]?.dataIndex]?.area;
+              return area && EXCLUSIVE_AREA_SET.has(area)
+                ? ["Excludes PRs that also carry another hardware-area label."]
+                : [];
+            },
+          },
+        },
+      },
       scales: {
         x: { stacked: true, beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: "Open PRs carrying the label" } },
         y: { stacked: true, ticks: { autoSkip: false }, title: { display: true, text: "area: label" } },
@@ -330,7 +373,7 @@ function renderTable() {
   const body = document.getElementById("prs");
   body.replaceChildren();
   const rows = state.open
-    .filter((pr) => !state.areaFilter || pr.areas.includes(state.areaFilter))
+    .filter((pr) => !state.areaFilter || prMatchesArea(pr, state.areaFilter))
     .sort((a, b) => Date.parse(a.labeled_at) - Date.parse(b.labeled_at));
 
   for (const pr of rows) {

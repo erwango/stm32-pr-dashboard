@@ -59,7 +59,10 @@ SPDX-License-Identifier: Apache-2.0
       <h3>Backlog by area</h3>
       <p class="hint">Number of open PRs carrying each hardware <code>area:</code> label: Boards/SoCs
         and the peripheral drivers (SPI, Flash, Clock Control, ...). A PR with several labels counts
-        in each of them. Click a label or its bar to filter the table below by that label; click it
+        in each of them, except for Boards/SoCs, Clock Control and Flash (marked <code>(*)</code>):
+        a PR that also carries a specific peripheral-driver label only counts under that driver, and
+        a PR carrying only several of these three keeps just the most specific one (hover a starred
+        bar for details). Click a label or its bar to filter the table below by that label; click it
         again to clear.</p>
       <div class="chart" id="chart-areas-box"><canvas id="chart-areas" role="img" aria-label="Open PRs per hardware area label"></canvas></div>
     </section>
@@ -115,7 +118,10 @@ SPDX-License-Identifier: Apache-2.0
           ready for review, so a PR enters this dataset when it is labelled.</li>
         <li>Area = each <code>area:</code> label on the PR. A PR with three area labels counts in all
           three, so the sum over areas exceeds the PR count. A PR without an <code>area:</code> label
-          is shown as <em>Unclassified</em>.</li>
+          is shown as <em>Unclassified</em>. Exception, marked <code>(*)</code> in the backlog-by-area
+          chart: Boards/SoCs, Clock Control and Flash only count a PR that carries no other hardware
+          area label; a PR carrying several of these three and nothing else is kept under only the
+          most specific one, in this broadest-first order: Boards/SoCs, Clock Control, Flash.</li>
         <li>The area chart only shows hardware labels: Boards/SoCs and the labels of peripheral
           drivers. They are derived from upstream <code>MAINTAINERS.yml</code> at each collection:
           a label is hardware when at least half of the areas carrying it are driver areas
