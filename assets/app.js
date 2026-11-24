@@ -106,13 +106,16 @@ function areaStats(open) {
   for (const pr of open) {
     for (const area of pr.areas) {
       if (!byArea.has(area)) {
-        byArea.set(area, []);
+        // states counts each review state for the area, so the backlog chart can stack by it.
+        byArea.set(area, { ages: [], states: Object.fromEntries(REVIEW_STATES.map(([, key]) => [key, 0])) });
       }
-      byArea.get(area).push(ageDays(pr));
+      const entry = byArea.get(area);
+      entry.ages.push(ageDays(pr));
+      entry.states[reviewState(pr)] += 1;
     }
   }
   return [...byArea.entries()]
-    .map(([area, ages]) => ({ area, count: ages.length }))
+    .map(([area, { ages, states }]) => ({ area, count: ages.length, states }))
     .sort((a, b) => b.count - a.count || a.area.localeCompare(b.area));
 }
 
@@ -218,28 +221,32 @@ function renderFlowChart(rows) {
 
 function renderAreaChart(stats) {
   state.areaStats = stats;
-  // One fixed-height row per label, so every label is drawn and none is skipped.
-  document.getElementById("chart-areas-box").style.height = `${stats.length * AREA_ROW_PX + 60}px`;
+  // One fixed-height row per label, plus room for the review-state legend, so every
+  // label is drawn and none is skipped.
+  document.getElementById("chart-areas-box").style.height = `${stats.length * AREA_ROW_PX + 90}px`;
+  const colors = reviewStateColors();
+  // Stacked per review state, same labels/colors/legend as the review-state chart.
+  // Selection is shown as a border (not a background swap) so it never clashes with a state color.
+  const datasets = REVIEW_STATES.map(([label, key], index) => ({
+    label,
+    data: stats.map((s) => s.states[key]),
+    backgroundColor: colors[index],
+    borderColor: css("--fg"),
+    borderWidth: stats.map((s) => (s.area === state.areaFilter ? 2 : 0)),
+  }));
   makeChart("chart-areas", {
     type: "bar",
     data: {
       labels: stats.map((s) => s.area),
-      datasets: [{
-        label: "Open PRs",
-        data: stats.map((s) => s.count),
-        backgroundColor: stats.map((s) =>
-          s.area === state.areaFilter ? css("--highlight") : css("--accent")),
-        borderColor: css("--accent"),
-        borderWidth: stats.map((s) => (s.area === state.areaFilter ? 2 : 0)),
-      }],
+      datasets,
     },
     options: {
       indexAxis: "y",
       maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
+      plugins: { legend: { position: "bottom" } },
       scales: {
-        x: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: "Open PRs carrying the label" } },
-        y: { ticks: { autoSkip: false }, title: { display: true, text: "area: label" } },
+        x: { stacked: true, beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: "Open PRs carrying the label" } },
+        y: { stacked: true, ticks: { autoSkip: false }, title: { display: true, text: "area: label" } },
       },
       // A click anywhere on a row (bar or label band) selects that label.
       onClick: (event, _elements, chart) => {
@@ -258,22 +265,37 @@ function renderAreaChart(stats) {
   });
 }
 
+// awaiting, reviewed, changes requested (the one that needs attention), approved: shared
+// between the age and review-state charts so a state always carries the same color.
+function reviewStateColors() {
+  return [css("--accent"), css("--neutral"), css("--highlight"), css("--sand")];
+}
+
 function renderAgeChart(open) {
-  const counts = AGE_BUCKETS.map(([, low, high]) =>
-    open.filter((pr) => {
-      const age = Math.floor(ageDays(pr));
-      return age >= low && age <= high;
-    }).length);
+  const colors = reviewStateColors();
+  // Stacked per review state, same labels/colors/legend as the review-state chart.
+  const datasets = REVIEW_STATES.map(([label, key], index) => ({
+    label,
+    backgroundColor: colors[index],
+    data: AGE_BUCKETS.map(([, low, high]) =>
+      open.filter((pr) => {
+        const age = Math.floor(ageDays(pr));
+        return age >= low && age <= high && reviewState(pr) === key;
+      }).length),
+  }));
   makeChart("chart-age", {
     type: "bar",
     data: {
       labels: AGE_BUCKETS.map(([label]) => `${label} d`),
-      datasets: [{ label: "Open PRs", data: counts, backgroundColor: css("--accent") }],
+      datasets,
     },
     options: {
       maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
-      scales: { y: { beginAtZero: true, ticks: { precision: 0 } } },
+      plugins: { legend: { position: "bottom" } },
+      scales: {
+        x: { stacked: true },
+        y: { stacked: true, beginAtZero: true, ticks: { precision: 0 } },
+      },
     },
   });
 }
@@ -286,8 +308,7 @@ function renderReviewChart(open) {
       labels: REVIEW_STATES.map(([label]) => label),
       datasets: [{
         data: counts,
-        // awaiting, reviewed, changes requested (the one that needs attention), approved
-        backgroundColor: [css("--accent"), css("--neutral"), css("--highlight"), css("--sand")],
+        backgroundColor: reviewStateColors(),
         borderColor: css("--bg"),
       }],
     },

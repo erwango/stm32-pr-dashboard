@@ -196,11 +196,18 @@ Static `index.html` plus Chart.js reading the JSON. No build step.
 - Open STM32 PR count over 12 months (headline); opened vs merged per week.
 - Age distribution; review-state split (awaiting review / changes requested /
   approved-not-merged); stale = no activity for more than 30 days. These cover
-  all PRs and sit above the label-dependent part.
+  all PRs and sit above the label-dependent part. The age-distribution bars are
+  stacked by review state, sharing the same four colors and legend as the
+  review-state chart next to it, so a bucket's composition is visible without
+  cross-referencing the other chart.
 - A titled group, "Drill down by label", holds everything that follows the
   selected label, in this order:
   - Backlog by area: horizontal bars sorted by count, annotated with median age;
-    click filters the table and reveals that area's snippet.
+    click filters the table and reveals that area's snippet. Each bar is stacked
+    by review state, sharing the same four colors and legend as the
+    review-state chart, so an area's backlog composition is visible without
+    cross-referencing it; the selected area is marked with a border instead of
+    a background swap, so the selection never collides with a state color.
   - Review queue comment (per-area copy box with a copy button).
   - Open PRs, oldest first: number, title, areas, age, review state.
 - Table filter: a label selector above the PR table (kept in sync with the area
