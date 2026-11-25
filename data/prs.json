@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-24T22:25:54Z",
- "watermark": "2026-11-24T21:25:54Z",
+ "generated_at": "2026-11-25T08:32:57Z",
+ "watermark": "2026-11-25T07:32:57Z",
  "prs": [
   {
    "number": 25085,
@@ -14791,7 +14791,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-04-29T15:19:02Z",
-   "last_activity_at": "2026-11-24T14:02:00Z"
+   "last_activity_at": "2026-11-25T06:36:09Z"
   },
   {
    "number": 108183,
@@ -18940,12 +18940,11 @@
    "areas": [
     "Devicetree",
     "Devicetree Binding",
-    "Documentation Infrastructure",
-    "MSPI"
+    "Documentation Infrastructure"
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-02T14:40:12Z",
-   "last_activity_at": "2026-11-14T07:40:36Z"
+   "last_activity_at": "2026-11-25T07:54:48Z"
   },
   {
    "number": 112113,
@@ -22084,7 +22083,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-08-10T05:47:22Z",
-   "last_activity_at": "2026-11-23T08:47:09Z"
+   "last_activity_at": "2026-11-25T07:46:33Z"
   },
   {
    "number": 115583,
@@ -27523,7 +27522,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-15T13:02:38Z",
-   "last_activity_at": "2026-11-24T20:00:29Z"
+   "last_activity_at": "2026-11-24T22:30:18Z"
   },
   {
    "number": 121054,
@@ -28124,7 +28123,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-16T07:22:58Z",
-   "last_activity_at": "2026-11-24T15:44:41Z"
+   "last_activity_at": "2026-11-25T06:47:06Z"
   },
   {
    "number": 121454,
@@ -28144,7 +28143,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-06T20:17:03Z",
-   "last_activity_at": "2026-11-24T17:02:15Z"
+   "last_activity_at": "2026-11-25T08:09:03Z"
   },
   {
    "number": 121471,
@@ -31793,7 +31792,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-17T18:57:05Z",
-   "last_activity_at": "2026-11-24T16:49:25Z"
+   "last_activity_at": "2026-11-25T07:39:09Z"
   },
   {
    "number": 126148,
@@ -31990,7 +31989,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-23T10:18:55Z",
-   "last_activity_at": "2026-11-24T07:55:46Z"
+   "last_activity_at": "2026-11-25T06:20:17Z"
   },
   {
    "number": 126459,
@@ -32007,7 +32006,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-19T16:18:08Z",
-   "last_activity_at": "2026-11-23T13:54:12Z"
+   "last_activity_at": "2026-11-25T07:59:21Z"
   },
   {
    "number": 126514,
@@ -32024,7 +32023,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-20T14:56:00Z",
-   "last_activity_at": "2026-11-20T14:56:00Z"
+   "last_activity_at": "2026-11-25T04:14:45Z"
   },
   {
    "number": 126537,
@@ -32169,17 +32168,17 @@
    "title": "soc: st: stm32: stm32n6x: skip TCM erase in non-secure images",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126643",
    "author": "lvbor",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-21T14:43:27Z",
    "labeled_at": "2026-11-21T14:45:00Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-25T03:12:49Z",
+   "merged_at": "2026-11-25T03:12:49Z",
    "areas": [
     "Boards/SoCs"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-23T07:59:05Z",
-   "last_activity_at": "2026-11-24T09:25:27Z"
+   "last_activity_at": "2026-11-25T03:12:50Z"
   },
   {
    "number": 126644,
@@ -32214,7 +32213,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-23T08:44:26Z",
-   "last_activity_at": "2026-11-24T06:49:37Z"
+   "last_activity_at": "2026-11-25T06:38:56Z"
   },
   {
    "number": 126754,
@@ -32337,7 +32336,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-24T08:29:39Z",
-   "last_activity_at": "2026-11-24T08:32:00Z"
+   "last_activity_at": "2026-11-24T22:34:15Z"
   },
   {
    "number": 126887,
@@ -32354,7 +32353,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-24T10:01:26Z",
-   "last_activity_at": "2026-11-24T12:05:34Z"
+   "last_activity_at": "2026-11-25T07:01:07Z"
   },
   {
    "number": 126938,
@@ -32374,6 +32373,33 @@
    "last_activity_at": "2026-11-24T15:55:55Z"
   },
   {
+   "number": 126941,
+   "title": "Use kernel-only stacks for threads and work queues that never run in user mode",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126941",
+   "author": "giomf",
+   "state": "open",
+   "created_at": "2026-11-24T14:32:48Z",
+   "labeled_at": "2026-11-25T08:06:15Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Authentication",
+    "Bluetooth",
+    "Bluetooth Host",
+    "Ethernet",
+    "IPC",
+    "LoRa",
+    "Networking",
+    "Sensors",
+    "UART",
+    "USB",
+    "Wi-Fi"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-24T14:46:07Z",
+   "last_activity_at": "2026-11-25T08:11:25Z"
+  },
+  {
    "number": 126960,
    "title": "stm32: drivers: disk: Prefer STM32 SDHC driver and remove legacy dependency",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126960",
@@ -32388,7 +32414,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-24T17:18:54Z",
-   "last_activity_at": "2026-11-24T17:18:54Z"
+   "last_activity_at": "2026-11-25T08:07:59Z"
   },
   {
    "number": 126962,
@@ -32411,6 +32437,23 @@
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
    "last_activity_at": "2026-11-24T17:15:33Z"
+  },
+  {
+   "number": 127038,
+   "title": "boards: st: nucleo_l432kc: honor the board serial in openocd.cfg",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127038",
+   "author": "benedekkupper",
+   "state": "open",
+   "created_at": "2026-11-25T08:12:36Z",
+   "labeled_at": "2026-11-25T08:15:03Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Boards/SoCs"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-25T08:16:01Z"
   }
  ]
 }

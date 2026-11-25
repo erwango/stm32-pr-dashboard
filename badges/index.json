@@ -7,6 +7,7 @@
   "ARM": "arm",
   "Architectures": "architectures",
   "Audio": "audio",
+  "Authentication": "authentication",
   "Aux display": "aux-display",
   "Base OS": "base-os",
   "Battery Backed RAM (bbram)": "battery-backed-ram-bbram",
