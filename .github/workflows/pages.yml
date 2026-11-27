@@ -31,14 +31,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     # Skip when the collector failed: the previous deployment stays valid.
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -62,6 +59,18 @@ jobs:
         with:
           path: _site
 
+  deploy:
+    # Run in a separate job from the upload: deploy-pages sometimes queries
+    # the artifact API before same-job uploads have propagated, failing with
+    # "No artifacts named github-pages were found" (upstream
+    # actions/deploy-pages#305). The job boundary avoids that race.
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
