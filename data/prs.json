@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T08:30:47Z",
- "watermark": "2026-11-27T07:30:47Z",
+ "generated_at": "2026-11-27T21:16:03Z",
+ "watermark": "2026-11-27T20:16:03Z",
  "prs": [
   {
    "number": 25085,
@@ -1362,7 +1362,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2025-06-09T16:27:36Z",
-   "last_activity_at": "2026-11-26T21:58:50Z"
+   "last_activity_at": "2026-11-27T15:41:59Z"
   },
   {
    "number": 91404,
@@ -2696,9 +2696,9 @@
     "USB",
     "Video"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2025-09-30T14:22:06Z",
-   "last_activity_at": "2026-11-27T08:22:01Z"
+   "last_activity_at": "2026-11-27T21:06:48Z"
   },
   {
    "number": 96412,
@@ -11644,7 +11644,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-03-18T17:14:24Z",
-   "last_activity_at": "2026-11-17T14:50:18Z"
+   "last_activity_at": "2026-11-27T15:32:21Z"
   },
   {
    "number": 105097,
@@ -14779,11 +14779,11 @@
    "title": "include: drivers: i2s: add i2s_get_state api",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/108181",
    "author": "mariopaja",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-04-29T08:50:19Z",
    "labeled_at": "2026-05-06T09:55:45Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-27T15:59:57Z",
+   "merged_at": "2026-11-27T15:59:57Z",
    "areas": [
     "I2S",
     "Tests",
@@ -14791,7 +14791,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-04-29T15:19:02Z",
-   "last_activity_at": "2026-11-26T15:24:24Z"
+   "last_activity_at": "2026-11-27T15:59:58Z"
   },
   {
    "number": 108183,
@@ -18944,7 +18944,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-02T14:40:12Z",
-   "last_activity_at": "2026-11-27T07:41:01Z"
+   "last_activity_at": "2026-11-27T15:39:27Z"
   },
   {
    "number": 112113,
@@ -19533,7 +19533,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-07-02T22:24:50Z",
-   "last_activity_at": "2026-11-07T22:44:38Z"
+   "last_activity_at": "2026-11-27T17:04:34Z"
   },
   {
    "number": 112648,
@@ -19830,7 +19830,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-07-08T14:50:04Z",
-   "last_activity_at": "2026-11-26T16:02:36Z"
+   "last_activity_at": "2026-11-27T17:15:03Z"
   },
   {
    "number": 112858,
@@ -24553,7 +24553,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-09-25T15:30:57Z",
-   "last_activity_at": "2026-11-26T19:59:36Z"
+   "last_activity_at": "2026-11-27T15:24:52Z"
   },
   {
    "number": 118648,
@@ -25652,7 +25652,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-13T16:00:22Z",
-   "last_activity_at": "2026-11-17T10:41:29Z"
+   "last_activity_at": "2026-11-27T19:35:27Z"
   },
   {
    "number": 119781,
@@ -26069,7 +26069,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-23T15:26:33Z",
-   "last_activity_at": "2026-11-27T00:42:48Z"
+   "last_activity_at": "2026-11-27T14:59:09Z"
   },
   {
    "number": 120105,
@@ -26175,7 +26175,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-09-24T08:33:55Z",
-   "last_activity_at": "2026-11-26T18:03:43Z"
+   "last_activity_at": "2026-11-27T13:42:47Z"
   },
   {
    "number": 120205,
@@ -28168,7 +28168,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-10-13T08:28:26Z",
-   "last_activity_at": "2026-11-26T19:50:33Z"
+   "last_activity_at": "2026-11-27T15:42:21Z"
   },
   {
    "number": 121484,
@@ -29688,17 +29688,17 @@
    "title": "soc: st: stm32u5: work around Stop 2/3 entry errata on U575/U585",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/123135",
    "author": "jsilvenn1",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-10-22T07:20:47Z",
    "labeled_at": "2026-10-22T07:22:15Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-27T16:00:32Z",
+   "merged_at": "2026-11-27T16:00:31Z",
    "areas": [
     "Boards/SoCs"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-10-22T08:09:23Z",
-   "last_activity_at": "2026-11-27T06:31:29Z"
+   "last_activity_at": "2026-11-27T16:00:32Z"
   },
   {
    "number": 123207,
@@ -30319,7 +30319,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-10T09:03:06Z",
-   "last_activity_at": "2026-11-10T09:35:55Z"
+   "last_activity_at": "2026-11-27T15:36:54Z"
   },
   {
    "number": 124229,
@@ -31576,7 +31576,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-16T20:04:30Z",
-   "last_activity_at": "2026-11-25T13:16:07Z"
+   "last_activity_at": "2026-11-27T08:50:18Z"
   },
   {
    "number": 126001,
@@ -31738,9 +31738,9 @@
    "areas": [
     "Flash"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-17T14:49:51Z",
-   "last_activity_at": "2026-11-17T16:28:31Z"
+   "last_activity_at": "2026-11-27T16:00:06Z"
   },
   {
    "number": 126133,
@@ -32012,7 +32012,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-23T10:18:55Z",
-   "last_activity_at": "2026-11-25T06:20:17Z"
+   "last_activity_at": "2026-11-27T10:19:41Z"
   },
   {
    "number": 126459,
@@ -32064,7 +32064,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-20T14:48:58Z",
-   "last_activity_at": "2026-11-25T10:53:56Z"
+   "last_activity_at": "2026-11-27T17:03:56Z"
   },
   {
    "number": 126564,
@@ -32176,17 +32176,17 @@
    "title": "dts: arm: st: n6: name the SDMMC interrupts",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126640",
    "author": "modersohn",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-11-21T14:01:34Z",
    "labeled_at": "2026-11-21T14:02:59Z",
-   "closed_at": null,
+   "closed_at": "2026-11-27T09:03:01Z",
    "merged_at": null,
    "areas": [
     "Unclassified"
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-26T17:32:25Z"
+   "last_activity_at": "2026-11-27T09:03:28Z"
   },
   {
    "number": 126643,
@@ -32220,7 +32220,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-23T07:58:33Z",
-   "last_activity_at": "2026-11-26T14:42:55Z"
+   "last_activity_at": "2026-11-27T13:15:49Z"
   },
   {
    "number": 126717,
@@ -32236,9 +32236,9 @@
     "Bluetooth",
     "Bluetooth HCI"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-23T08:44:26Z",
-   "last_activity_at": "2026-11-26T16:22:47Z"
+   "last_activity_at": "2026-11-27T15:59:39Z"
   },
   {
    "number": 126754,
@@ -32290,7 +32290,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-25T10:59:59Z",
-   "last_activity_at": "2026-11-25T11:27:39Z"
+   "last_activity_at": "2026-11-27T13:04:53Z"
   },
   {
    "number": 126832,
@@ -32439,7 +32439,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-25T09:43:48Z"
+   "last_activity_at": "2026-11-27T14:52:32Z"
   },
   {
    "number": 126960,
@@ -32478,7 +32478,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-24T17:15:33Z"
+   "last_activity_at": "2026-11-27T10:26:01Z"
   },
   {
    "number": 127038,
@@ -32495,7 +32495,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-11-26T16:36:21Z",
-   "last_activity_at": "2026-11-26T17:35:39Z"
+   "last_activity_at": "2026-11-27T13:17:56Z"
   },
   {
    "number": 127051,
@@ -32510,9 +32510,9 @@
    "areas": [
     "Video"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-25T10:54:12Z",
-   "last_activity_at": "2026-11-26T10:21:16Z"
+   "last_activity_at": "2026-11-27T17:05:28Z"
   },
   {
    "number": 127063,
@@ -32530,7 +32530,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-27T07:20:11Z"
+   "last_activity_at": "2026-11-27T09:16:43Z"
   },
   {
    "number": 127065,
@@ -32547,7 +32547,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-26T07:52:27Z",
-   "last_activity_at": "2026-11-26T07:52:27Z"
+   "last_activity_at": "2026-11-27T14:41:55Z"
   },
   {
    "number": 127071,
@@ -32583,9 +32583,9 @@
     "Samples",
     "Tests"
    ],
-   "review_decision": "APPROVED",
+   "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-25T17:14:51Z",
-   "last_activity_at": "2026-11-26T13:27:42Z"
+   "last_activity_at": "2026-11-27T16:10:15Z"
   },
   {
    "number": 127103,
@@ -32602,9 +32602,9 @@
     "Boards/SoCs",
     "Tests"
    ],
-   "review_decision": "CHANGES_REQUESTED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-25T14:44:43Z",
-   "last_activity_at": "2026-11-27T08:15:58Z"
+   "last_activity_at": "2026-11-27T16:55:11Z"
   },
   {
    "number": 127114,
@@ -32622,7 +32622,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-26T09:01:49Z",
-   "last_activity_at": "2026-11-27T07:54:38Z"
+   "last_activity_at": "2026-11-27T09:31:49Z"
   },
   {
    "number": 127121,
@@ -32638,8 +32638,8 @@
     "Video"
    ],
    "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-26T08:56:02Z"
+   "first_review_at": "2026-11-27T13:08:23Z",
+   "last_activity_at": "2026-11-27T13:18:32Z"
   },
   {
    "number": 127123,
@@ -32692,7 +32692,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-26T10:06:16Z",
-   "last_activity_at": "2026-11-26T10:06:16Z"
+   "last_activity_at": "2026-11-27T16:08:46Z"
   },
   {
    "number": 127147,
@@ -32709,7 +32709,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-26T12:39:31Z",
-   "last_activity_at": "2026-11-27T07:17:53Z"
+   "last_activity_at": "2026-11-27T14:27:18Z"
   },
   {
    "number": 127175,
@@ -32731,7 +32731,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-26T11:06:43Z"
+   "last_activity_at": "2026-11-27T17:56:10Z"
   },
   {
    "number": 127181,
@@ -32797,13 +32797,13 @@
    "areas": [
     "DMA"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-26T16:14:40Z",
-   "last_activity_at": "2026-11-26T16:14:40Z"
+   "last_activity_at": "2026-11-27T16:36:39Z"
   },
   {
    "number": 127235,
-   "title": "drivers: dma: stm32: clear hal_override when the input indicates",
+   "title": "drivers: dma: stm32: clear hal_override when configuring non-HAL channel",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127235",
    "author": "benedekkupper",
    "state": "open",
@@ -32816,7 +32816,7 @@
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-26T16:17:40Z",
-   "last_activity_at": "2026-11-26T17:03:04Z"
+   "last_activity_at": "2026-11-27T14:11:35Z"
   },
   {
    "number": 127236,
@@ -32837,7 +32837,7 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": "2026-11-26T16:21:44Z",
-   "last_activity_at": "2026-11-26T16:21:45Z"
+   "last_activity_at": "2026-11-27T14:32:37Z"
   },
   {
    "number": 127263,
@@ -32855,13 +32855,13 @@
     "Tests",
     "Wi-Fi"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-26T20:14:05Z"
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-27T09:27:40Z",
+   "last_activity_at": "2026-11-27T13:20:04Z"
   },
   {
    "number": 127268,
-   "title": "drivers: display: various event callback fixes",
+   "title": "drivers: display: STM32 LTDC: various event callback fixes",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127268",
    "author": "JarmouniA",
    "state": "open",
@@ -32873,9 +32873,9 @@
     "Display",
     "Tests"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-26T18:45:31Z"
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-27T15:24:40Z",
+   "last_activity_at": "2026-11-27T16:36:08Z"
   },
   {
    "number": 127269,
@@ -32892,24 +32892,24 @@
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-27T07:32:56Z"
+   "last_activity_at": "2026-11-27T08:54:57Z"
   },
   {
    "number": 127324,
    "title": "drivers: video: stm32_venc: maintain the data cache around the encoder",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127324",
    "author": "kristkis",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-11-27T07:17:39Z",
    "labeled_at": "2026-11-27T07:19:17Z",
-   "closed_at": null,
+   "closed_at": "2026-11-27T09:16:39Z",
    "merged_at": null,
    "areas": [
     "Video"
    ],
    "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-27T07:19:37Z"
+   "last_activity_at": "2026-11-27T09:16:39Z"
   },
   {
    "number": 127325,
@@ -32924,9 +32924,9 @@
    "areas": [
     "Video"
    ],
-   "review_decision": "REVIEW_REQUIRED",
-   "first_review_at": null,
-   "last_activity_at": "2026-11-27T07:19:23Z"
+   "review_decision": "CHANGES_REQUESTED",
+   "first_review_at": "2026-11-27T19:31:54Z",
+   "last_activity_at": "2026-11-27T19:31:54Z"
   },
   {
    "number": 127328,
@@ -32943,13 +32943,13 @@
     "Bluetooth HCI",
     "Boards/SoCs"
    ],
-   "review_decision": "REVIEW_REQUIRED",
+   "review_decision": "APPROVED",
    "first_review_at": "2026-11-27T07:54:18Z",
-   "last_activity_at": "2026-11-27T07:54:19Z"
+   "last_activity_at": "2026-11-27T08:46:02Z"
   },
   {
    "number": 127329,
-   "title": "drivers: video: stm32_venc: fix the recovery from encoding errors",
+   "title": "drivers: video: stm32_venc: fix the error recovery and maintain the data cache",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127329",
    "author": "kristkis",
    "state": "open",
@@ -32961,8 +32961,113 @@
     "Video"
    ],
    "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-27T14:13:22Z",
+   "last_activity_at": "2026-11-27T14:13:22Z"
+  },
+  {
+   "number": 127353,
+   "title": "dts: st: n6: Get cryp and hash nodes usable in non-secure",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127353",
+   "author": "erwango",
+   "state": "open",
+   "created_at": "2026-11-27T09:47:52Z",
+   "labeled_at": "2026-11-27T09:49:14Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Unclassified"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-27T10:25:22Z",
+   "last_activity_at": "2026-11-27T15:31:29Z"
+  },
+  {
+   "number": 127360,
+   "title": "stm32wbax: update bluetooth and ieee802154 for cube wba release 1.11.0",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127360",
+   "author": "vtardy-st",
+   "state": "open",
+   "created_at": "2026-11-27T10:14:32Z",
+   "labeled_at": "2026-11-27T10:15:47Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Bluetooth",
+    "Bluetooth HCI",
+    "Boards/SoCs",
+    "IEEE 802.15.4"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
    "first_review_at": null,
-   "last_activity_at": "2026-11-27T07:54:27Z"
+   "last_activity_at": "2026-11-27T14:39:10Z"
+  },
+  {
+   "number": 127375,
+   "title": "drivers: uart: stm32: fix 7-bit data with parity",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127375",
+   "author": "filipembedded",
+   "state": "open",
+   "created_at": "2026-11-27T13:09:34Z",
+   "labeled_at": "2026-11-27T13:11:06Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "UART"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": null,
+   "last_activity_at": "2026-11-27T13:11:22Z"
+  },
+  {
+   "number": 127396,
+   "title": "drivers: sdhc: stm32: support SD High Speed timing",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127396",
+   "author": "modersohn",
+   "state": "open",
+   "created_at": "2026-11-27T15:46:44Z",
+   "labeled_at": "2026-11-27T15:48:06Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Disk Access"
+   ],
+   "review_decision": "REVIEW_REQUIRED",
+   "first_review_at": "2026-11-27T16:01:09Z",
+   "last_activity_at": "2026-11-27T16:10:33Z"
+  },
+  {
+   "number": 127397,
+   "title": "drivers: clock_control: stm32: h7p: correct VCOH bounds explanation",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127397",
+   "author": "mathieuchopstm",
+   "state": "open",
+   "created_at": "2026-11-27T15:49:02Z",
+   "labeled_at": "2026-11-27T15:50:40Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Clock Control"
+   ],
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-27T15:59:31Z",
+   "last_activity_at": "2026-11-27T16:01:13Z"
+  },
+  {
+   "number": 127398,
+   "title": "dts: arm: st: h7p: regroup ITCM with other memories",
+   "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127398",
+   "author": "mathieuchopstm",
+   "state": "open",
+   "created_at": "2026-11-27T15:53:11Z",
+   "labeled_at": "2026-11-27T15:54:50Z",
+   "closed_at": null,
+   "merged_at": null,
+   "areas": [
+    "Unclassified"
+   ],
+   "review_decision": "APPROVED",
+   "first_review_at": "2026-11-27T16:01:49Z",
+   "last_activity_at": "2026-11-27T16:05:08Z"
   }
  ]
 }
