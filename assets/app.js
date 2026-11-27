@@ -288,7 +288,9 @@ function renderAreaChart(stats) {
         },
       },
       scales: {
-        x: { stacked: true, beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: "Open PRs carrying the label" } },
+        // On top: with one row per label the chart runs tall, so the scale would
+        // otherwise sit far below the visible bars once the page is scrolled.
+        x: { position: "top", stacked: true, beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: "Open PRs carrying the label" } },
         y: { stacked: true, ticks: { autoSkip: false }, title: { display: true, text: "area: label" } },
       },
       // A click anywhere on a row (bar or label band) selects that label.
