@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T21:16:03Z",
- "watermark": "2026-11-27T20:16:03Z",
+ "generated_at": "2026-11-28T07:47:35Z",
+ "watermark": "2026-11-28T06:47:35Z",
  "prs": [
   {
    "number": 25085,
@@ -19533,7 +19533,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-07-02T22:24:50Z",
-   "last_activity_at": "2026-11-27T17:04:34Z"
+   "last_activity_at": "2026-11-27T22:36:30Z"
   },
   {
    "number": 112648,
@@ -24553,7 +24553,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-09-25T15:30:57Z",
-   "last_activity_at": "2026-11-27T15:24:52Z"
+   "last_activity_at": "2026-11-28T00:04:50Z"
   },
   {
    "number": 118648,
@@ -29581,7 +29581,7 @@
    ],
    "review_decision": "CHANGES_REQUESTED",
    "first_review_at": "2026-10-28T12:48:38Z",
-   "last_activity_at": "2026-10-28T12:48:38Z"
+   "last_activity_at": "2026-11-28T00:40:04Z"
   },
   {
    "number": 122995,
@@ -31730,17 +31730,17 @@
    "title": "drivers: flash: stm32_xspi: declare dev_data only when used",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126125",
    "author": "mlecriva",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-17T14:45:48Z",
    "labeled_at": "2026-11-17T14:47:24Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-27T22:12:41Z",
+   "merged_at": "2026-11-27T22:12:41Z",
    "areas": [
     "Flash"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-17T14:49:51Z",
-   "last_activity_at": "2026-11-27T16:00:06Z"
+   "last_activity_at": "2026-11-27T22:13:05Z"
   },
   {
    "number": 126133,
@@ -32227,18 +32227,18 @@
    "title": "Bluetooth: HCI: Fix RX buffer length checks in five drivers",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/126717",
    "author": "jhedberg",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-22T16:39:03Z",
    "labeled_at": "2026-11-22T18:05:30Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-27T22:13:00Z",
+   "merged_at": "2026-11-27T22:13:00Z",
    "areas": [
     "Bluetooth",
     "Bluetooth HCI"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-23T08:44:26Z",
-   "last_activity_at": "2026-11-27T15:59:39Z"
+   "last_activity_at": "2026-11-27T22:13:00Z"
   },
   {
    "number": 126754,
@@ -32502,17 +32502,17 @@
    "title": "drivers: video: stm32_dcmipp: fix the dump of 10/12/14-bit Bayer",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127051",
    "author": "kristkis",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-25T09:45:48Z",
    "labeled_at": "2026-11-25T09:47:29Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-27T22:13:29Z",
+   "merged_at": "2026-11-27T22:13:29Z",
    "areas": [
     "Video"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-25T10:54:12Z",
-   "last_activity_at": "2026-11-27T17:05:28Z"
+   "last_activity_at": "2026-11-27T22:13:29Z"
   },
   {
    "number": 127063,
@@ -32646,18 +32646,18 @@
    "title": "dts: bindings: timer: stm32: fix TI2FP2 trigger selection",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127123",
    "author": "str4t0m",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-25T16:47:03Z",
    "labeled_at": "2026-11-25T17:32:41Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-27T22:13:59Z",
+   "merged_at": "2026-11-27T22:13:59Z",
    "areas": [
     "Devicetree Binding",
     "Timer"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-26T07:43:12Z",
-   "last_activity_at": "2026-11-26T12:02:42Z"
+   "last_activity_at": "2026-11-27T22:13:59Z"
   },
   {
    "number": 127128,
@@ -33040,34 +33040,34 @@
    "title": "drivers: clock_control: stm32: h7p: correct VCOH bounds explanation",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127397",
    "author": "mathieuchopstm",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-27T15:49:02Z",
    "labeled_at": "2026-11-27T15:50:40Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-27T22:14:41Z",
+   "merged_at": "2026-11-27T22:14:41Z",
    "areas": [
     "Clock Control"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-27T15:59:31Z",
-   "last_activity_at": "2026-11-27T16:01:13Z"
+   "last_activity_at": "2026-11-27T22:14:42Z"
   },
   {
    "number": 127398,
    "title": "dts: arm: st: h7p: regroup ITCM with other memories",
    "url": "https://github.com/zephyrproject-rtos/zephyr/pull/127398",
    "author": "mathieuchopstm",
-   "state": "open",
+   "state": "merged",
    "created_at": "2026-11-27T15:53:11Z",
    "labeled_at": "2026-11-27T15:54:50Z",
-   "closed_at": null,
-   "merged_at": null,
+   "closed_at": "2026-11-27T22:14:48Z",
+   "merged_at": "2026-11-27T22:14:48Z",
    "areas": [
     "Unclassified"
    ],
    "review_decision": "APPROVED",
    "first_review_at": "2026-11-27T16:01:49Z",
-   "last_activity_at": "2026-11-27T16:05:08Z"
+   "last_activity_at": "2026-11-27T22:14:48Z"
   }
  ]
 }
